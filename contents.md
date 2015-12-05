@@ -1,10 +1,10 @@
 * [Introduction](what_is_freecad.md)
   * [What is FreeCAD](what_is_freecad.md)
-  * Installing
-    * on Windows
-    * on Linux
-    * on Mac OS
-    * installing additional content
+  * [Installing](installing.md)
+    * [on Windows](installing.md)
+    * [on Linux](installing.md)
+    * [on Mac OS](installing.md)
+    * [installing additional content](installing.md)
   * The FreeCAD interface
   * Navigating in the 3D view
   * The FreeCAD document
