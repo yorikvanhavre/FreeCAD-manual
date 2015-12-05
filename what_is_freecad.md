@@ -10,6 +10,12 @@ width and length. In FreeCAD, as in other parametric modelers, these parameters 
 stay modifiable at any time, after the object has been created. Some object can have other objects as
 parameters, for example you could have an object that takes our brick as input, and creates a column from it.
 
+FreeCAD is not designed for a particular kind of work, or to make a certain kind of objects. Instead,
+it allows a wide range of uses, and permits to produce models of all sizes and purposes, from small 
+electronic components to 3D-printable pieces and all the way up to buildings. Each of these tasks have 
+dedicated sets of tools, but one of the great features of FreeCAD is to put all these tools at your 
+disposal, no matter what job you are doing.
+
 FreeCAD is also multiplatform (it runs exactly the same way on Windows, Mac OS and Linux platforms), and 
 [open-source](http://en.wikipedia.org/wiki/Open-source_software). 
 Far from being a mark of low quality (for who is not used to the concept, open-source is often
