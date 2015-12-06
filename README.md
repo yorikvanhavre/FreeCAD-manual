@@ -5,3 +5,5 @@ An experiment at reorganizing the contents of the [FreeCAD wiki](http://www.free
 Start with the [table of contents](SUMMARY.md). 
 
 If you are a book editor interested in publishing this book, drop me a note ;)
+
+This book is being tailored to be used with [gitbook](https://github.com/GitbookIO/gitbook)
