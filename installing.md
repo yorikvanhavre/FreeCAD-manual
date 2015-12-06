@@ -41,6 +41,15 @@ regularly updated with the most recent changes.
 
 ### Installing on Linux
 
+On most modern Linux distributions (Ubuntu, Fedora, OpenSUSE, Debian, Mint, Elementary, etc), FreeCAD can be installed
+with the click of a button, directly from the software management application provided by your distribution (the
+aspect of it can differ from the images below, each distribution uses its own tool:)
+
+1. Open the software manager and search for "freecad":
+![FreeCAD installation on linux, step 1](http://www.freecadweb.org/wiki/images/4/4e/Freecad-linux-install-01.jpg)
+2. Click the "install" button and that's it, FreeCAD gets installed. Don't forget to rate it afterwards!
+![FreeCAD installation on linux, step 2](http://www.freecadweb.org/wiki/images/6/6f/Freecad-linux-install-02.jpg)
+
 ### Installing on  Mac OS
 
 ### Uninstalling
