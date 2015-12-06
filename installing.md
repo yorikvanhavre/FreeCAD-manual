@@ -79,13 +79,17 @@ Once FreeCAD is installed, you might want to open it and set a couple of prefere
 FreeCAD are located under menu Edit -> Preferences. You can browse through the different pages to see if there is
 anything else you would want to change, but here are a couple of basic ones:
 
-1. **Language**: FreeCAD will automatically pick the language of your operating system, but you might want to change that. FreeCAD is almost fully translated to a dozen of languages, plus many others that are only partially translated. You can easy [help to translate FreeCAD](https://crowdin.com/project/freecad).
+1. **Language**: FreeCAD will automatically pick the language of your operating system, but you might want to change that. FreeCAD is almost fully translated to 5 or 6 languages, plus many others that are at the moment only partially translated. You can easily [help to translate FreeCAD](https://crowdin.com/project/freecad).
+![freecad basic options, step 1](http://www.freecadweb.org/wiki/images/f/f1/Freecad-basic-options01.jpg)
 2. **Auto-load module**: Normally, FreeCAD will start showing you the start center page. You can skip this and begin a FreeCAD session directly in the workbench of your choice.
 3. **Create document at startup**: Combined with the option above, this starts FreeCAD ready for work.
+![freecad basic options, step 2](http://www.freecadweb.org/wiki/images/8/8e/Freecad-basic-options02.jpg)
 4. **Storage options**: As any complex application, FreeCAD might crash from time to time. Here you can configure a few options that will help you to recover your work in case of a crash.
 5. **Authoring and license**: You can set the defautl settings that will be used for your new files. Consider making your files shareable right from the start, by using a friendly license like [Creative Commons](https://creativecommons.org/).
 6. **Redirect python messages to output view**: These two options are always good to mark, as they will permit you to see what's wrong in the Report View, when one of the python scripts running in FreeCAD has a problem.
+![freecad basic options, step 3](http://www.freecadweb.org/wiki/images/1/19/Freecad-basic-options03.jpg)
 7. **Units**: Here you can set the default units system you wish to use.
+![freecad basic options, step 4](http://www.freecadweb.org/wiki/images/c/c5/Freecad-basic-options04.jpg)
 
 **Read more**
 
