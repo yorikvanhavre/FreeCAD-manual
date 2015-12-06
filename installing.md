@@ -24,9 +24,12 @@ are uploaded from time to time on the download page above, or, if you are using 
 also maintains a [PPA](https://launchpad.net/~freecad-maintainers/+archive/ubuntu/freecad-daily) which is 
 regularly updated with the most recent changes.
 
+If you are installing FreeCAD in a virtual machine, please be aware that the performance might be low, or 
+in some cases unusable due to the limits of OpenGL support on most virtual machines.
+
 ### Installing on Windows
 
-1. Download an installer (.exe) package corresponding to your version of Windows (32bit or 64bit) from  the [download page]( https://github.com/FreeCAD/FreeCAD/release). The FreeCAD installers should work on any windows version.
+1. Download an installer (.exe) package corresponding to your version of Windows (32bit or 64bit) from  the [download page](https://github.com/FreeCAD/FreeCAD/release). The FreeCAD installers should work on any windows version.
 2. Double-click the downloaded installer.
 3. Accept the terms of the LGPL license (this will be one of the few cases where you can really, safely click the "accept" button without reading the text. No hidden clauses):
 ![FreeCAD installation on windows, step 1](http://www.freecadweb.org/wiki/images/0/05/Freecad-windows-install-01.jpg)
@@ -67,11 +70,25 @@ can also easily [compile FreeCAD yourself](http://www.freecadweb.org/wiki/index.
 
 ### Installing on  Mac OS
 
+Installing FreeCAD on Mac OSX is nowadays as easy as on other platforms. However, Since there are less people
+in the community who own a Mac, the available packages often lag a couple of versions behind the other
+platforms.
+
+1. Download a zipped package corresponding to your version from  the [download page](https://github.com/FreeCAD/FreeCAD/release). The FreeCAD installers should work on any windows version.
+2. Open the Downloads folder, and expand the downloaded zip file:
+![FreeCAD installation on mac, step 1](http://www.freecadweb.org/wiki/images/7/76/Freecad-mac-01.jpg)
+3. Drag the FreeCAD application from inside the zip to the Applications folder:
+![FreeCAD installation on mac, step 2](http://www.freecadweb.org/wiki/images/a/a7/Freecad-mac-02.jpg)
+4. That's it, FreeCAD is installed!
+![FreeCAD installation on mac, step 3](http://www.freecadweb.org/wiki/images/2/2b/Freecad-mac-03.jpg)
+5. If the system prevents FreeCAD to launch, due to restricted permissions for applications not coming from the App store, you will need to enable it in the system settings:
+![FreeCAD installation on mac, step 4](http://www.freecadweb.org/wiki/images/f/fe/Freecad-mac-04.jpg)
+
 ### Uninstalling
 
 Hopefully you won't want to do that, but it is good to know anyway. On Windows and Linux, uninstalling FreeCAD
 is very straightforward. Use the standard "remove software" option found in the control panel on Windows, or remove it
-with the same software manager you used to install FreeCAD on Linux.
+with the same software manager you used to install FreeCAD on Linux. On Mac, all you need to do is remove it from the Applications folder.
 
 ### Setting basic preferences
 
