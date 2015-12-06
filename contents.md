@@ -14,11 +14,11 @@
   * Import and export to other filetypes
 * Working with FreeCAD
   * All workbenches at a glance
-  * Traditional modelling, the CSG way
+  * Traditional modeling, the CSG way
   * Traditional 2D drafting
-  * Modelling for product design
-  * BIM modelling
+  * Modeling for product design
   * Generating 2D drawings
+  * BIM modeling
   * Using spreadsheets
   * Creating FEM analyses
   * Creating renderings
