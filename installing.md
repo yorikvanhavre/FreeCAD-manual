@@ -26,7 +26,7 @@ regularly updated with the most recent changes.
 
 ### Installing on Windows
 
-1. Download an installer (.exe) package corresponding to your version of Windows (32bit or 64bit) from  the download page above. The FreeCAD installers should work on any windows version.
+1. Download an installer (.exe) package corresponding to your version of Windows (32bit or 64bit) from  the [download page]( https://github.com/FreeCAD/FreeCAD/release). The FreeCAD installers should work on any windows version.
 2. Double-click the downloaded installer.
 3. Accept the terms of the LGPL license (this will be one of the few cases where you can really, safely click the "accept" button without reading the text. No hidden clauses):
 ![FreeCAD installation on windows, step 1](http://www.freecadweb.org/wiki/images/0/05/Freecad-windows-install-01.jpg)
