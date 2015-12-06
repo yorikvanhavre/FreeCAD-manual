@@ -69,7 +69,23 @@ can also easily [compile FreeCAD yourself](http://www.freecadweb.org/wiki/index.
 
 ### Uninstalling
 
+Hopefully you won't want to do that, but it is good to know anyway. On Windows and Linux, uninstalling FreeCAD
+is very straightforward. Use the standard "remove software" option found in the control panel on Windows, or remove it
+with the same software manager you used to install FreeCAD on Linux.
+
 ### Setting basic preferences
+
+Once FreeCAD is installed, you might want to open it and set a couple of preferences. Preferences settings in
+FreeCAD are located under menu Edit -> Preferences. You can browse through the different pages to see if there is
+anything else you would want to change, but here are a couple of basic ones:
+
+1. **Language**: FreeCAD will automatically pick the language of your operating system, but you might want to change that. FreeCAD is almost fully translated to a dozen of languages, plus many others that are only partially translated. You can easy [help to translate FreeCAD](https://crowdin.com/project/freecad).
+2. **Auto-load module**: Normally, FreeCAD will start showing you the start center page. You can skip this and begin a FreeCAD session directly in the workbench of your choice.
+3. **Create document at startup**: Combined with the option above, this starts FreeCAD ready for work.
+4. **Storage options**: As any complex application, FreeCAD might crash from time to time. Here you can configure a few options that will help you to recover your work in case of a crash.
+5. **Authoring and license**: You can set the defautl settings that will be used for your new files. Consider making your files shareable right from the start, by using a friendly license like [Creative Commons](https://creativecommons.org/).
+6. **Redirect python messages to output view**: These two options are always good to mark, as they will permit you to see what's wrong in the Report View, when one of the python scripts running in FreeCAD has a problem.
+7. **Units**: Here you can set the default units system you wish to use.
 
 **Read more**
 
@@ -77,3 +93,4 @@ can also easily [compile FreeCAD yourself](http://www.freecadweb.org/wiki/index.
 * Detailed installation instructions: http://www.freecadweb.org/wiki/index.php?title=Installing
 * FreeCAD PPA for Ubuntu: https://launchpad.net/~freecad-maintainers
 * Compile FreeCAD yourself: http://www.freecadweb.org/wiki/index.php?title=Compiling
+* FreeCAD translations: https://crowdin.com/project/freecad
