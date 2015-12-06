@@ -39,6 +39,13 @@ regularly updated with the most recent changes.
 7. That's it, FreeCAD is installed. You will find it in your start menu.
 ![FreeCAD installation on windows, step 5](http://www.freecadweb.org/wiki/images/0/0b/Freecad-windows-install-05.jpg)
 
+**Installing a development version**
+
+Packaging FreeCAD and creating installer takes some time and dedication, so usually, development (also called 
+pre-release) versions are provided as .zip (or .7z) archives. These don't need to be installed, just unpack
+them and lauch FreeCAD by double-clicking the FreeCAD.exe file that you will find inside. This also allows you to
+keep both the stable and "unstable" versions together on the same computer.
+
 ### Installing on Linux
 
 On most modern Linux distributions (Ubuntu, Fedora, OpenSUSE, Debian, Mint, Elementary, etc), FreeCAD can be installed
@@ -50,6 +57,14 @@ aspect of it can differ from the images below, each distribution uses its own to
 2. Click the "install" button and that's it, FreeCAD gets installed. Don't forget to rate it afterwards!
 ![FreeCAD installation on linux, step 2](http://www.freecadweb.org/wiki/images/6/6f/Freecad-linux-install-02.jpg)
 
+**Alternative ways**
+
+One of the big joys of using Linux is the multitude of possibilities to tailor your software, so don't refrain
+yourself: On Ubuntu and derivatives, FreeCAD can also be installed from a 
+[PPA](https://launchpad.net/~freecad-maintainers) maintained by the FreeCAD
+community (it contains both stable and development versions), and, since this is open-source software, you
+can also easily [compile FreeCAD yourself](http://www.freecadweb.org/wiki/index.php?title=Compiling).
+
 ### Installing on  Mac OS
 
 ### Uninstalling
@@ -60,4 +75,5 @@ aspect of it can differ from the images below, each distribution uses its own to
 
 * [More download options](http://www.freecadweb.org/wiki/index.php?title=Download)
 * [Detailed installation instructions](http://www.freecadweb.org/wiki/index.php?title=Installing)
+* [FreeCAD PPA for Ubuntu](https://launchpad.net/~freecad-maintainers)
 * [Compile FreeCAD yourself](http://www.freecadweb.org/wiki/index.php?title=Compiling)
