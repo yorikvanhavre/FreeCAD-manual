@@ -21,12 +21,12 @@ manager, are stable versions. However, the development of FreeCAD is fast! New f
 are added almost every single day. Since it can sometimes take a long time between stable releases, you might
 be interested in trying a more bleeding-edge version of FreeCAD. These development versions, or pre-releases,
 are uploaded from time to time on the download page above, or, if you are using Ubuntu, the FreeCAD community
-also maintains a PPA at https://launchpad.net/~freecad-maintainers/+archive/ubuntu/freecad-daily which is 
+also maintains a [PPA](https://launchpad.net/~freecad-maintainers/+archive/ubuntu/freecad-daily) which is 
 regularly updated with the most recent changes.
 
 ### Installing on Windows
 
-1. Download an installer (.exe) package corresponding to your version of Windows (32bit or 64bit) from  https://github.com/FreeCAD/FreeCAD/releases. The FreeCAD installers should work on any windows version.
+1. Download an installer (.exe) package corresponding to your version of Windows (32bit or 64bit) from  the download page above. The FreeCAD installers should work on any windows version.
 2. Double-click the downloaded installer.
 3. Accept the terms of the LGPL license (this will be one of the few cases where you can really, safely click the "accept" button without reading the text. No hidden clauses):
 ![FreeCAD installation on windows, step 1](http://www.freecadweb.org/wiki/images/0/05/Freecad-windows-install-01.jpg)
