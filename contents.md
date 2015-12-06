@@ -1,12 +1,12 @@
 * [Introduction](what_is_freecad.md)
-  * [What is FreeCAD](what_is_freecad.md)
+  * [What is FreeCAD](what_is_freecad.md#what-is-freecad)
   * [Installing](installing.md)
-    * [Installing on Windows](installing.md)
-    * [Installing on Linux](installing.md)
-    * [Installing on Mac OS](installing.md)
-    * [Uninstalling](installing.md)
-    * [Setting basic preferences](installing.md)
-    * [Installing additional content](installing.md)
+    * [Installing on Windows](installing.md#installing-on-windows)
+    * [Installing on Linux](installing.md#installing-on-linux)
+    * [Installing on Mac OS](installing.md#installing-on-mac-os)
+    * [Uninstalling](installing.md#uninstalling)
+    * [Setting basic preferences](installing.md#setting-basic-preferences)
+    * [Installing additional content](installing.md#installing-additional-content)
   * The FreeCAD interface
   * Navigating in the 3D view
   * The FreeCAD document
