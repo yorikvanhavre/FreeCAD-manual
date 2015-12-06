@@ -12,7 +12,7 @@ depending on your platform: On Windows and Mac, the FreeCAD community provides p
 maintainers, who are then responsible for packaging FreeCAD for their specific distribution. As a result,
 on Linux, you can usually install FreeCAD right from the software manager application.
 
-The official FreeCAD download page fro Windows and Mac OS is https://github.com/FreeCAD/FreeCAD/releases
+The official FreeCAD download page for Windows and Mac OS is https://github.com/FreeCAD/FreeCAD/releases
 
 **FreeCAD versions**
 
