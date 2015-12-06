@@ -98,8 +98,8 @@ external contributions and side-projects made by community members and other ent
 appear everywhere on the internet. There is an effort going on to gather all these interesting additions in
 one place, on the [FreeCAD github page](https://github.com/FreeCAD). There, among other things, you will find:
 
-1. A **Parts library**, which contains all kinds of useful models or pieces of models, created by FreeCAD users, that can be freely used in your projects. The library can be used and accessed right from inside your FreeCAD installation thanks to a macro.
-2. A **collection of addons**, most of them additional workbenches, that extend the functionality of FreeCAD for certain tasks.
+1. A **Parts library**, which contains all kinds of useful models or pieces of models, created by FreeCAD users, that can be freely used in your projects. The library can be used and accessed right from inside your FreeCAD installation.
+2. A **collection of addons**, most of them additional workbenches, that extend the functionality of FreeCAD for certain tasks. Instructions for installing these addons are given on each separate addon page.
 
 **Read more**
 
