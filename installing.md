@@ -34,7 +34,7 @@ regularly updated with the most recent changes.
 ![FreeCAD installation on windows, step 2](http://www.freecadweb.org/wiki/images/7/73/Freecad-windows-install-02.jpg)
 5. No need to set the PYTHONPATH variable, unless you plan to do some advanced python programming, in which case I suppose you already know what this is for:
 ![FreeCAD installation on windows, step 3](http://www.freecadweb.org/wiki/images/1/1b/Freecad-windows-install-03.jpg)
-6. FreeCAD is being installed. During the installation, a couple of additional components, which are bundled inside the installer, will be installed too:
+6. During the installation, a couple of additional components, which are bundled inside the installer, will be installed too:
 ![FreeCAD installation on windows, step 4](http://www.freecadweb.org/wiki/images/5/53/Freecad-windows-install-04.jpg)
 7. That's it, FreeCAD is installed. You will find it in your start menu.
 ![FreeCAD installation on windows, step 5](http://www.freecadweb.org/wiki/images/0/0b/Freecad-windows-install-05.jpg)
