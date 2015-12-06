@@ -11,6 +11,7 @@ controlled by parameters. For example, the shape of a brick might be controlled 
 width and length. In FreeCAD, as in other parametric modelers, these parameters are part of the object, and
 stay modifiable at any time, after the object has been created. Some object can have other objects as
 parameters, for example you could have an object that takes our brick as input, and creates a column from it.
+You could think of a parametric object as a small program that creates geometry from parameters.
 
 FreeCAD is not designed for a particular kind of work, or to make a certain kind of objects. Instead,
 it allows a wide range of uses, and permits to produce models of all sizes and purposes, from small 
