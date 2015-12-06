@@ -91,6 +91,16 @@ anything else you would want to change, but here are a couple of basic ones:
 7. **Units**: Here you can set the default units system you wish to use.
 ![freecad basic options, step 4](http://www.freecadweb.org/wiki/images/c/c5/Freecad-basic-options04.jpg)
 
+### Installing additional content
+
+As the FreeCAD project and its community grows quickly, and also thansk to being easy to extend,
+external contributions and side-projects made by community members and other enthusiasts begin to 
+appear everywhere on the internet. There is an effort going on to gather all these interesting additions in
+one place, on the [FreeCAD github page](https://github.com/FreeCAD). There, among other things, you will find:
+
+1. A **Parts library**, which contains all kinds of useful models or pieces of models, created by FreeCAD users, that can be freely used in your projects. The library can be used and accessed right from inside your FreeCAD installation thanks to a macro.
+2. A **collection of addons**, most of them additional workbenches, that extend the functionality of FreeCAD for certain tasks.
+
 **Read more**
 
 * More download options: http://www.freecadweb.org/wiki/index.php?title=Download
@@ -98,3 +108,4 @@ anything else you would want to change, but here are a couple of basic ones:
 * FreeCAD PPA for Ubuntu: https://launchpad.net/~freecad-maintainers
 * Compile FreeCAD yourself: http://www.freecadweb.org/wiki/index.php?title=Compiling
 * FreeCAD translations: https://crowdin.com/project/freecad
+* FreeCAD github page: https://github.com/FreeCAD
