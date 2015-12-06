@@ -73,7 +73,7 @@ can also easily [compile FreeCAD yourself](http://www.freecadweb.org/wiki/index.
 
 **Read more**
 
-* [More download options](http://www.freecadweb.org/wiki/index.php?title=Download)
-* [Detailed installation instructions](http://www.freecadweb.org/wiki/index.php?title=Installing)
-* [FreeCAD PPA for Ubuntu](https://launchpad.net/~freecad-maintainers)
-* [Compile FreeCAD yourself](http://www.freecadweb.org/wiki/index.php?title=Compiling)
+* More download options: http://www.freecadweb.org/wiki/index.php?title=Download
+* Detailed installation instructions: http://www.freecadweb.org/wiki/index.php?title=Installing
+* FreeCAD PPA for Ubuntu: https://launchpad.net/~freecad-maintainers
+* Compile FreeCAD yourself: http://www.freecadweb.org/wiki/index.php?title=Compiling
