@@ -110,7 +110,7 @@ anything else you would want to change, but here are a couple of basic ones:
 
 ### Installing additional content
 
-As the FreeCAD project and its community grows quickly, and also thansk to being easy to extend,
+As the FreeCAD project and its community grows quickly, and also because it is easy to extend,
 external contributions and side-projects made by community members and other enthusiasts begin to 
 appear everywhere on the internet. There is an effort going on to gather all these interesting additions in
 one place, on the [FreeCAD github page](https://github.com/FreeCAD). There, among other things, you will find:
