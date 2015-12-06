@@ -1,6 +1,6 @@
 # Introduction
 
-![screenshot](http://www.freecadweb.org/wiki/images/thumb/7/72/Freecad016_screenshot1.jpg/800px-Freecad016_screenshot1.jpg)
+![FreeCAD screenshot](http://www.freecadweb.org/wiki/images/thumb/7/72/Freecad016_screenshot1.jpg/800px-Freecad016_screenshot1.jpg)
 
 ## What is FreeCAD?
 
@@ -36,6 +36,6 @@ The official website of FreeCAD is at http://www.freecadweb.org
 
 **Read more:**
 
-* [About FreeCAD](http://www.freecadweb.org/wiki/index.php?title=About_FreeCAD)
-* [List of features](http://www.freecadweb.org/wiki/index.php?title=Feature_list)
-* [Screenshots and user cases](http://forum.freecadweb.org/viewforum.php?f=24)
+* About FreeCAD: http://www.freecadweb.org/wiki/index.php?title=About_FreeCAD
+* List of features: http://www.freecadweb.org/wiki/index.php?title=Feature_list
+* Screenshots and user cases: http://forum.freecadweb.org/viewforum.php?f=24
