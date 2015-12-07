@@ -15,3 +15,8 @@ But after a while, or after you did some changes in the preferences, you will mu
 directly in one of the other workbenches, with a new document open:
 
 [screenshot]
+
+**Read more**
+
+* Getting started with FreeCAD: http://www.freecadweb.org/wiki/index.php?title=Getting_started
+* Customizing the interface: http://www.freecadweb.org/wiki/index.php?title=Interface_Customization
