@@ -8,6 +8,8 @@
     * [Setting basic preferences](installing.md#setting-basic-preferences)
     * [Installing additional content](installing.md#installing-additional-content)
   * [The FreeCAD interface](the_freecad_interface.md)
+    * [Workbenches](the_freecad_interface.md#workbenches)
+    * [Customizing the interface](the_freecad_interface.md#customizing-the-interface)
   * Navigating in the 3D view
   * The FreeCAD document
   * Parametric objects
