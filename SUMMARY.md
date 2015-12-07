@@ -7,7 +7,7 @@
     * [Uninstalling](installing.md#uninstalling)
     * [Setting basic preferences](installing.md#setting-basic-preferences)
     * [Installing additional content](installing.md#installing-additional-content)
-  * The FreeCAD interface
+  * [The FreeCAD interface](the_freecad_interface.md)
   * Navigating in the 3D view
   * The FreeCAD document
   * Parametric objects
