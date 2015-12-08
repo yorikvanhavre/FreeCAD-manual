@@ -10,11 +10,14 @@ or directly by right-clicking anywhere on the 3D view:
 ![Accessing navigation modes](http://www.freecadweb.org/wiki/images/2/2e/Freecad-interface-05.jpg)
 
 Each of these modes attributes different mouse buttons, or mouse + keyboard combinations, or
-mouse gestures, to these four operations. The following table shows the different available modes:
+mouse gestures, to these four operations. The following table shows the principal available modes:
 
 | Name                          | Pan           | Rotate     | Zoom      | Select     |
 | ----------------------------- |:-------------:| :---------:|:---------:|:----------:|
-| CAD navigation (default)      | ![](http://www.freecadweb.org/wiki/images/e/e9/Pan-mouse.svg) | ![](http://www.freecadweb.org/wiki/images/9/92/Rotate-mouse.svg) | ![](http://www.freecadweb.org/wiki/images/b/bf/Zoom-mouse.svg) | ![](http://www.freecadweb.org/wiki/images/7/7e/Select-mouse.svg) | 
+| Inventor mode | ![](http://www.freecadweb.org/wiki/images/7/7e/Select-mouse.svg) | ![](http://www.freecadweb.org/wiki/images/9/92/Rotate-mouse.svg) | ![](http://www.freecadweb.org/wiki/images/b/bf/Zoom-mouse.svg) | CTRL + ![](http://www.freecadweb.org/wiki/images/7/7e/Select-mouse.svg) | 
+| CAD mode (default) | ![](http://www.freecadweb.org/wiki/images/e/e9/Pan-mouse.svg) | ![](http://www.freecadweb.org/wiki/images/9/92/Rotate-mouse.svg) | ![](http://www.freecadweb.org/wiki/images/b/bf/Zoom-mouse.svg) | ![](http://www.freecadweb.org/wiki/images/7/7e/Select-mouse.svg) | 
+| Blender mode | SHIFT + ![](http://www.freecadweb.org/wiki/images/e/e9/Pan-mouse.svg) | ![](http://www.freecadweb.org/wiki/images/e/e9/Pan-mouse.svg) | ![](http://www.freecadweb.org/wiki/images/b/bf/Zoom-mouse.svg) | ![](http://www.freecadweb.org/wiki/images/7/7e/Select-mouse.svg) | 
+| Touchpad mode | SHIFT + ![](http://www.freecadweb.org/wiki/images/7/78/Touchpad.png) | ALT + ![](http://www.freecadweb.org/wiki/images/7/78/Touchpad.png) | PGUP / PGDOWN | ![](http://www.freecadweb.org/wiki/images/b/bb/Select-touchpad.png) | 
 
 **Read more**
 
