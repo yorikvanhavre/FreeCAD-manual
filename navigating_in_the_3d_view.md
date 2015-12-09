@@ -52,6 +52,9 @@ Double-clicking will select the object, and all its subcomponents. You can selec
 even different subcomponents from different objects, by pressing the CTRL key. Clicking with the selection button
 on an empty portion of the 3D view will deselect everything.
 
+A panel called "Selection view", available from the View menu, can also be turned on, which shows you what is 
+currently selected.
+
 **Read more**
 
 * The FreeCAD navigation modes: http://www.freecadweb.org/wiki/index.php?title=Mouse_Model
