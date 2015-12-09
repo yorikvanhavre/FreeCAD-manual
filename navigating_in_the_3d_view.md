@@ -12,7 +12,8 @@ object that exists in that space can be located by its (x,y,z) coordinates. For 
 coordinates (2,3,1) will lie at 2 units on the X axis, 3 units on the Y axis, and 1 unit on the Z axis.
 
 You can look at that scene from any angle, like if you were holding a camera. That camera can be moved
-left, right, up and down (pan), rotated (rotate) and brought closer or further from the scene (zoom).
+left, right, up and down (pan), rotated around what it is looking at (rotate) and brought closer or further 
+from the scene (zoom).
 
 ### The FreeCAD 3D view
 
