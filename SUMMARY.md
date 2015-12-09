@@ -15,7 +15,7 @@
     * [The FreeCAD 3D view](navigating_in_the_3d_view.md#the-freecad-3d-view)
     * [Selecting objects](navigating_in_the_3d_view.md#selecting-objects)
   * [The FreeCAD document](the_freecad_document.md)
-  * [Parametric objects](parametric-objects.md)
+  * [Parametric objects](parametric_objects.md)
   * Import and export to other filetypes
 * Working with FreeCAD
   * All workbenches at a glance
