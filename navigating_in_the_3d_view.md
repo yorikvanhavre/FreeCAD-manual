@@ -7,7 +7,8 @@ not, you can safely skip this section.
 
 The FreeCAD 3D space is an [euclidian space](https://en.wikipedia.org/wiki/Euclidean_space). It has
 an origin point and three axes: X, Y and Z. If you look at your scene from above, conventionally, the
-X axis points to the right, the Y axis to the back, and the Z axis upwards. Every point of every
+X axis points to the right, the Y axis to the back, and the Z axis upwards. In the lower right corner of the
+FreeCAD view, you can always see from where you are viewing the scene. Every point of every
 object that exists in that space can be located by its (x,y,z) coordinates. For example, a point with
 coordinates (2,3,1) will lie at 2 units on the X axis, 3 units on the Y axis, and 1 unit on the Z axis.
 
