@@ -1,5 +1,21 @@
 ## Navigating in the 3D view
 
+### A word about the 3D space
+
+If this is your first contact with a 3D application, you will need to grab some concepts first. If
+not, you can safely skip this section.
+
+The FreeCAD 3D space is an [euclidian space](https://en.wikipedia.org/wiki/Euclidean_space). It has
+an origin point and three axes: X, Y and Z. If you look at your scene from above, conventionally, the
+X axis points to the right, the Y axis to the back, and the Z axis upwards. Every point of every
+object that exists in that space can be located by its (x,y,z) coordinates. For example, a point with
+coordinates (2,3,1) will lie at 2 units on the X axis, 3 units on the Y axis, and 1 unit on the Z axis.
+
+You can look at that scene from any angle, like if you were holding a camera. That camera can be moved
+left, right, up and down (pan), rotated (rotate) and brought closer or further from the scene (zoom).
+
+### The FreeCAD 3D view
+
 Navigating in the FreeCAD 3D view can be done with a mouse, a Space Navigator device, the keyboard,
 a touchpad, or a combination of those. FreeCAD proposes several 
 [navigation modes](http://www.freecadweb.org/wiki/index.php?title=Mouse_Model), which determine how
@@ -23,14 +39,16 @@ mouse gestures, to these four operations. The following table shows the principa
 Alternatively, some keyboard controls are always available, no matter the navigation mode: CTRL + and CTRL - to
 zoom in and zoom out, the arrow keys to shift the view left/right and up/down, SHIFT + left arrow and SHIFT + right
 arrow to rotate the view by 90 degrees, and the numeric keys 1 to 6 for the six standard views, top, front, right,
-bottom, back and left. These controls are also avaialbe from the View menu and the View toolbar.
+bottom, back and left. O will set the camara in orthographic mode, while P sets it in perspective mode. These 
+controls are also available from the View menu and some from the View toolbar.
 
 ### Selecting objects
 
 Objects in the 3D view can be selected by clicking them with the corresponding mouse button, depending on
 the navigation mode. A single click will select the object, and one of its subcomponents (edge, face, vertex).
 Double-clicking will select the object, and all its subcomponents. You can select more than one subcomponent, or
-even different subcomponents from different objects, by pressing the CTRL key.
+even different subcomponents from different objects, by pressing the CTRL key. Clicking with the selection button
+on an empty portion of the 3D view will deselect everything.
 
 **Read more**
 
