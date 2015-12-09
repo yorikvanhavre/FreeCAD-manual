@@ -14,7 +14,7 @@
     * [A word about the 3D space](navigating_in_the_3d_view.md#a-word-about-the-3d-space)
     * [The FreeCAD 3D view](navigating_in_the_3d_view.md#the-freecad-3d-view)
     * [Selecting objects](navigating_in_the_3d_view.md#selecting-objects)
-  * The FreeCAD document
+  * [The FreeCAD document](the_freecad_document.md)
   * Parametric objects
   * Import and export to other filetypes
 * Working with FreeCAD
