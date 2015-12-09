@@ -11,6 +11,8 @@
     * [Workbenches](the_freecad_interface.md#workbenches)
     * [Customizing the interface](the_freecad_interface.md#customizing-the-interface)
   * [Navigating in the 3D view](navigating_in_the_3d_view.md)
+    * [A word about the 3D space](navigating_in_the_3d_view.md#a-word-about-the-3d-space)
+    * [The FreeCAD 3D view](navigating_in_the_3d_view.md#the-freecad-3d-view)
     * [Selecting objects](navigating_in_the_3d_view.md#selecting-objects)
   * The FreeCAD document
   * Parametric objects
