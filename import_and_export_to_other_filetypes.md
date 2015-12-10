@@ -8,7 +8,7 @@ short description of the available features:
 | STEP   | Yes    | Yes    | This is the most faithful import/export format available, since it supports solid geometry and NURBS. Use it whenever it is possible. |
 | IGES   | Yes    | Yes    | An older solid format, also very well supported. Some older applications don't support Step but have Iges. |
 | BREP   | Yes    | Yes    | The native format of [OpenCasCade](https://en.wikipedia.org/wiki/Open_Cascade_Technology), FreeCAD's geometry kernel.  |
-| DXF    | Yes    | Yes    | An open format maintained by Autodesk. Since the 3D data inside a DXF file is encoded in proprietary format, FreeCAD can only import/export 2D datato/from this format.|
+| DXF    | Yes    | Yes    | An open format maintained by Autodesk. Since the 3D data inside a DXF file is encoded in proprietary format, FreeCAD can only import/export 2D data to/from this format.|
 | DWG    | Yes    | Yes    | The proprietary version of DXF. Requires the installation of the [Teigha File Converter](https://www.opendesign.com/guestfiles) utility. This format suffers from the same limitations as DXF.|
 | OBJ    | Yes    | Yes    | A mesh-based format. Can only contain triangulated meshes. All solid and NURBS-based objects of FreeCAD will be converted to mesh on export. An alternative exporter is provided by the Arch workbench, more suited to the export of architectural models.|
 | DAE    | Yes    | Yes    | The main import/export format of Sketchup. Can only contain triangulated meshes. All solid and NURBS-based objects of FreeCAD will be converted to mesh on export. |
@@ -20,7 +20,7 @@ short description of the available features:
 | GCODE  | Yes    | Yes    | FreeCAD can already import and export to/from several flavors of GCode, but only a small number of machines is supported at the moment. |
 | CSG    | Yes    | No     | OpenSCAD's CSG format. |
 
-Some of these file formats have options. These can be configured frommenu Edit -> Preferences -> File formats.
+Some of these file formats have options. These can be configured fr ommenu Edit -> Preferences -> File formats:
 
 **Read more**
 
