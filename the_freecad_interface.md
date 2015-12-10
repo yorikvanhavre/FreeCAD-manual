@@ -71,4 +71,4 @@ These advanced customization options are availabe from the Tools -> Customize me
 * Getting started with FreeCAD: http://www.freecadweb.org/wiki/index.php?title=Getting_started
 * Customizing the interface: http://www.freecadweb.org/wiki/index.php?title=Interface_Customization
 * Workbenches: http://www.freecadweb.org/wiki/index.php?title=Workbenches
-* More about Python: https://www.python.org/
+* More about Python: https://en.wikipedia.org/wiki/Python_%28programming_language%29
