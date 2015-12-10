@@ -20,7 +20,7 @@ be rebuilt (recomputed).
 Two important things are necessary to know:
 
 1. Recomputation is not always automatic. Heavy operations, that might modify a big portion of your document, and therefore take some time, are not performed automatically. Instead, the object (and all the objects that depend on it) will be marked for recomputation (a small blue icon appears on them in the tree view). You must then press the recompute button to have all the marked objects recomputed.
-2. The dependency tree must always flow in the same direction. Loops are forbidden. You can have object A which depends on object B which depend on object C. But you cannot have object A which depends on object B which depends on object A. That would be a circular dependency. However, you can have many objects that depend ona same object, for example objects B and C both depend on A.
+2. The dependency tree must always flow in the same direction. Loops are forbidden. You can have object A which depends on object B which depend on object C. But you cannot have object A which depends on object B which depends on object A. That would be a circular dependency. However, you can have many objects that depend ona same object, for example objects B and C both depend on A. Menu Tools -> Dependency graph shows you a dependency diagram like on the image above. It can be useful if you  accidentally create loops in your document.
 
 Not all objects are parametric in FreeCAD. Often, the geometry that you import from other files won't contain
 any parameter, and will be imported as simple, non-parametric objects. However, these can sometimes be used as
