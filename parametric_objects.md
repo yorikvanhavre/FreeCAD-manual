@@ -9,13 +9,14 @@ parameters has changed, in order to recompute the shape of the object. Objects c
 kinds of parameters: numbers (integers like 1, 2, 3 or floating-point values like 3.1416), real-world sizes
 (1mm, 2.4m, 4.5ft), (x,y,z) coordinates, text strings ("hello!") or even another object.
 
-For example, a Pad object takes a 2D shape and an extrusion distance. With these, it produces an extrusion (pad)
-of the given 2D shape, by the given distance. You can then use this pad as a base for further operations, such as
-subtractions (pocket), until arriving at your final object. All the intermediary operations (2D shape, pad,
+In the example below, a Pad object takes a 2D shape (Sketch) and an extrusion distance. With these, 
+it produces an extrusion (pad) of the given 2D shape, by the given distance. You can then use this 
+pad as a base for further operations, such as drawing a new 2D shape on one of its faces (Sketch001) and
+then making a subtraction (pocket), until arriving at your final object. All the intermediary operations (2D shapse, pad,
 pocket, etc) are still there, and you can still change any of their parameters anytime. The whole chain will 
-be rebuilt (recomputed).
+be rebuilt (recomputed) whenever needed.
 
-![parametric_modeling](http://www.freecadweb.org/wiki/images/4/47/Parametric_objects.jpg)
+![parametric modeling example](http://www.freecadweb.org/wiki/images/4/47/Parametric_objects.jpg)
 
 Two important things are necessary to know:
 
