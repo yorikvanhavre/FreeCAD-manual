@@ -6,7 +6,7 @@
 
 FreeCAD is an open-source parametric 3D modeling application, made primarily to design real-life objects. 
 [Parametric modeling](http://en.wikipedia.org/wiki/Parametric_feature_based_modeler) 
-describes a certain type of modeling, where the shape of the 3D objects you design are
+describes a certain type of modeling, where the shape of the 3D objects you design is
 controlled by parameters. For example, the shape of a brick might be controlled by three parameters: height,
 width and length. In FreeCAD, as in other parametric modelers, these parameters are part of the object, and
 stay modifiable at any time, after the object has been created. Some object can have other objects as
