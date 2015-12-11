@@ -15,7 +15,7 @@ previous one, and adding new features to it.
 In the example below, a Pad object is based on a 2D shape (Sketch) and an extrusion distance. With these, 
 it produces an extrusion (pad) of the given 2D shape, by the given distance. You can then use this 
 pad as a base for further operations, such as drawing a new 2D shape on one of its faces (Sketch001) and
-then making a subtraction (pocket), until arriving at your final object. All the intermediary operations (2D shapse, pad,
+then making a subtraction (pocket), until arriving at your final object. All the intermediary operations (2D shapes, pad,
 pocket, etc) are still there, and you can still change any of their parameters anytime. The whole chain will 
 be rebuilt (recomputed) whenever needed.
 
