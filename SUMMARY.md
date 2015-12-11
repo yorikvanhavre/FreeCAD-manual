@@ -17,8 +17,8 @@
   * [The FreeCAD document](the_freecad_document.md)
   * [Parametric objects](parametric_objects.md)
   * [Import and export to other filetypes](import_and_export_to_other_filetypes.md)
-* Working with FreeCAD
-  * All workbenches at a glance
+* [Working with FreeCAD](all_workbenches_at_a_glance.md)
+  * [All workbenches at a glance](all_workbenches_at_a_glance.md)
   * Traditional modeling, the CSG way
   * Traditional 2D drafting
   * Modeling for product design
