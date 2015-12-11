@@ -13,11 +13,38 @@ The Draft workbench provides tools to do basic 2D CAD drafting tasks: lines, cir
 a series of generic handy tools such as move, rotate or scale. It also provides several 
 drawing aids, such as grid and snapping.
 
+test: 3-column table
+
 | Tool | Description | Tool | Description | Tool | Description |
 | ---- | ----------- | ---- | ----------- | ---- | ----------- |
-| ![icon](http://www.freecadweb.org/wiki/images/a/a8/Draft_Line.png) Line | Draws a line segment between 2 points | ![icon](http://www.freecadweb.org/wiki/images/0/00/Draft_Wire.png) Wire | Draws a line made of multiple line segments (polyline) | ![icon](http://www.freecadweb.org/wiki/images/1/10/Draft_Circle.png) Circle | Draws a circle from center and radius |
-| ![icon](http://www.freecadweb.org/wiki/images/a/a8/Draft_Arc.png) Arc | Draws an arc segment from center, radius, start angle and end angle | ![icon](http://www.freecadweb.org/wiki/images/thumb/1/13/Draft_Ellipse.png/32px-Draft_Ellipse.png) Ellipse | Draws an ellipse from two corner points | ![icon](http://www.freecadweb.org/wiki/images/8/8e/Draft_Polygon.png) Polygon | Draws a regular polygon from a center and a radius | 
+| ![icon](http://www.freecadweb.org/wiki/images/a/a8/Draft_Line.png) [Line](http://www.freecadweb.org/wiki/index.php?title=Draft_Line) | Draws a line segment between 2 points | ![icon](http://www.freecadweb.org/wiki/images/0/00/Draft_Wire.png) [Wire](http://www.freecadweb.org/wiki/index.php?title=Draft_Wire) | Draws a line made of multiple line segments (polyline) | ![icon](http://www.freecadweb.org/wiki/images/1/10/Draft_Circle.png) [Circle](http://www.freecadweb.org/wiki/index.php?title=Draft_Circle) | Draws a circle from center and radius |
+| ![icon](http://www.freecadweb.org/wiki/images/a/a8/Draft_Arc.png) [Arc](http://www.freecadweb.org/wiki/index.php?title=Draft_Arc) | Draws an arc segment from center, radius, start angle and end angle | ![icon](http://www.freecadweb.org/wiki/images/thumb/1/13/Draft_Ellipse.png/32px-Draft_Ellipse.png) [Ellipse](http://www.freecadweb.org/wiki/index.php?title=Draft_Ellipse) | Draws an ellipse from two corner points | ![icon](http://www.freecadweb.org/wiki/images/8/8e/Draft_Polygon.png) [Polygon](http://www.freecadweb.org/wiki/index.php?title=Draft_Polygon) | Draws a regular polygon from a center and a radius | 
 
+test: 2-column table
+
+| Tool | Description | Tool | Description |
+| ---- | ----------- | ---- | ----------- |
+| ![icon](http://www.freecadweb.org/wiki/images/a/a8/Draft_Line.png) [Line](http://www.freecadweb.org/wiki/index.php?title=Draft_Line) | Draws a line segment between 2 points | ![icon](http://www.freecadweb.org/wiki/images/0/00/Draft_Wire.png) [Wire](http://www.freecadweb.org/wiki/index.php?title=Draft_Wire) | Draws a line made of multiple line segments (polyline) |
+| ![icon](http://www.freecadweb.org/wiki/images/1/10/Draft_Circle.png) [Circle](http://www.freecadweb.org/wiki/index.php?title=Draft_Circle) | Draws a circle from center and radius | ![icon](http://www.freecadweb.org/wiki/images/a/a8/Draft_Arc.png) [Arc](http://www.freecadweb.org/wiki/index.php?title=Draft_Arc) | Draws an arc segment from center, radius, start angle and end angle |
+| ![icon](http://www.freecadweb.org/wiki/images/thumb/1/13/Draft_Ellipse.png/32px-Draft_Ellipse.png)[Ellipse](http://www.freecadweb.org/wiki/index.php?title=Draft_Ellipse) | Draws an ellipse from two corner points | ![icon](http://www.freecadweb.org/wiki/images/8/8e/Draft_Polygon.png) [Polygon](http://www.freecadweb.org/wiki/index.php?title=Draft_Polygon) | Draws a regular polygon from a center and a radius |
+| ![icon](http://www.freecadweb.org/wiki/images/1/14/Draft_Rectangle.png) [Rectangle](http://www.freecadweb.org/wiki/index.php?title=Draft_Rectangle) | Draws a rectangle from 2 opposite points | ![icon](http://www.freecadweb.org/wiki/images/9/9f/Draft_Text.png) [Text](http://www.freecadweb.org/wiki/index.php?title=Draft_Text) | Draws a multi-line text annotation |
+| ![icon](http://www.freecadweb.org/wiki/images/b/b0/Draft_Dimension.png) [Dimension](http://www.freecadweb.org/wiki/index.php?title=Draft_Dimension) | Draws a dimension annotation |
+
+test: 1-column table
+
+| Tool | Description |
+| ---- | ----------- |
+| ![icon](http://www.freecadweb.org/wiki/images/a/a8/Draft_Line.png) [Line](http://www.freecadweb.org/wiki/index.php?title=Draft_Line) | Draws a line segment between 2 points |
+| ![icon](http://www.freecadweb.org/wiki/images/0/00/Draft_Wire.png) [Wire](http://www.freecadweb.org/wiki/index.php?title=Draft_Wire) | Draws a line made of multiple line segments (polyline) |
+| ![icon](http://www.freecadweb.org/wiki/images/1/10/Draft_Circle.png) [Circle](http://www.freecadweb.org/wiki/index.php?title=Draft_Circle) | Draws a circle from center and radius |
+| ![icon](http://www.freecadweb.org/wiki/images/a/a8/Draft_Arc.png) [Arc](http://www.freecadweb.org/wiki/index.php?title=Draft_Arc) | Draws an arc segment from center, radius, start angle and end angle |
+| ![icon](http://www.freecadweb.org/wiki/images/thumb/1/13/Draft_Ellipse.png/32px-Draft_Ellipse.png)[Ellipse](http://www.freecadweb.org/wiki/index.php?title=Draft_Ellipse) | Draws an ellipse from two corner points |
+| ![icon](http://www.freecadweb.org/wiki/images/8/8e/Draft_Polygon.png) [Polygon](http://www.freecadweb.org/wiki/index.php?title=Draft_Polygon) | Draws a regular polygon from a center and a radius |
+| ![icon](http://www.freecadweb.org/wiki/images/1/14/Draft_Rectangle.png) [Rectangle](http://www.freecadweb.org/wiki/index.php?title=Draft_Rectangle) | Draws a rectangle from 2 opposite points |
+| ![icon](http://www.freecadweb.org/wiki/images/9/9f/Draft_Text.png) [Text](http://www.freecadweb.org/wiki/index.php?title=Draft_Text) | Draws a multi-line text annotation |
+| ![icon](http://www.freecadweb.org/wiki/images/b/b0/Draft_Dimension.png) [Dimension](http://www.freecadweb.org/wiki/index.php?title=Draft_Dimension) | Draws a dimension annotation |
+
+test: list
 
 * ![icon](http://www.freecadweb.org/wiki/images/a/a8/Draft_Line.png) [Line](http://www.freecadweb.org/wiki/index.php?title=Draft_Line): Draws a line segment between 2 points
 * ![icon](http://www.freecadweb.org/wiki/images/0/00/Draft_Wire.png) [Wire](http://www.freecadweb.org/wiki/index.php?title=Draft_Wire): Draws a line made of multiple line segments (polyline)
