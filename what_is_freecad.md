@@ -16,8 +16,7 @@ You could think of a parametric object as a small program that creates geometry 
 FreeCAD is not designed for a particular kind of work, or to make a certain kind of objects. Instead,
 it allows a wide range of uses, and permits to produce models of all sizes and purposes, from small 
 electronic components to 3D-printable pieces and all the way up to buildings. Each of these tasks have 
-dedicated sets of tools, but one of the great features of FreeCAD is to put all these tools at your 
-disposal, no matter what job you are doing.
+dedicated sets of tools and workflows, but you can switch between them anytime.
 
 FreeCAD is also multiplatform (it runs exactly the same way on Windows, Mac OS and Linux platforms), and 
 [open-source](http://en.wikipedia.org/wiki/Open-source_software). 
