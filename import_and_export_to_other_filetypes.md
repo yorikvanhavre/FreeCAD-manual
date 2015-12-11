@@ -20,7 +20,7 @@ short description of the available features:
 | GCODE  | Yes    | Yes    | FreeCAD can already import and export to/from several flavors of GCode, but only a small number of machines is supported at the moment. |
 | CSG    | Yes    | No     | OpenSCAD's CSG format. |
 
-Some of these file formats have options. These can be configured fr ommenu Edit -> Preferences -> Import/export:
+Some of these file formats have options. These can be configured from menu Edit -> Preferences -> Import/export:
 ![Import/export preferences](http://www.freecadweb.org/wiki/images/4/41/Import_preferences.jpg)
 
 **Read more**
