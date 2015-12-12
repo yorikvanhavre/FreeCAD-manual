@@ -2,15 +2,11 @@
 
 ## All workbenches at a glance
 
-One of the biggest difficulty for new users of FreeCAD, is to know in which workbench to find 
-a specific tool. The table below will give you an overview of the most important workbenches
-and their tools. Refer to each workbench page in the FreeCAD documentation for a more complete
-list.
+One of the biggest difficulty for new users of FreeCAD, is to know in which workbench to find a specific tool. The table below will give you an overview of the most important workbenches and their tools. Refer to each workbench page in the FreeCAD documentation for a more complete list.
 
 **Draft**
 
-The Draft workbench provides tools to do basic 2D CAD drafting tasks: lines, circles, etc... and  
-a series of generic handy tools such as move, rotate or scale. It also provides several 
+The Draft workbench provides tools to do basic 2D CAD drafting tasks: lines, circles, etc... and a series of generic handy tools such as move, rotate or scale. It also provides several 
 drawing aids, such as grid and snapping.
 
 test: 3-column table
@@ -23,7 +19,7 @@ test: 3-column table
 | ![icon](http://www.freecadweb.org/wiki/images/a/af/Draft_BSpline.png) [BSpline](http://www.freecadweb.org/wiki/index.php?title=Draft_BSpline) | Draws a B-Spline from a series of points | ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c5/Draft_Point.png/32px-Draft_Point.png) [Point](http://www.freecadweb.org/wiki/index.php?title=Draft_Point) | Inserts a point object | ![icon](http://www.freecadweb.org/wiki/images/f/f7/Draft_ShapeString.png) [ShapeString](http://www.freecadweb.org/wiki/index.php?title=Draft_ShapeString) | The ShapeString tool inserts a compound shape representing a text string at a given point in the current document |
 | ![icon](http://www.freecadweb.org/wiki/images/thumb/9/93/Draft_Facebinder.png/32px-Draft_Facebinder.png) [Facebinder](http://www.freecadweb.org/wiki/index.php?title=Draft_Facebinder) | Creates a new object from selected faces on existing objects | ![icon](http://www.freecadweb.org/wiki/images/thumb/3/34/Draft_BezCurve.png/32px-Draft_BezCurve.png) [BezierCurve](http://www.freecadweb.org/wiki/index.php?title=Draft_BezCurve) | Draws a Bezier curve from a series of points |
 
-test: 2-column table
+test: 2-column table  <!-- think this one looks the best-->
 
 | Tool | Description | Tool | Description |
 | ---- | ----------- | ---- | ----------- |
