@@ -68,7 +68,7 @@ Once FreeCAD is installed, you might want to open it and set a couple of prefere
 
 1. **Language**: FreeCAD will automatically pick the language of your operating system, but you might want to change that. FreeCAD is almost fully translated to 5 or 6 languages, plus many others that are at the moment only partially translated. You can easily [help to translate FreeCAD](https://crowdin.com/project/freecad).
 ![freecad basic options, step 1](http://www.freecadweb.org/wiki/images/f/f1/Freecad-basic-options01.jpg)
-2. **Auto-load module**: Normally, FreeCAD will start showing you the start center page. You can skip this and begin a FreeCAD session directly in the workbench of your choice.![Auto load module after start up:](https://dl.dropboxusercontent.com/u/7117445/Screencaptures/2015-12-12_12-01-15.png)
+2. **Auto-load module**: Normally, FreeCAD will start showing you the start center page. You can skip this and begin a FreeCAD session directly in the workbench of your choice.
 3. **Create document at startup**: Combined with the option above, this starts FreeCAD ready for work.
 ![freecad basic options, step 2](http://www.freecadweb.org/wiki/images/8/8e/Freecad-basic-options02.jpg)
 4. **Storage options**: As any complex application, FreeCAD might crash from time to time. Here you can configure a few options that will help you to recover your work in case of a crash.
