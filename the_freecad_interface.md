@@ -20,15 +20,13 @@ The most important control of the FreeCAD interface is the Workbench selector, w
 
 ![FreeCAD interface screenshot 03](http://www.freecadweb.org/wiki/images/9/94/Freecad-interface-03.jpg)
 
-The Workbenches often confuse new users, since it's not always easy to know in which Workbench to look for a specific tool. But they are quick to learn, and after a short while, will feel nature--realizing it a convenient way to organize the multitude of tools FreeCAD has to offer.
-
-Go to the [Customizing the interface](#customizing-the-interface) section below to learn how you can customize your very own Workbench.
+The Workbenches often confuse new users, since it's not always easy to know in which Workbench to look for a specific tool. But they are quick to learn, and after a short while, will feel nature--realizing it a convenient way to organize the multitude of tools FreeCAD has to offer, and they are also fully customizable (see below).
 
 Later in this manual, you will also find a table showing the contents of all Workbenches.
 
 Let's have a better look at the different parts of the interface:
 
-###Parts of the Interface
+### Parts of the Interface
 
 ![FreeCAD interface screenshot 04](http://www.freecadweb.org/wiki/images/7/76/Freecad-interface-04.jpg)
 
@@ -42,8 +40,6 @@ Let's have a better look at the different parts of the interface:
 * **The Python console** is also hidden by default. This is where you can interact with the contents of the document using the [Python language](https://en.wikipedia.org/wiki/Python_%28programming_language%29). Since every action you do on the FreeCAD interface actually executes a piece of Python code, having this open allows you to watch the code unfold in real time—allowing you a wonderful and easy way to learn a little Python on the way, almost without noticing it.
 
 ![FreeCAD interface screenshot 05](http://www.freecadweb.org/wiki/images/4/4f/Freecad-interface-07.jpg)
-
-
 
 ### Customizing the interface
 
