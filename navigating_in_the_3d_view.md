@@ -41,6 +41,7 @@ These controls are also available from the View menu and some from the View tool
 Objects in the 3D view can be selected by clicking them with the corresponding mouse button, depending on the navigation mode. A single click will select the object, and one of its subcomponents (edge, face, vertex). Double-clicking will select the object, and all its subcomponents. You can select more than one subcomponent, or even different subcomponents from different objects, by pressing the CTRL key. Clicking with the selection button on an empty portion of the 3D view will deselect everything.
 
 A panel called "Selection view", available from the View menu, can also be turned on, which shows you what is currently selected:
+
 ![selection view](http://www.freecadweb.org/wiki/images/c/c5/Selection_view.jpg)
 
 You can also use the Selection View to select objects by searching for a particular object.
