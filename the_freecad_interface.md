@@ -26,8 +26,6 @@ Later in this manual, you will also find a table showing the contents of all Wor
 
 Let's have a better look at the different parts of the interface:
 
-### Parts of the Interface
-
 ![FreeCAD interface screenshot 04](http://www.freecadweb.org/wiki/images/7/76/Freecad-interface-04.jpg)
 
 * **The 3D view** is the main component of the interface. It can be undocked out of the main window, you can have several views of the same document (or same objects), or several documents opened at the same time. You can select objects or parts of objects by clicking them, and you can pan, zoom and rotate the view with the mouse buttons. This will be explained further in the next chapter.
