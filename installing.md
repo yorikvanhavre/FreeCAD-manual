@@ -77,7 +77,6 @@ Once FreeCAD is installed, you might want to open it and set a couple of prefere
 ![freecad basic options, step 3](http://www.freecadweb.org/wiki/images/1/19/Freecad-basic-options03.jpg)
 7. **Units**: Here you can set the default units system you wish to use.
 ![freecad basic options, step 4](http://www.freecadweb.org/wiki/images/c/c5/Freecad-basic-options04.jpg)
-<!-- include a word about the 'feet and inches' units being in development?-->
 
 ### Installing additional content
 
