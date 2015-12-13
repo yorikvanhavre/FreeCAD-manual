@@ -24,6 +24,7 @@
   * Traditional 2D drafting
   * Modeling for product design
   * Generating 2D drawings
+  * Preparing models for 3D printing
   * BIM modeling
   * Using spreadsheets
   * Creating FEM analyses
