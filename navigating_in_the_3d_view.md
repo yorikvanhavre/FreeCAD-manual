@@ -8,7 +8,7 @@ The FreeCAD 3D space is an [euclidian space](https://en.wikipedia.org/wiki/Eucli
 
 ![axes](http://www.freecadweb.org/wiki/images/a/af/Axes_orientation.png) 
 
-Every point of every object that exists in that space can be located by its (x,y,z) coordinates. For example, a point with coordinates (2,3,1) will lie at 2 units on the X axis, 3 units on the Y axis, and 1 unit on the Z axis.
+Every point of every object that exists in that space can be located by its (x,y,z) coordinates. For example, a point with coordinates (2,3,1) will lie at 2 units on the X axis, 3 units on the Y axis, and 1 unit on the Z axis:
 
 ![3d space](http://www.freecadweb.org/wiki/images/4/4a/3dspace_coordinates.jpg)
 
