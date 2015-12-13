@@ -24,6 +24,8 @@ The Workbenches often confuse new users, since it's not always easy to know in w
 
 Later in this manual, you will also find a table showing the contents of all Workbenches.
 
+### The interface
+
 Let's have a better look at the different parts of the interface:
 
 ![FreeCAD interface screenshot 04](http://www.freecadweb.org/wiki/images/7/76/Freecad-interface-04.jpg)
