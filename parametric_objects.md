@@ -19,6 +19,8 @@ Two important things are necessary to know:
 
 Not all objects are parametric in FreeCAD. Often, the geometry that you import from other files won't contain any parameter, and will be simple, non-parametric objects. However, these can often be used as a base, or starting point for newly created parametric objects, depending, of course, on what the parametric object requires and the quality of the imported geometry.
 
+All objects, however, will have a couple of basic parameters, such as a Name, which is unique in the document and cannot be edited, a Label, which is a user-defined name, that can be edited, and a  [placement](http://www.freecadweb.org/wiki/index.php?title=Placement), which holds its position in the 3D space.
+
 Finally, it is worth noting that custom parametric objects are [easy to program in python](http://www.freecadweb.org/wiki/index.php?title=Scripted_objects).
 
 **Read more**
@@ -26,3 +28,4 @@ Finally, it is worth noting that custom parametric objects are [easy to program 
 * The properties editor: http://www.freecadweb.org/wiki/index.php?title=Property_editor
 * How to program parametric objects: http://www.freecadweb.org/wiki/index.php?title=Scripted_objects
 * Enabling the dependency graph feature: http://www.freecadweb.org/wiki/index.php?title=Std_DependencyGraph
+* Positioning objects in FreeCAD: http://www.freecadweb.org/wiki/index.php?title=Placement
