@@ -31,4 +31,4 @@ drawing aids, such as grid and snapping.
 **Read more**
 
 * The complete list of workbenches: http://www.freecadweb.org/wiki/index.php?title=Workbenches
-* The draft workbench: http://www.freecadweb.org/wiki/index.php?title=Draft_Module
+* The Draft workbench: http://www.freecadweb.org/wiki/index.php?title=Draft_Module
