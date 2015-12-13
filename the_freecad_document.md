@@ -13,7 +13,7 @@ The objects inside a FreeCAD document can be of different types. Each workbench 
 If there is at least one document open in FreeCAD, there is always one and only one active document. That's the document that appears in the current 3D view, the document you are currently working on. If you switch tabs to another document, that one
 becomes the active document. Most operations always work on the active document.
 
-FreeCAD documents are saved with the .FcStd extension, which is a zip-based compound format, similar to [LibreOffice](https://www.libreoffice.org).
+FreeCAD documents are saved with the .FcStd extension, which is a zip-based compound format, similar to [LibreOffice](https://www.libreoffice.org). If something goes very wrong, it is often possible to unzip it and fix the problem or rescue the data.
 
 **Read more**
 
