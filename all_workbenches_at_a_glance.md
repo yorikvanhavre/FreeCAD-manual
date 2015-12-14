@@ -28,7 +28,7 @@ drawing aids, such as grid and snapping.
 
 **Part**
 
-The Part Workbench provides basic tools for working with solid parts: primitives, such as cube and sphere, and simple geometric operations and boolean operations. Being the main interface with [OpenCasCade](https://en.wikipedia.org/wiki/Open_Cascade_Technology), the Part workbench provides the foundation of FreeCAD's geometry system, and almost all other workbenches produce Part-based geometry.
+The Part Workbench provides basic tools for working with solid parts: primitives, such as cube and sphere, and simple geometric operations and boolean operations. Being the main anchor point with [OpenCasCade](https://en.wikipedia.org/wiki/Open_Cascade_Technology), the Part workbench provides the foundation of FreeCAD's geometry system, and almost all other workbenches produce Part-based geometry.
 
 | Tool | Description | Tool | Description |
 | ---- | ----------- | ---- | ----------- |
