@@ -6,7 +6,7 @@ One of the biggest difficulty for new users of FreeCAD, is to know in which work
 
 **Draft**
 
-The Draft workbench provides tools to do basic 2D CAD drafting tasks: lines, circles, etc... and a series of generic handy tools such as move, rotate or scale. It also provides several 
+The Draft Workbench provides tools to do basic 2D CAD drafting tasks: lines, circles, etc... and a series of generic handy tools such as move, rotate or scale. It also provides several 
 drawing aids, such as grid and snapping.
 
 | Tool | Description | Tool | Description |
@@ -28,7 +28,7 @@ drawing aids, such as grid and snapping.
 
 **Part**
 
-The Part workbench provides basic tools for working with solid parts: primitives, such as cube and sphere, and simple geometric operations and boolean operations. The Part workbench provides the foundation of FreeCAD's geometry system, and almost all other workbenches produce Part-based geometry.
+The Part Workbench provides basic tools for working with solid parts: primitives, such as cube and sphere, and simple geometric operations and boolean operations. The Part workbench provides the foundation of FreeCAD's geometry system, and almost all other workbenches produce Part-based geometry.
 
 | Tool | Description | Tool | Description |
 | ---- | ----------- | ---- | ----------- |
@@ -50,4 +50,5 @@ The Part workbench provides basic tools for working with solid parts: primitives
 **Read more**
 
 * The complete list of workbenches: http://www.freecadweb.org/wiki/index.php?title=Workbenches
-* The Draft workbench: http://www.freecadweb.org/wiki/index.php?title=Draft_Module
+* The Draft Workbench: http://www.freecadweb.org/wiki/index.php?title=Draft_Module
+* The Part Workbench: http://www.freecadweb.org/wiki/index.php?title=Part_Module
