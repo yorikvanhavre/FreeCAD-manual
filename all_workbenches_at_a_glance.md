@@ -95,4 +95,4 @@ The Part Design Workbench contains advanced tools to build solid parts. It also 
 * The complete list of workbenches: http://www.freecadweb.org/wiki/index.php?title=Workbenches
 * The Part Workbench: http://www.freecadweb.org/wiki/index.php?title=Part_Module
 * The Draft Workbench: http://www.freecadweb.org/wiki/index.php?title=Draft_Module
-* The Part Design Workbench: http://www.freecadweb.org/wiki/index.php?title=PartDesign_Workbench
+* The Sketcher and Part Design Workbench: http://www.freecadweb.org/wiki/index.php?title=PartDesign_Workbench
