@@ -6,4 +6,4 @@ Start with the [table of contents](SUMMARY.md).
 
 If you are a book editor interested in publishing this book, drop me a note ;)
 
-This book is being tailored to be used with [gitbook](https://github.com/GitbookIO/gitbook).
+This book is being tailored to be used with [gitbook](https://github.com/GitbookIO/gitbook). A preview of the final book is available at https://www.gitbook.com/book/yorikvanhavre/a-freecad-manual/
