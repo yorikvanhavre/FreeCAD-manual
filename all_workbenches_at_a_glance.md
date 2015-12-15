@@ -46,6 +46,11 @@ The Part Workbench provides basic tools for working with solid parts: primitives
 | ![icon](http://www.freecadweb.org/wiki/images/thumb/e/ef/Part_Loft.png/32px-Part_Loft.png) [Loft](http://www.freecadweb.org/wiki/index.php?title=Part_Loft) | Lofts from one profile to another | ![icon](http://www.freecadweb.org/wiki/images/thumb/9/9f/Part_Offset.png/32px-Part_Offset.png) [Offset](http://www.freecadweb.org/wiki/index.php?title=Part_Offset) | Creates a scaled copy of the original object |
 | ![icon](http://www.freecadweb.org/wiki/images/thumb/e/e7/Part_Thickness.png/32px-Part_Thickness.png) [Thickness](http://www.freecadweb.org/wiki/index.php?title=Part_Thickness) | Assign a thickness to the faces of a shape |
 
+**Sketcher**
+
+The Sketcher Workbench contains tools to build and edit complex 2D objects, called sketches. The geometry inside these sketches can be precisely positioned and relationed by the use of constraints. They are meant primarily to be the building blocks of PartDesign geometry, but are widely used all over FreeCAD.
+
+
 
 **Read more**
 
