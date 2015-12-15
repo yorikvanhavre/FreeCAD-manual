@@ -55,5 +55,5 @@ The Sketcher Workbench contains tools to build and edit complex 2D objects, call
 **Read more**
 
 * The complete list of workbenches: http://www.freecadweb.org/wiki/index.php?title=Workbenches
-* The Draft Workbench: http://www.freecadweb.org/wiki/index.php?title=Draft_Module
 * The Part Workbench: http://www.freecadweb.org/wiki/index.php?title=Part_Module
+* The Draft Workbench: http://www.freecadweb.org/wiki/index.php?title=Draft_Module
