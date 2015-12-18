@@ -91,7 +91,7 @@ The Part Design Workbench contains advanced tools to build solid parts. It also 
 
 ### Arch
 
-The Arch Workbench contains tools to work with [BIM](https://en.wikipedia.org/wiki/Building_information_modeling) projects (civil engineering and architecture). It also contains all the tools from the Draft workbench. The main use of the Arch Workbench is to create BIM objects or give BIM attributes to objects built with other workbenches, in order to export it to [IFC](https://en.wikipedia.org/wiki/Industry_Foundation_Classes).
+The Arch Workbench contains tools to work with [BIM](https://en.wikipedia.org/wiki/Building_information_modeling) projects (civil engineering and architecture). It also contains all the tools from the Draft workbench. The main use of the Arch Workbench is to create BIM objects or give BIM attributes to objects built with other workbenches, in order to export them to [IFC](https://en.wikipedia.org/wiki/Industry_Foundation_Classes).
 
 | Tool | Description | Tool | Description |
 | ---- | ----------- | ---- | ----------- |
