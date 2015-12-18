@@ -119,6 +119,37 @@ The Drawing Workbench handles the creation and manipulation of 2D drawing sheets
 | ![icon] (http://www.freecadweb.org/wiki/images/thumb/0/0a/Drawing_Symbol.png/32px-Drawing_Symbol.png) [Symbol](http://www.freecadweb.org/wiki/index.php?title=Drawing_Symbol) | Adds the contents of a SVG file as a symbol on the current drawing sheet | ![icon] (http://www.freecadweb.org/wiki/images/thumb/f/ff/Drawing_DraftView.png/32px-Drawing_DraftView.png) [Draft View](http://www.freecadweb.org/wiki/index.php?title=Drawing_DraftView) | Inserts a special Draft view of the selected object in the current drawing sheet |
 | ![icon] (http://www.freecadweb.org/wiki/images/thumb/4/43/Drawing_Save.png/32px-Drawing_Save.png) [Export](http://www.freecadweb.org/wiki/index.php?title=Drawing_Save) | Saves the current sheet as a SVG file |
 
+### FEM
+
+The FEM ([Finite Elements Analysis](https://en.wikipedia.org/wiki/Finite_element_method))Workbench permits the performing of pre- and post-processing FEM calculations and display the results graphically.
+
+| Tool | Description | Tool | Description |
+| ---- | ----------- | ---- | ----------- |
+| ![icon] (http://www.freecadweb.org/wiki/images/thumb/5/57/FEM_Analysis.png/32px-FEM_Analysis.png) [New Analysis](http://www.freecadweb.org/wiki/index.php?title=FEM_Analysis) | Creates a new static mechanical analysis | ![icon] (http://www.freecadweb.org/wiki/images/thumb/1/19/FEM_Create.png/32px-FEM_Create.png) [Create FEM Mesh](http://www.freecadweb.org/wiki/index.php?title=FEM_Create) | Opens the meshing dialog |
+| ![icon] (http://www.freecadweb.org/wiki/images/thumb/1/1e/FEM_Material.png/32px-FEM_Material.png) [Add Material](http://www.freecadweb.org/wiki/index.php?title=FEM_Material) | Lets you select a material from the database | ![icon] (http://www.freecadweb.org/wiki/images/thumb/d/d4/FEM_BeamCrossSectionDefinition.png/32px-FEM_BeamCrossSectionDefinition.png) [Beam Cross Section](http://www.freecadweb.org/wiki/index.php?title=FEM_BeamCrossSectionDefinition) | Creates a FEM Beam Cross Section |
+| ![icon] (http://www.freecadweb.org/wiki/images/thumb/f/fa/FEM_ShellPlateTicknessDefinition.png/32px-FEM_ShellPlateTicknessDefinition.png) [Shell Thickness](http://www.freecadweb.org/wiki/index.php?title=FEM_ShellThicknessDefinition) | Creates a FEM Shell Thickness | ![icon] (http://www.freecadweb.org/wiki/images/thumb/f/f3/FEM_DefineNodes.png/32px-FEM_DefineNodes.png) [Define Nodes](http://www.freecadweb.org/wiki/index.php?title=FEM_DefineNodes) | Creates/defines a node set |
+| ![icon] (http://www.freecadweb.org/wiki/images/thumb/d/d3/FEM_FixedConstraint.png/32px-FEM_FixedConstraint.png) [Fixed Constraint](http://www.freecadweb.org/wiki/index.php?title=FEM_FixedConstraint) |  Defines a fixed constraint on point/edge/face(s) | ![icon] (http://www.freecadweb.org/wiki/images/thumb/5/5f/FEM_ForceConstraint.png/32px-FEM_ForceConstraint.png) [Force Constraint](http://www.freecadweb.org/wiki/index.php?title=FEM_ForceConstraint) |  Defines a force in [N] applied uniformly to a selectable face in a definable direction |
+| ![icon] (http://www.freecadweb.org/wiki/images/thumb/3/3f/Fem_ConstraintPressure.png/32px-Fem_ConstraintPressure.png) [Pressure Constraint](http://www.freecadweb.org/wiki/index.php?title=FEM_PressureConstraint) | Defines a pressure constraint | ![icon] (http://www.freecadweb.org/wiki/images/thumb/9/93/FEM_BearingConstraint.png/32px-FEM_BearingConstraint.png) [Bearing Constraint](http://www.freecadweb.org/wiki/index.php?title=FEM_BearingConstraint) | Defines a bearing constraint |
+| ![icon] (http://www.freecadweb.org/wiki/images/thumb/f/f9/FEM_GearConstraint.png/32px-FEM_GearConstraint.png) [Gear Constraint](http://www.freecadweb.org/wiki/index.php?title=FEM_GearConstraint) | Defines a gear constraint | ![icon] (http://www.freecadweb.org/wiki/images/thumb/0/09/FEM_PulleyConstraint.png/32px-FEM_PulleyConstraint.png) [Pulley Constraint](http://www.freecadweb.org/wiki/index.php?title=FEM_PulleyConstraint) | Defines a pulley constraint |
+| ![icon] (http://www.freecadweb.org/wiki/images/thumb/4/4a/FEM_Calculation.png/32px-FEM_Calculation.png) [Start Calculation](http://www.freecadweb.org/wiki/index.php?title=FEM_Calculation) |  Opens the Calculix-Solver dialog | ![icon] (http://www.freecadweb.org/wiki/images/thumb/8/85/FEM_RunCalculiXccx.png/32px-FEM_RunCalculiXccx.png) [Quick Analysis](http://www.freecadweb.org/wiki/index.php?title=FEM_RunCalculiXccx) | Write an .inp file and run CalculiX ccx |
+| ![icon] (http://www.freecadweb.org/wiki/images/thumb/9/92/Fem_PurgeResults.png) [Purge Results](http://www.freecadweb.org/wiki/index.php?title=FEM_PurgeResults) | Clears the current Results in the tree view | ![icon] (http://www.freecadweb.org/wiki/images/thumb/f/f5/FEM_ShowResult.png/32px-FEM_ShowResult.png) [Show Results](http://www.freecadweb.org/wiki/index.php?title=FEM_ShowResult) | Used to display the result of the study (Von Mises Stress or Displacement) |
+
+### Other built-in workbenches
+
+Although the above summarizes the most important tools of FreeCAD, many more workbenches are available, among them:
+
+* The [Mesh Workbench](http://www.freecadweb.org/wiki/index.php?title=Mesh_Module) allows to work with [polygon meshes](https://en.wikipedia.org/wiki/Polygon_mesh). Although meshes sare not the preferred type of geometry to work with in FreeCAD, because of their lack of precision and support for curves, meshes still have a lot of uses, and are fully supported in FreeCAD. The Mesh Workbench also offers a number of Part-to-Mesh and Mesh-to-Part tools.
+* The [Raytracing Workbench](http://www.freecadweb.org/wiki/index.php?title=Raytracing_Module) offers tools to interface with external renderers such as povray or luxrender. Right from inside FreeCAD, this workbench allows you to produce high-quality renderings from your models.
+* The [Spreadsheet Workbench](http://www.freecadweb.org/wiki/index.php?title=Spreadsheet_Module) permits the creation and manipulation of spreadsheet data, that can be extracted from FreeCAD models. Spreadsheet cells can also be referenced in many areas of FreeCAD, allowing to use them as master data structures.
+
+### External workbenches
+
+A number of other very useful workbenches produced by FreeCAD community members also exist. Although they are not included in a standard FreeCAD installation,they are easy to install as plug-ins. They are all referenced in the [FreeCAD-addons](https://github.com/FreeCAD/FreeCAD-addons) repository. Among the most developed are:
+
+* The [Drawing Dimensioning Workbench](https://github.com/hamish2014/FreeCAD_drawing_dimensioning) offers many new tools to work directly on Drawing Sheets and allow you to add dimensions, annotations and other technical symbols with great control over their aspect.
+* The [Fasteners Workbench](https://github.com/shaise/FreeCAD_FastenersWB) offers a wide range of ready-to-insert fasteners objects like screws, bolts, rods, washers and nuts. Many options and settings are available.
+* The [Assembly2 Workbench](https://github.com/hamish2014/FreeCAD_assembly2) offers a series of tools to mount and work with [assemblies](https://en.wikipedia.org/wiki/Assembly_modelling).
+
 **Read more**
 
 * The complete list of workbenches: http://www.freecadweb.org/wiki/index.php?title=Workbenches
@@ -127,3 +158,5 @@ The Drawing Workbench handles the creation and manipulation of 2D drawing sheets
 * The Sketcher and Part Design Workbench: http://www.freecadweb.org/wiki/index.php?title=PartDesign_Workbench
 * The Arch Workbench: http://www.freecadweb.org/wiki/index.php?title=Arch_Module
 * The Drawing Workbench: http://www.freecadweb.org/wiki/index.php?title=Drawing_Module
+* The FEM Workbench: http://www.freecadweb.org/wiki/index.php?title=Fem_Workbench
+* The FreeCAD-addons repository: https://github.com/FreeCAD/FreeCAD-addons
