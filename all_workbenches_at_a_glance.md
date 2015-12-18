@@ -6,7 +6,7 @@ One of the biggest difficulty for new users of FreeCAD, is to know in which work
 
 Four workbenches are also designed to work in pairs, and the latter contains all the tools of the former: Draft with Arch, and Sketcher with PartDesign. However, for clarity, they are separated below.
 
-**Part**
+### Part
 
 The Part Workbench provides basic tools for working with solid parts: primitives, such as cube and sphere, and simple geometric operations and boolean operations. Being the main anchor point with [OpenCasCade](https://en.wikipedia.org/wiki/Open_Cascade_Technology), the Part workbench provides the foundation of FreeCAD's geometry system, and almost all other workbenches produce Part-based geometry.
 
@@ -26,7 +26,7 @@ The Part Workbench provides basic tools for working with solid parts: primitives
 | ![icon](http://www.freecadweb.org/wiki/images/thumb/e/ef/Part_Loft.png/32px-Part_Loft.png) [Loft](http://www.freecadweb.org/wiki/index.php?title=Part_Loft) | Lofts from one profile to another | ![icon](http://www.freecadweb.org/wiki/images/thumb/9/9f/Part_Offset.png/32px-Part_Offset.png) [Offset](http://www.freecadweb.org/wiki/index.php?title=Part_Offset) | Creates a scaled copy of the original object |
 | ![icon](http://www.freecadweb.org/wiki/images/thumb/e/e7/Part_Thickness.png/32px-Part_Thickness.png) [Thickness](http://www.freecadweb.org/wiki/index.php?title=Part_Thickness) | Assign a thickness to the faces of a shape |
 
-**Draft**
+### Draft
 
 The Draft Workbench provides tools to do basic 2D CAD drafting tasks: lines, circles, etc... and a series of generic handy tools such as move, rotate or scale. It also provides several drawing aids, such as grid and snapping. It is principally meant to draw the guidelines for Arch objects, but also serves as FreeCAD's "swiss knife".
 
@@ -47,7 +47,7 @@ The Draft Workbench provides tools to do basic 2D CAD drafting tasks: lines, cir
 | ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c1/Draft_PathArray.png/32px-Draft_PathArray.png) [PathArray](http://www.freecadweb.org/wiki/index.php?title=Draft_PathArray) | Creates an array from an object by placing copies along a path | ![icon](http://www.freecadweb.org/wiki/images/thumb/3/39/Draft_Clone.png/32px-Draft_Clone.png) [Clone](http://www.freecadweb.org/wiki/index.php?title=Draft_Clone) | Creates linked copies of objects |
 | ![icon](http://www.freecadweb.org/wiki/images/thumb/3/3f/Draft_Mirror.png/32px-Draft_Mirror.png) [Mirror](http://www.freecadweb.org/wiki/index.php?title=Draft_Mirror) | Mirrors objects across a line |
 
-**Sketcher**
+### Sketcher
 
 The Sketcher Workbench contains tools to build and edit complex 2D objects, called sketches. The geometry inside these sketches can be precisely positioned and relationed by the use of constraints. They are meant primarily to be the building blocks of PartDesign geometry, but are useful everywhere in FreeCAD.
 
@@ -75,7 +75,7 @@ The Sketcher Workbench contains tools to build and edit complex 2D objects, call
 | ![icon](http://www.freecadweb.org/wiki/images/thumb/4/45/Sketcher_MapSketch.png/32px-Sketcher_MapSketch.png) [Map sketch to face](http://www.freecadweb.org/wiki/index.php?title=Sketcher_MapSketch) | Maps a sketch to the previously selected face of a solid | ![icon](http://www.freecadweb.org/wiki/images/thumb/7/79/Sketcher_MergeSketch.png/32px-Sketcher_MergeSketch.png) [Merge](http://www.freecadweb.org/wiki/index.php?title=Sketcher_MergeSketch) | Merge two or more sketches |
 | ![icon](http://www.freecadweb.org/wiki/images/thumb/4/4c/Sketcher_MirrorSketch.png/32px-Sketcher_MirrorSketch.png) [Mirror](http://www.freecadweb.org/wiki/index.php?title=Sketcher_MirrorSketch) | Mirrors selected elements of a sketch |
 
-**Part Design**
+### Part Design
 
 The Part Design Workbench contains advanced tools to build solid parts. It also contains all the tools from the sketcher. Since it can only produces solid shapes (the rule number one of Part Design), it is the main workbench to use when designing pieces (parts) to be manufactured or 3D-printed, as you will always obtain a printable object.
 
@@ -89,7 +89,7 @@ The Part Design Workbench contains advanced tools to build solid parts. It also 
 | ![icon](http://www.freecadweb.org/wiki/images/thumb/7/72/PartDesign_Scaled.png/32px-PartDesign_Scaled.png) [Scaled](http://www.freecadweb.org/wiki/index.php?title=PartDesign_Scaled) | Scales features to a different size | ![icon](http://www.freecadweb.org/wiki/images/thumb/4/46/PartDesign_MultiTransform.png/32px-PartDesign_MultiTransform.png) [MultiTransform](http://www.freecadweb.org/wiki/index.php?title=PartDesign_MultiTransform) | Allows creating a pattern with any combination of the other transformations |
 | ![icon](http://www.freecadweb.org/wiki/images/thumb/2/2b/PartDesign_WizardShaft.png/32px-PartDesign_WizardShaft.png) [Shaft wizard](http://www.freecadweb.org/wiki/index.php?title=PartDesign_WizardShaft) | Generates a shaft from a table of values and allows to analyze forces and moments | ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a7/PartDesign_InvoluteGear.png/32px-PartDesign_InvoluteGear.png) [Involute Gear wizard](http://www.freecadweb.org/wiki/index.php?title=PartDesign_InvoluteGear) | Allows you to create several types of gears |
 
-**Arch**
+### Arch
 
 The Arch Workbench contains tools to work with [BIM](https://en.wikipedia.org/wiki/Building_information_modeling) projects (civil engineering and architecture). It also contains all the tools from the Draft workbench. The main use of the Arch Workbench is to create or meaningful objects or give BIM meaning to the geometry that you build with FreeCAD, in order to export it to [IFC](https://en.wikipedia.org/wiki/Industry_Foundation_Classes).
 
@@ -107,6 +107,18 @@ The Arch Workbench contains tools to work with [BIM](https://en.wikipedia.org/wi
 | ![icon](http://www.freecadweb.org/wiki/images/d/d2/Arch_Add.png) [Add Component](http://www.freecadweb.org/wiki/index.php?title=Arch_Add) | Adds objects to a component | ![icon](http://www.freecadweb.org/wiki/images/d/dc/Arch_Remove.png) [Remove Component](http://www.freecadweb.org/wiki/index.php?title=Arch_Remove) | Subtracts or removes objects from a component |
 | ![icon](http://www.freecadweb.org/wiki/images/thumb/1/14/Arch_Survey.png/32px-Arch_Survey.png) [Survey Mode](http://www.freecadweb.org/wiki/index.php?title=Arch_Survey) | Enters or leaves surveying mode |
 
+### Drawing
+
+The Drawing Workbench handles the creation and manipulation of 2D drawing sheets, used for displaying views of your 3D work in 2D. These sheets can then be exported to 2D applications in SVG or DXF formats, to a PDF file or printed.
+
+| Tool | Description | Tool | Description |
+| ---- | ----------- | ---- | ----------- |
+| ![icon] (http://www.freecadweb.org/wiki/images/thumb/2/27/Drawing_Landscape_A3.png/32px-Drawing_Landscape_A3.png) [New sheet](http://www.freecadweb.org/wiki/index.php?title=Drawing_Landscape_A3) | Creates a new drawing sheet | ![icon] (http://www.freecadweb.org/wiki/images/thumb/0/03/Drawing_View.png/32px-Drawing_View.png) [Insert view](http://www.freecadweb.org/wiki/index.php?title=Drawing_View) | Inserts a view of the selected object in the active drawing sheet |
+| ![icon] (http://www.freecadweb.org/wiki/images/thumb/7/74/Drawing_Annotation.png/32px-Drawing_Annotation.png) [Annotation](http://www.freecadweb.org/wiki/index.php?title=Drawing_Annotation) | Adds an annotation to the current drawing sheet | ![icon] (http://www.freecadweb.org/wiki/images/thumb/b/b9/Drawing_Clip.png/32px-Drawing_Clip.png) [Clip](http://www.freecadweb.org/wiki/index.php?title=Drawing_Clip) | Adds a clip group to the current drawing sheet |
+| ![icon] (http://www.freecadweb.org/wiki/images/thumb/0/02/Drawing_Openbrowser.png/32px-Drawing_Openbrowser.png) [Browser preview](http://www.freecadweb.org/wiki/index.php?title=Drawing_Openbrowser) | Opens a preview of the current sheet in the browser | ![icon] (http://www.freecadweb.org/wiki/images/thumb/7/7f/Drawing_Orthoviews.png/32px-Drawing_Orthoviews.png) [Ortho Views](http://www.freecadweb.org/wiki/index.php?title=Drawing_Orthoviews) | Automatically creates orthographic views of an object on the current drawing sheet |
+| ![icon] (http://www.freecadweb.org/wiki/images/thumb/0/0a/Drawing_Symbol.png/32px-Drawing_Symbol.png) [Symbol](http://www.freecadweb.org/wiki/index.php?title=Drawing_Symbol) | Adds the contents of a SVG file as a symbol on the current drawing sheet | ![icon] (http://www.freecadweb.org/wiki/images/thumb/f/ff/Drawing_DraftView.png/32px-Drawing_DraftView.png) [Draft View](http://www.freecadweb.org/wiki/index.php?title=Drawing_DraftView) | Inserts a special Draft view of the selected object in the current drawing sheet |
+| ![icon] (http://www.freecadweb.org/wiki/images/thumb/4/43/Drawing_Save.png/32px-Drawing_Save.png) [Export](http://www.freecadweb.org/wiki/index.php?title=Drawing_Save) | Saves the current sheet as a SVG file |
+
 **Read more**
 
 * The complete list of workbenches: http://www.freecadweb.org/wiki/index.php?title=Workbenches
@@ -114,3 +126,4 @@ The Arch Workbench contains tools to work with [BIM](https://en.wikipedia.org/wi
 * The Draft Workbench: http://www.freecadweb.org/wiki/index.php?title=Draft_Module
 * The Sketcher and Part Design Workbench: http://www.freecadweb.org/wiki/index.php?title=PartDesign_Workbench
 * The Arch Workbench: http://www.freecadweb.org/wiki/index.php?title=Arch_Module
+* The Drawing Workbench: http://www.freecadweb.org/wiki/index.php?title=Drawing_Module
