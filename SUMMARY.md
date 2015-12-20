@@ -20,7 +20,7 @@
   * [Import and export to other filetypes](import_and_export_to_other_filetypes.md)
 * [Working with FreeCAD](all_workbenches_at_a_glance.md)
   * [All workbenches at a glance](all_workbenches_at_a_glance.md)
-  * Traditional modeling, the CSG way
+  * [Traditional modeling, the CSG way](traditional_modeling_the_csg_way.md)
   * Traditional 2D drafting
   * Modeling for product design
   * Generating 2D drawings
