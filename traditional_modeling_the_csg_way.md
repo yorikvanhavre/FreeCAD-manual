@@ -8,8 +8,31 @@ As we saw earlier in this manual, FreeCAD can handle many types of geometry, but
 
 The difference between the two can be compared to the difference between bitmap and vectorial images. As with bitmap images, polygon meshes have their curved surfaces fractionned in a series of points. If you look at it from very close, or print it very large, you will see not a curved but a faceted surface. In both vectorial images and BREP data, the position of any point on a curve is not stored in the geometry but calculated on the fly, with exact precision.
 
-In FreeCAD, all BREP-based geometry is handled by another piece of open-source software, [OpenCasCade](https://en.wikipedia.org/wiki/Open_Cascade_Technology). The main interface between FreeCAD and the OpenCasCade kernel is the Part Workbench. Most other workbenches build their functionality on top of Part objects.
+In FreeCAD, all BREP-based geometry is handled by another piece of open-source software, [OpenCasCade](https://en.wikipedia.org/wiki/Open_Cascade_Technology). The main interface between FreeCAD and the OpenCasCade kernel is the Part Workbench. Most other workbenches build their functionality on top of the Part Workbench.
 
 Although other workbenches often offer more advanced tools to build and manipulate geometry, since they all actually manipulate Part objects, it is very useful to know how these objects work internally, and be able to use the Part tools since, being more simple, they can very often help you to work around problems that the more intelligent tools fail to solve properly.
 
-To illustrate the working of the Part Workbench, we will model this table, using only CSG operations.
+To illustrate the working of the Part Workbench, we will model this table, using only CSG operations (except the screws, for which we will use one of the addons, and the dimensions, which will see in the next chapter):
+
+![Complete table](http://www.freecadweb.org/wiki/images/9/99/Exercise_table_complete.jpg)
+
+The four feet and the tabletop will be modeled using only two Part tools: ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a5/Part_Box.png/32px-Part_Box.png) [Box](http://www.freecadweb.org/wiki/index.php?title=Part_Box) and ![icon](http://www.freecadweb.org/wiki/images/thumb/4/4a/Part_Cut.png/32px-Part_Cut.png) [Cut](http://www.freecadweb.org/wiki/index.php?title=Part_Cut).
+
+Let's create a new document (**Ctrl+N** or menu File -> New Document), switch to the Part Workbench, and begin with the first foot:
+
+* Press the **Box** button
+* Select the box, then set the following properties (in the **Data** tab):
+   * Length: 80mm (or 8cm, or 0.8m, FreeCAD works in any unit)
+   * Width: 80mm
+   * Height: 75cm
+* Duplicate the box by pressing **Ctrl+C** then **Ctrl+V** (or menu Edit -> Copy and Paste)
+* Select the new object that has been created
+* Change its position by editing its Placement property:
+   * Position x: 8mm
+   * Position y: 8mm
+
+You should obtain two high boxes, one 8mm apart from the other:
+
+![The first objects](http://www.freecadweb.org/wiki/images/d/d4/Exercise_table_01.jpg)
+
+* Now we can subtract one from the other: Select the **first** one, that is, the one that will **stay**, then, with the CTRL key pressed, select the **other** one, that will be **subtracted** (the order is important) and press the **Cut** button:
