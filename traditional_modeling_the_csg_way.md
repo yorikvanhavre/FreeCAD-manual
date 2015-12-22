@@ -16,7 +16,7 @@ To illustrate the working of the Part Workbench, we will model this table, using
 
 ![Complete table](http://www.freecadweb.org/wiki/images/9/99/Exercise_table_complete.jpg)
 
-The four feet and the tabletop will be modeled using only two Part tools: ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a5/Part_Box.png/32px-Part_Box.png) [Box](http://www.freecadweb.org/wiki/index.php?title=Part_Box) and ![icon](http://www.freecadweb.org/wiki/images/thumb/4/4a/Part_Cut.png/32px-Part_Cut.png) [Cut](http://www.freecadweb.org/wiki/index.php?title=Part_Cut).
+The four feet and the tabletop will be modeled using mainly these two Part tools: ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a5/Part_Box.png/32px-Part_Box.png) [Box](http://www.freecadweb.org/wiki/index.php?title=Part_Box) and ![icon](http://www.freecadweb.org/wiki/images/thumb/4/4a/Part_Cut.png/32px-Part_Cut.png) [Cut](http://www.freecadweb.org/wiki/index.php?title=Part_Cut).
 
 Let's create a new document (**Ctrl+N** or menu File -> New Document), switch to the Part Workbench, and begin with the first foot:
 
@@ -36,3 +36,21 @@ You should obtain two high boxes, one 8mm apart from the other:
 ![The first objects](http://www.freecadweb.org/wiki/images/d/d4/Exercise_table_01.jpg)
 
 * Now we can subtract one from the other: Select the **first** one, that is, the one that will **stay**, then, with the CTRL key pressed, select the **other** one, that will be **subtracted** (the order is important) and press the **Cut** button:
+
+![First foot complete](http://www.freecadweb.org/wiki/images/0/00/Exercise_table_02.jpg)
+
+Observe that the newly created object, called "Cut", still contains the two cubes we used as operands. In fact, the two cubes are still there in the document, they have merely been hidden and grouped under the Cut object in the tree view. You can still select them by expanding the arrow next to the Cut object, and, if you wish, turn them visible again by right-clickig them or change any of their properties.
+
+* Now let's create the three other feet by duplicating our base cube 6 other times. Since it is still copied, you can simply paste (Ctrl+V) 6 times. Change their position as follows:
+   * cube 2: x: 0, y: 80cm
+   * cube 3: x: 8mm, y: 79.2cm
+   * cube 4: x: 120cm, y: 0
+   * cube 5: x: 119.2cm, y: 8mm
+   * cube 6: x: 120cm, y: 80cm
+   * cube 7: x: 119.2cm, y: 79.2cm
+
+* Now let's do the three other cuts, selecting first the "host" cube then the cube to be cut off. We now have four Cut objects:
+
+![the four feet](http://www.freecadweb.org/wiki/images/4/43/Exercise_table_03.jpg) 
+
+You might have been thinking that, instead of duplicating the base cube six times, we could have duplicated the complete foot three times. This is totally true, as always in FreeCAD, there are many ways to achieve a same result. This is a precious thing to remember, because, as we will advance into more complex objects, some operations might not give the correct result and we often need to try other ways.
