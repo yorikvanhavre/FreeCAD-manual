@@ -85,7 +85,7 @@ Now that our five pieces are complete, it is a good time to give them more prope
 
 ![a selected hole](http://www.freecadweb.org/wiki/images/9/99/Exercise_table_07.jpg)
 
-* Then we can press one of the screw buttons of the Fasteners Workbench, for example the *EN 1665 Hexagon bolt with flanges, heavy series*. The screw will be placed and aligned with our hole. Sometimes the screw will be placed inverted, which we can correct by flipping its **invert** proprty. We can also set its offset to 2mm, to follow the same rule we used between the tabletop and the feet:
+* Then we can press one of the screw buttons of the Fasteners Workbench, for example the *EN 1665 Hexagon bolt with flanges, heavy series*. The screw will be placed and aligned with our hole, and the diameter will automatically be selected to match the size of our hole. Sometimes the screw will be placed inverted, which we can correct by flipping its **invert** proprty. We can also set its offset to 2mm, to follow the same rule we used between the tabletop and the feet:
 
 ![the placed screw](http://www.freecadweb.org/wiki/images/5/54/Exercise_table_08.jpg)
 
@@ -93,3 +93,28 @@ Now that our five pieces are complete, it is a good time to give them more prope
 
 **The internal structure of Part objects**
 
+As we saw above, it is possible in FreeCAD to select not only whole objects, but parts fo them, such as the circular border of our screw hole. This is a good time to have a quick look at how Part objects are constructed internally. Every workbench that produces Part geometry will be based on these:
+
+* **Vertices**: These are points (usually endpoints) on which all the rest is built. For example, a line has two vertices.
+* **Edges**: the edges are linear geometry like lines, arcs, ellipses or [NURBS](https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline) curves. They usually have two vertices, but some special cases have only one (a closed circle for example).
+* **Wires**: A wire is a sequence of edges connected by their endpoints. It can contain edges of any type, and it can be closed or not.
+* **Faces**: Faces can be planar or curved, and can be formed by one wire, which forms the border of the face, or more than one, in case the face has holes.
+* **Shells**: Shells are simply a group of faces connected by their edges. It can be open or closed.
+* **Solids**: When a shell is tighly closed, that is, it has no "leak", it becomes a solid. Solids carry the notion of inside and outside. Many workbench rely on this to make sure the objects they produce can be built in the real world.
+* **Compounds**: Compounds are simply aggegates of other shapes, no matter their type, into a single shape.
+
+In the 3D view, you can select individual **vertices**, **edges** or **faces**.
+
+**A note about shared design**
+
+You might look at the table above, and think its design is not good. The tightening of the feet with the tabletop is probably too weak. You might want to add reforcing pieces, or simply you have other ideas to make it better. This is where sharing becomes interesting. You can download the file made during this exercise from the link below, and modify it to make it better. Then, if you share that improved file, others might be able to make it even better, or use your well-designed table in their projects.
+
+**Downloads**
+
+* The file produced in this exercise: 
+
+**Read more**
+
+* The Part Workbench: http://www.freecadweb.org/wiki/index.php?title=Part_Module
+* The FreeCAD addons repository: https://github.com/FreeCAD/FreeCAD-addons
+* The Fasteners Workbench: https://github.com/shaise/FreeCAD_FastenersWB
