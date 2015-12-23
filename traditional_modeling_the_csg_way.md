@@ -103,7 +103,7 @@ As we saw above, it is possible in FreeCAD to select not only whole objects, but
 * **Solids**: When a shell is tighly closed, that is, it has no "leak", it becomes a solid. Solids carry the notion of inside and outside. Many workbench rely on this to make sure the objects they produce can be built in the real world.
 * **Compounds**: Compounds are simply aggegates of other shapes, no matter their type, into a single shape.
 
-In the 3D view, you can select individual **vertices**, **edges** or **faces**.
+In the 3D view, you can select individual **vertices**, **edges** or **faces**. Selecting one of these also selects the whole object.
 
 **A note about shared design**
 
