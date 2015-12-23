@@ -42,15 +42,34 @@ You should obtain two high boxes, one 8mm apart from the other:
 Observe that the newly created object, called "Cut", still contains the two cubes we used as operands. In fact, the two cubes are still there in the document, they have merely been hidden and grouped under the Cut object in the tree view. You can still select them by expanding the arrow next to the Cut object, and, if you wish, turn them visible again by right-clickig them or change any of their properties.
 
 * Now let's create the three other feet by duplicating our base cube 6 other times. Since it is still copied, you can simply paste (Ctrl+V) 6 times. Change their position as follows:
-   * cube 2: x: 0, y: 80cm
-   * cube 3: x: 8mm, y: 79.2cm
-   * cube 4: x: 120cm, y: 0
-   * cube 5: x: 119.2cm, y: 8mm
-   * cube 6: x: 120cm, y: 80cm
-   * cube 7: x: 119.2cm, y: 79.2cm
+   * cube002: x: 0, y: 80cm
+   * cube003: x: 8mm, y: 79.2cm
+   * cube004: x: 120cm, y: 0
+   * cube005: x: 119.2cm, y: 8mm
+   * cube006: x: 120cm, y: 80cm
+   * cube007: x: 119.2cm, y: 79.2cm
 
 * Now let's do the three other cuts, selecting first the "host" cube then the cube to be cut off. We now have four Cut objects:
 
 ![the four feet](http://www.freecadweb.org/wiki/images/4/43/Exercise_table_03.jpg) 
 
 You might have been thinking that, instead of duplicating the base cube six times, we could have duplicated the complete foot three times. This is totally true, as always in FreeCAD, there are many ways to achieve a same result. This is a precious thing to remember, because, as we will advance into more complex objects, some operations might not give the correct result and we often need to try other ways.
+
+* We will now make holes for the screws, using the same Cut method. Since we need 8 holes, two in each foot, we could make 8 objects to be subtracted. Instead, let's explore other ways and make 4 tubes, that will be reused by two of the feet. So let's create four tubes by using the **Cylinder** tool. You can again, make only one and duplicate it afterwards. Give all cylinders a radius of 6mm. This time, we will need to rotate them, which is also done via the **Placement** property:
+  * cylinder: height: 130cm, angle: 90°, axis: x:0,y:1, position: x:-10mm, y:40mm, z:72cm
+  * cylinder001: height: 130cm, angle: 90°, axis: x:0,y:1, position: x:-10mm, y:84cm, z:72cm
+  * cylinder002: height: 90cm, angle: 90°, axis: x:-1,y:0, position: x:40mm, y:-10mm, z:70cm
+  * cylinder003: height: 90cm, angle: 90°, axis: x:-1,y:0, position: x:124cm, y:-10mm, z:70cm
+
+![the cylinders to subtract](http://www.freecadweb.org/wiki/images/3/30/Exercise_table_04.jpg)
+
+You will notice that the cylinders are a bit longer than needed. This is because, as in all solid-based 3D applications, boolean operations in FreeCAD are sometimes oversensitive to face-on-face situations and might fail. By doing this, we put ourselves on the safe side.
+
+* Now let's do the subtractions. Select the first foot, then, with CTRL pressed, select one of the tubes that crosses it, press the **Cut** button. The hole will be done, and the tube hidden. Find it in the tree view by expanding the pierced foot.
+* Select another foot pierced by this hidden tube, then repeat the operation, this time Ctrl+ selecting the tube in the tree view, as it is hidden in the 3D view. Repeat this for the other feet until each of them has its two holes:
+
+![the pierced feet](http://www.freecadweb.org/wiki/images/5/57/Exercise_table_05.jpg)
+
+As you can see, each foot has become a quite long series of operations. All this stays parametric, and you can go change any parameter of any of the older operations anytime. In FreeCAD, we often refer to this pile as "modeling history", since it in fact carries all the history of the operations you did. 
+
+Another particularity of FreeCAD is that the concept of 3D object and the concept of 3D operation tend to blend into one same thing. The Cut is at the same time an operation, and the 3D object resulting from this operation. In FreeCAD this is called a "feature", rather than object or operation.
