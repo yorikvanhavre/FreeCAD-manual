@@ -16,11 +16,9 @@ To illustrate the working of the Part Workbench, we will model this table, using
 
 ![Complete table](http://www.freecadweb.org/wiki/images/9/99/Exercise_table_complete.jpg)
 
-The four feet and the tabletop will be modeled using mainly these two Part tools: ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a5/Part_Box.png/32px-Part_Box.png) [Box](http://www.freecadweb.org/wiki/index.php?title=Part_Box) and ![icon](http://www.freecadweb.org/wiki/images/thumb/4/4a/Part_Cut.png/32px-Part_Cut.png) [Cut](http://www.freecadweb.org/wiki/index.php?title=Part_Cut).
-
 Let's create a new document (**Ctrl+N** or menu File -> New Document), switch to the Part Workbench, and begin with the first foot:
 
-* Press the **Box** button
+* Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a5/Part_Box.png/16px-Part_Box.png) **Box** button
 * Select the box, then set the following properties (in the **Data** tab):
    * Length: 80mm (or 8cm, or 0.8m, FreeCAD works in any unit)
    * Width: 80mm
@@ -35,7 +33,7 @@ You should obtain two high boxes, one 8mm apart from the other:
 
 ![The first objects](http://www.freecadweb.org/wiki/images/d/d4/Exercise_table_01.jpg)
 
-* Now we can subtract one from the other: Select the **first** one, that is, the one that will **stay**, then, with the CTRL key pressed, select the **other** one, that will be **subtracted** (the order is important) and press the **Cut** button:
+* Now we can subtract one from the other: Select the **first** one, that is, the one that will **stay**, then, with the CTRL key pressed, select the **other** one, that will be **subtracted** (the order is important) and press the ![icon](http://www.freecadweb.org/wiki/images/thumb/4/4a/Part_Cut.png/16px-Part_Cut.png) **Cut** button:
 
 ![First foot complete](http://www.freecadweb.org/wiki/images/0/00/Exercise_table_02.jpg)
 
@@ -55,7 +53,7 @@ Observe that the newly created object, called "Cut", still contains the two cube
 
 You might have been thinking that, instead of duplicating the base cube six times, we could have duplicated the complete foot three times. This is totally true, as always in FreeCAD, there are many ways to achieve a same result. This is a precious thing to remember, because, as we will advance into more complex objects, some operations might not give the correct result and we often need to try other ways.
 
-* We will now make holes for the screws, using the same Cut method. Since we need 8 holes, two in each foot, we could make 8 objects to be subtracted. Instead, let's explore other ways and make 4 tubes, that will be reused by two of the feet. So let's create four tubes by using the **Cylinder** tool. You can again, make only one and duplicate it afterwards. Give all cylinders a radius of 6mm. This time, we will need to rotate them, which is also done via the **Placement** property:
+* We will now make holes for the screws, using the same Cut method. Since we need 8 holes, two in each foot, we could make 8 objects to be subtracted. Instead, let's explore other ways and make 4 tubes, that will be reused by two of the feet. So let's create four tubes by using the ![icon](http://www.freecadweb.org/wiki/images/thumb/d/d4/Part_Cylinder.png/16px-Part_Cylinder.png) **Cylinder** tool. You can again, make only one and duplicate it afterwards. Give all cylinders a radius of 6mm. This time, we will need to rotate them, which is also done via the **Placement** property:
   * cylinder: height: 130cm, angle: 90°, axis: x:0,y:1, position: x:-10mm, y:40mm, z:72cm
   * cylinder001: height: 130cm, angle: 90°, axis: x:0,y:1, position: x:-10mm, y:84cm, z:72cm
   * cylinder002: height: 90cm, angle: 90°, axis: x:-1,y:0, position: x:40mm, y:-10mm, z:70cm
@@ -79,3 +77,19 @@ Another particularity of FreeCAD is that the concept of 3D object and the concep
 ![the tabletop](http://www.freecadweb.org/wiki/images/f/f2/Exercise_table_06.jpg)
 
 Notice that, although the legs are 8mm thick, we placed it 10mm away, leaving 2mm between them. This is not necessary, of course, it won't happen with the real table, but it is a common thing to do in that kind of "assembled" models, it helps people who look at the model to understand that these are independent parts, that will need to be attached together manually later.
+
+Now that our five pieces are complete, it is a good time to give them more proper names than "Cut015". By right-clicking the objects in the tree view (or pressing **F2**), you can rename them to something more meaningful to yourself or to another person who would open your file later. It is often said that simlpy giving proper names to your objects is much more important than the way you model them.
+
+* We will now place some screws. There is nowadays an extremely useful addon developed by a member of the FreeCAD community, that you can find on the [FreeCAD addons](https://github.com/FreeCAD/FreeCAD-addons) repository, called [Fasteners](https://github.com/shaise/FreeCAD_FastenersWB), that makes the insertion of screws very easy. Installing additional workbenches is easy and described on the addons pages.
+* Once you have installed the Fasteners Workbench and restarted FreeCAD, it will appear in the workbenches list, and we can switch to it. Adding a screw to one of our holes is done by first selecting the circular edge of our hole:
+
+![a selected hole](http://www.freecadweb.org/wiki/images/9/99/Exercise_table_07.jpg)
+
+* Then we can press one of the screw buttons of the Fasteners Workbench, for example the *EN 1665 Hexagon bolt with flanges, heavy series*. The screw will be placed and aligned with our hole. Sometimes the screw will be placed inverted, which we can correct by flipping its **invert** proprty. We can also set its offset to 2mm, to follow the same rule we used between the tabletop and the feet:
+
+![the placed screw](http://www.freecadweb.org/wiki/images/5/54/Exercise_table_08.jpg)
+
+* Repeat this for all the holes, and our table is complete!
+
+**The internal structure of Part objects**
+
