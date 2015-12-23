@@ -98,7 +98,7 @@ As we saw above, it is possible in FreeCAD to select not only whole objects, but
 * **Vertices**: These are points (usually endpoints) on which all the rest is built. For example, a line has two vertices.
 * **Edges**: the edges are linear geometry like lines, arcs, ellipses or [NURBS](https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline) curves. They usually have two vertices, but some special cases have only one (a closed circle for example).
 * **Wires**: A wire is a sequence of edges connected by their endpoints. It can contain edges of any type, and it can be closed or not.
-* **Faces**: Faces can be planar or curved, and can be formed by one wire, which forms the border of the face, or more than one, in case the face has holes.
+* **Faces**: Faces can be planar or curved, and can be formed by one closed wire, which forms the border of the face, or more than one, in case the face has holes.
 * **Shells**: Shells are simply a group of faces connected by their edges. It can be open or closed.
 * **Solids**: When a shell is tighly closed, that is, it has no "leak", it becomes a solid. Solids carry the notion of inside and outside. Many workbench rely on this to make sure the objects they produce can be built in the real world.
 * **Compounds**: Compounds are simply aggegates of other shapes, no matter their type, into a single shape.
