@@ -111,7 +111,7 @@ You might look at the table above, and think its design is not good. The tighten
 
 **Downloads**
 
-* The file produced in this exercise: 
+* The file produced in this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/table.FCStd
 
 **Read more**
 
