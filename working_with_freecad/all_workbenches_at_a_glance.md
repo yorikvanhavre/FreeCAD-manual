@@ -1,5 +1,3 @@
-# Working with FreeCAD
-
 ## All workbenches at a glance
 
 One of the biggest difficulty for new users of FreeCAD, is to know in which workbench to find a specific tool. The table below will give you an overview of the most important workbenches and their tools. Refer to each [workbench](http://www.freecadweb.org/wiki/index.php?title=Workbenches) page in the FreeCAD documentation for a more complete list.
