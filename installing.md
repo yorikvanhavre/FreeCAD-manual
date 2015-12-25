@@ -92,6 +92,7 @@ The addons above or the Parts library can easily be installed using an addon-ins
 2. Copy the macro to your FreeCAD Macros path. You FreeCAD Macros path is indicated at the bottom of the **Execute macro** dialog in FreeCAD:
 ![the execute macro dialog](http://www.freecadweb.org/wiki/images/1/1e/Macro_installer_01.jpg)
 3. Close and reopen the **Execute macro** dialog, and start the **addons_installer.FCMacro**. The installer will launch, from where you can install, update and uninstall any of the addons:
+
 ![the addons installer](http://www.freecadweb.org/wiki/images/c/c6/Macro_installer_02.jpg)
 
 **Read more**
