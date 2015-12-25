@@ -82,8 +82,17 @@ Once FreeCAD is installed, you might want to open it and set a couple of prefere
 
 As the FreeCAD project and its community grows quickly, and also because it is easy to extend, external contributions and side-projects made by community members and other enthusiasts begin to appear everywhere on the internet. There is an effort going on to gather all these interesting additions in one place, on the [FreeCAD github page](https://github.com/FreeCAD). There, among other things, you will find:
 
-1. A **Parts library**, which contains all kinds of useful models, or pieces of models, created by FreeCAD users that can be freely used in your projects. The library can be used and accessed right from inside your FreeCAD installation.
-2. A **collection of addons**, most of them additional workbenches, that extend the functionality of FreeCAD for certain tasks. Instructions for installing are given on each separate addon page.
+1. A [Parts library](https://github.com/FreeCAD/FreeCAD-library), which contains all kinds of useful models, or pieces of models, created by FreeCAD users that can be freely used in your projects. The library can be used and accessed right from inside your FreeCAD installation.
+2. A [collection of addons](https://github.com/FreeCAD/FreeCAD-addons), most of them additional workbenches, that extend the functionality of FreeCAD for certain tasks. Instructions for installing are given on each separate addon page.
+3. A [collection of macros](https://github.com/FreeCAD/FreeCAD-macros), which are also available [on the FreeCAD wiki](http://www.freecadweb.org/wiki/index.php?title=Macros_recipes) along with documentation about how to use them. The wiki contains many more macros.
+
+The addons above or the Parts library can easily be installed using an addon-installer macro provided in the addons repository. The following procedure shows how to install the addon-installer, but is the same for any other macro:
+
+1. Download the addons-installer.FCMacro file from https://github.com/FreeCAD/FreeCAD-addons by clicking it, then right-clicking the "RAW" button, and choosing "Save as".
+2. Copy the macro to your FreeCAD Macros path. You FreeCAD Macros path is indicated at the bottom of the **Execute macro** dialog in FreeCAD:
+![the execute macro dialog](http://www.freecadweb.org/wiki/images/1/1e/Macro_installer_01.jpg)
+3. Close and reopen the **Execute macro** dialog, and start the **addons_installer.FCMacro**. The installer will launch, from where you can install, update and uninstall any of the addons:
+![the addons installer](http://www.freecadweb.org/wiki/images/c/c6/Macro_installer_02.jpg)
 
 **Read more**
 
