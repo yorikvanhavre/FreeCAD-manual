@@ -1,5 +1,5 @@
 * [Introduction](introduction/README.md)
-  * [What is FreeCAD](introduction/what_is_freecad.md#what-is-freecad)
+  * [What is FreeCAD](introduction/what_is_freecad.md)
   * [Installing](introduction/installing.md)
     * [Installing on Windows](introduction/installing.md#installing-on-windows)
     * [Installing on Linux](introduction/installing.md#installing-on-linux)
