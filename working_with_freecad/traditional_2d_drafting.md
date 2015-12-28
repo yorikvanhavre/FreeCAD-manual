@@ -20,7 +20,7 @@ Like with all technical drawing applications, it is wise to set up your environm
 ![Draft options](http://www.freecadweb.org/wiki/images/1/1a/Freecad_draft_options_01.jpg)
 
 * You can also configure the Draft grid which indicates the current [working plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane). Each intersection of the grid lines provides a snapping point. As we can see on the image above, our house plan will measure 2 meters by 2 meters. We could leave the grid to its default values of 1 meter between lines. But we could also set it to a more convenient value of 5cm (50mm), which will make almost all our points snappable to the grid.
-* The Draft Workbench also has two special toolbars, one to manage **visual settings** and another to change **snap locations**. From there, you can change the current working plane, turn [construction mode](http://www.freecadweb.org/wiki/index.php?title=Draft_ToggleConstructionMode) on/off, set the line color, face color and line weight for new objects, and set individual [Snap locations](http://www.freecadweb.org/wiki/index.php?title=Draft_Snap):
+* The Draft Workbench also has two special toolbars, one to manage **visual settings** and another to change **snap locations**. From there, you can change the current working plane, turn [construction mode](http://www.freecadweb.org/wiki/index.php?title=Draft_ToggleConstructionMode) on/off, set the line color, face color and line weight for new objects, and set/unset individual [Snap locations](http://www.freecadweb.org/wiki/index.php?title=Draft_Snap):
 
 ![Draft toolbars](http://www.freecadweb.org/wiki/images/3/39/Draft_toolbars.jpg)
 
