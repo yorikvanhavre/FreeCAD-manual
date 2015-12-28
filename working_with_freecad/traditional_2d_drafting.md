@@ -10,7 +10,7 @@ To showcase the working and possibilities of the Draft Workbench, we will walk t
 
 ![the final floor plan](http://www.freecadweb.org/wiki/images/3/35/Exercise_cabin_01.jpg)
 
-**Preparations**
+### Preparations
 
 Like with all technical drawing applications, it is wise to set up your environment correctly. The Draft Workbench comes with several pages of preferences settings that allow you to save yourself a lot of time by setting everything to the way you like before starting:
 
@@ -19,15 +19,23 @@ Like with all technical drawing applications, it is wise to set up your environm
 
 ![Draft options](http://www.freecadweb.org/wiki/images/1/1a/Freecad_draft_options_01.jpg)
 
-* You can also configure the Draft grid which indicates the current [working plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane). Each intersection of the grid lines provides a snapping point. As we can see on the image above, our house plan will measure 2 meters by 2 meters. We could leave the grid to its default values of 1 meter between lines. But we could also set it to a more convenient value of 5cm (50mm), which will make almost all our points snappable to the grid.
+* You can also configure the Draft grid which indicates the current [working plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane). Each intersection of the grid lines provides a snapping point. As we can see on the image above, our house plan will measure 2 meters by 2 meters. We could leave the grid to its default values of 1 meter between lines. But we could also set it to a more convenient value of 5cm (50mm), which will make almost all our points snappable to the grid. However, for the pleasure of exploration, in the example below, we will do as if our 5cm grid was not available.
 * The Draft Workbench also has two special toolbars, one to manage **visual settings** and another to change **snap locations**. From there, you can change the current working plane, turn [construction mode](http://www.freecadweb.org/wiki/index.php?title=Draft_ToggleConstructionMode) on/off, set the line color, face color and line weight for new objects, and set/unset individual [Snap locations](http://www.freecadweb.org/wiki/index.php?title=Draft_Snap):
 
 ![Draft toolbars](http://www.freecadweb.org/wiki/images/3/39/Draft_toolbars.jpg)
+
+### Construction lines
 
 * Let's start by turning construction mode on, which will allow us to draw some guidelines on which we will draw our final geometry.
 * Then, select the ![icon](http://www.freecadweb.org/wiki/images/thumb/1/14/Draft_Rectangle.png/16px-Draft_Rectangle.png) [Rectangle](http://www.freecadweb.org/wiki/index.php?title=Draft_Rectangle) tool and draw two rectangles, one of 2 meters by 2 meters, and another 15cm inside. You can do the second one either by drawing another rectangle, or by using the ![icon](http://www.freecadweb.org/wiki/images/thumb/e/eb/Draft_Offset.png/16px-Draft_Offset.png) [Offset](http://www.freecadweb.org/wiki/index.php?title=Draft_Offset) tool, turning its Copy mode on, and giving it a distance of 15cm:
 
 ![the first rectangles](http://www.freecadweb.org/wiki/images/f/f0/Exercise_cabin_02.jpg)
+
+* We can then draw a couple of vertical lines, using the ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a8/Draft_Line.png/16px-Draft_Line.png) [Line](http://www.freecadweb.org/wiki/index.php?title=Draft_Line) tool, to indicate where our window and door will be placed. You can use the line tool again to draw the other lines, or draw only one and use the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c5/Draft_Move.png/16px-Draft_Move.png) [Move](http://www.freecadweb.org/wiki/index.php?title=Draft_Move) tool with Copy mode turned on to copy the first line to the other locations. The length of the lines doesn't matter, we just need them to intersect with the two rectangles, in order to have intersection points to snap to.
+
+![the window lines](http://www.freecadweb.org/wiki/images/6/60/Exercise_cabin_03.jpg)
+
+
 
 **Read more**
 
