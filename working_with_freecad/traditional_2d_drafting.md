@@ -15,8 +15,21 @@ To showcase the working and possibilities of the Draft Workbench, we will walk t
 Like with all technical drawing applications, it is wise to set up your environment correctly. The Draft Workbench comes with several pages of preferences settings that allow you to save yourself a lot of time by setting everything to the way you like before starting:
 
 * Switch to the **Draft Workbench**
-* Choose menu **Edit -> Preferences**. An important thing to know: FreeCAD adopts a **late loading** philosophy: Since workbench can sometimes be very heavy because they will load a lot of software libraries, they will only load fully the first time you activate them. So the Draft preferences pages will only appear after the Draft Workbench has been loaded.
+* Choose menu **Edit -> Preferences**. An important thing to know: FreeCAD adopts a **late loading** philosophy: Since workbench can sometimes be very heavy because they will load a lot of software libraries, they will only load fully the first time you activate them. So the Draft preferences pages will only appear after the Draft Workbench has been loaded. There, you can set a couple of defaults to your liking, such as text and dimensions style.
+
+![Draft options](http://www.freecadweb.org/wiki/images/1/1a/Freecad_draft_options_01.jpg)
+
+* You can also configure the Draft grid which indicates the current [working plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane). Each intersection of the grid lines provides a snapping point. As we can see on the image above, our house plan will measure 2 meters by 2 meters. We could leave the grid to its default values of 1 meter between lines. But we could also set it to a more convenient value of 5cm (50mm), which will make almost all our points snappable to the grid.
+* The Draft Workbench also has two special toolbars, one to manage **visual settings** and another to change **snap locations**. From there, you can change the current working plane, turn [construction mode](http://www.freecadweb.org/wiki/index.php?title=Draft_ToggleConstructionMode) on/off, set the line color, face color and line weight for new objects, and set individual [Snap locations](http://www.freecadweb.org/wiki/index.php?title=Draft_Snap):
+
+![Draft toolbars](http://www.freecadweb.org/wiki/images/3/39/Draft_toolbars.jpg)
+
+* Let's start by turning construction mode on, which willallow us to draw some guidelines on which we will draw our final geometry.
+* Then, select the ![icon](http://www.freecadweb.org/wiki/images/thumb/1/14/Draft_Rectangle.png/16px-Draft_Rectangle.png) [Rectangle](http://www.freecadweb.org/wiki/index.php?title=Draft_Rectangle) tool and draw two rectangles, one of 2 meters by 2 meters, and another 15cm inside. You can do the second one either by drawing another rectangle, or by using the ![icon](http://www.freecadweb.org/wiki/images/thumb/e/eb/Draft_Offset.png/16px-Draft_Offset.png) [Offset](http://www.freecadweb.org/wiki/index.php?title=Draft_Offset) tool, turning its Copy mode on, and giving it a distance of 15cm:
+
+![the first rectangles](http://www.freecadweb.org/wiki/images/f/f0/Exercise_cabin_02.jpg)
 
 **Read more**
 
 * The Draft Workbench: http://www.freecadweb.org/wiki/index.php?title=Draft_Module
+* Snapping: http://www.freecadweb.org/wiki/index.php?title=Draft_Snap
