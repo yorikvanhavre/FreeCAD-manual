@@ -15,7 +15,7 @@ To showcase the working and possibilities of the Draft Workbench, we will walk t
 Like with all technical drawing applications, it is wise to set up your environment correctly. The Draft Workbench comes with several pages of preferences settings that allow you to save yourself a lot of time by setting everything to the way you like before starting:
 
 * Switch to the **Draft Workbench**
-* Choose menu **Edit -> Preferences**. An important thing to know: FreeCAD adopts a **late loading** philosophy: Since workbench can sometimes be very heavy because they will load a lot of software libraries, they will only load fully the first time you activate them. So the Draft preferences pages will only appear after the Draft Workbench has been loaded. There, you can set a couple of defaults to your liking, such as text and dimensions style.
+* Choose menu **Edit -> Preferences**. An important thing to know: FreeCAD adopts a **late loading** philosophy: Since workbenches can sometimes be very heavy because they will load a lot of software libraries, they will only load fully the first time you activate them. So the Draft preferences pages will only appear after the Draft Workbench has been loaded. There, you can set a couple of defaults to your liking, such as text and dimensions style.
 
 ![Draft options](http://www.freecadweb.org/wiki/images/1/1a/Freecad_draft_options_01.jpg)
 
