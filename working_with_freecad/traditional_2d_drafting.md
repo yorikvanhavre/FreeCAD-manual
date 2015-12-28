@@ -24,7 +24,7 @@ Like with all technical drawing applications, it is wise to set up your environm
 
 ![Draft toolbars](http://www.freecadweb.org/wiki/images/3/39/Draft_toolbars.jpg)
 
-* Let's start by turning construction mode on, which willallow us to draw some guidelines on which we will draw our final geometry.
+* Let's start by turning construction mode on, which will allow us to draw some guidelines on which we will draw our final geometry.
 * Then, select the ![icon](http://www.freecadweb.org/wiki/images/thumb/1/14/Draft_Rectangle.png/16px-Draft_Rectangle.png) [Rectangle](http://www.freecadweb.org/wiki/index.php?title=Draft_Rectangle) tool and draw two rectangles, one of 2 meters by 2 meters, and another 15cm inside. You can do the second one either by drawing another rectangle, or by using the ![icon](http://www.freecadweb.org/wiki/images/thumb/e/eb/Draft_Offset.png/16px-Draft_Offset.png) [Offset](http://www.freecadweb.org/wiki/index.php?title=Draft_Offset) tool, turning its Copy mode on, and giving it a distance of 15cm:
 
 ![the first rectangles](http://www.freecadweb.org/wiki/images/f/f0/Exercise_cabin_02.jpg)
