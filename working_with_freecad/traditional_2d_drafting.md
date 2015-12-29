@@ -56,7 +56,7 @@ To showcase the working and possibilities of the Draft Workbench, we will walk t
 ![the door arc](http://www.freecadweb.org/wiki/images/b/bc/Exercise_cabin_07.jpg)
 
 * We can now start placing some furniture. To begin with, let's place a counter by drawing a rectangle from the upper left inner corner, and giving it a width of 170cm and a height of -60cm. In the image below, the **Transparency** property of the rectangle is set to 80%, to give it a nice furniture look.
-* Then let's add a sink and a cooktop. Drawing these kinds of symbols by hand can be very tedious, and they are usually easy to find on the internet, for example on http://www.cad-blocks.net. In the **Read more** section below, for convenience, we separated a sink and a cooktop from this site, and saved them as DXF files.You can download these two files by visiting the links below, and right-clicking the **Raw** button, then choosing **save as**.
+* Then let's add a sink and a cooktop. Drawing these kinds of symbols by hand can be very tedious, and they are usually easy to find on the internet, for example on http://www.cad-blocks.net. In the **Downloads** section below, for convenience, we separated a sink and a cooktop from this site, and saved them as DXF files.You can download these two files by visiting the links below, and right-clicking the **Raw** button, then choosing **save as**.
 * Inserting a DXF file into an opened FreeCAD document can be done either by choosing the **File -> Import** menu option, or by dragging and dropping the DXF file from your file explorer into the FreeCAD window. The contents of the DXF files might not appear right on the center of your current view, depending on where they were in the DXF file. You can use menu **View -> Standard views -> Fit all** to zoom out and find the imported objects. Insert the two DXF files, and move them to a suitable location on the tabletop:
 
 ![the furniture in place](http://www.freecadweb.org/wiki/images/8/86/Exercise_cabin_08.jpg)
@@ -85,10 +85,13 @@ To showcase the working and possibilities of the Draft Workbench, we will walk t
 
 ![3d on top of draft objects](http://www.freecadweb.org/wiki/images/4/45/Exercise_cabin_13.jpg)
 
-**Read more**
+**Downloads**
 
 * The file created during this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/cabin.FCStd
 * The sink DXF file: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/sink.dxf
-* The cooktop DXF file: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/cooktop.dxf
+* The cooktop DXF file: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/cooktop.dx
+
+**Read more**
+
 * The Draft Workbench: http://www.freecadweb.org/wiki/index.php?title=Draft_Module
 * Snapping: http://www.freecadweb.org/wiki/index.php?title=Draft_Snap
