@@ -20,6 +20,7 @@ To showcase the working and possibilities of the Draft Workbench, we will walk t
 ![Draft toolbars](http://www.freecadweb.org/wiki/images/3/39/Draft_toolbars.jpg)
 
 * Let's start by turning **construction mode** on, which will allow us to draw some guidelines on which we will draw our final geometry.
+* If you wish, set the **working plane** to **XY*. If you do this, the working plane won't change, no matter the current view. If not, the working plane will adapt automatically to the current view, and you should take care of staying in top view whenever you want to draw on the XY (ground) plane.
 * Then, select the ![icon](http://www.freecadweb.org/wiki/images/thumb/1/14/Draft_Rectangle.png/16px-Draft_Rectangle.png) [Rectangle](http://www.freecadweb.org/wiki/index.php?title=Draft_Rectangle) tool and draw a rectangle, starting at point (0,0,0), of 2 meters by 2 meters (leave the Z at zero). Note that most of the Draft commands can be fully performed from the keyboard, without touching the mouse, using their two-letter shortcut. Our first 2x2m rectangle can be done like this: `re 0` **Enter** `0` **Enter** `0` **Enter** `2m` **Enter** `2m` **Enter** `0` **Enter**.
 * Duplicate that rectangle by 15cm inside, using the ![icon](http://www.freecadweb.org/wiki/images/thumb/e/eb/Draft_Offset.png/16px-Draft_Offset.png) [Offset](http://www.freecadweb.org/wiki/index.php?title=Draft_Offset) tool, turning its Copy mode on, and giving it a distance of 15cm:
 
@@ -56,9 +57,33 @@ To showcase the working and possibilities of the Draft Workbench, we will walk t
 
 * We can now start placing some furniture. To begin with, let's place a counter by drawing a rectangle from the upper left inner corner, and giving it a width of 170cm and a height of -60cm. In the image below, the **Transparency** property of the rectangle is set to 80%, to give it a nice furniture look.
 * Then let's add a sink and a cooktop. Drawing these kinds of symbols by hand can be very tedious, and they are usually easy to find on the internet, for example on http://www.cad-blocks.net. In the **Read more** section below, for convenience, we separated a sink and a cooktop from this site, and saved them as DXF files.You can download these two files by visiting the links below, and right-clicking the **Raw** button, then choosing **save as**.
-* Inserting a DXF file into an opened FreeCAD document can be done either by choosing the **File -> Import** menu option, or by dragging and dropping the DXF file from your file explorer into the FreeCAD window. The contents of the DXF files might not appear right on the center of your current view, depending on where they were in the DXF file. You can use menu **View -> Standard views -> Fit all** to zoom out and find theimported objects. Insert the two DXF files, and move them to a suitable location on the tabletop:
+* Inserting a DXF file into an opened FreeCAD document can be done either by choosing the **File -> Import** menu option, or by dragging and dropping the DXF file from your file explorer into the FreeCAD window. The contents of the DXF files might not appear right on the center of your current view, depending on where they were in the DXF file. You can use menu **View -> Standard views -> Fit all** to zoom out and find the imported objects. Insert the two DXF files, and move them to a suitable location on the tabletop:
 
 ![the furniture in place](http://www.freecadweb.org/wiki/images/8/86/Exercise_cabin_08.jpg)
+
+* We can now place a couple of dimensions using the ![icon](http://www.freecadweb.org/wiki/images/thumb/b/b0/Draft_Dimension.png/16px-Draft_Dimension.png) [Dimension](http://www.freecadweb.org/wiki/index.php?title=Draft_Dimension) tool. Dimensions are drawn by clicking 3 points: the start point, an end point, and a third point to place the dimension line. To make horizontal or vertical dimensions, even if the two first points are not aligned, press **Shift** while clicking the second point.
+* You can change the position of a dimension text by double-clicking the dimension in the tree view. A control point will allow you to move the text graphically. In our exercise, the "0.15" texts have been moved away for better clarity.
+* You can change the contents of the dimension text by editing their **Override** property. In our example, the texts of the door and windows dimensions have been edited to indicate their heights:
+
+![the dimensions](http://www.freecadweb.org/wiki/images/f/fb/Exercise_cabin_09.jpg)
+
+* Let's add some description texts using the ![icon](http://www.freecadweb.org/wiki/images/thumb/9/9f/Draft_Text.png/16px-Draft_Text.png) [Text](http://www.freecadweb.org/wiki/index.php?title=Draft_Text) tool. Click a point to position the text, then enter the lines of text, pressing Enter after each line. To finish, press Enter twice.
+* The indication lines (also called "leaders") that link the texts to the item they are describing are simply done with the Wire tool. Draw wires, starting from the text position, to the place being described. Once that is done, you can add a bullet or arrow at the end of the wires by setting their **End Arrow** property to **True**
+
+![the indications](http://www.freecadweb.org/wiki/images/2/24/Exercise_cabin_10.jpg)
+
+* Our drawing is now complete! Since there begins to be quite a number of objects there, it would be wise do some cleaning and place everything in a nice structure of groups, to make the file easier to understand to another person:
+
+![order](http://www.freecadweb.org/wiki/images/7/70/Exercise_cabin_11.jpg)
+
+* We can now print our work by placing it on a Drawing sheet, which we will show further in this manual, or directly export our drawing to other CAD applications, by exporting it to a DXF file. Simply select our "Floor plan" group, select menu **File -> Export**, and select the Autodesk DXF format. The file can then be opened in any other 2D CAD application such as [LibreCAD](http://www.librecad.org). You might notice some differences (for example LibreCAD is at the moment unable to express dimension lengths in a specific unit), this can vary from one application to another.
+
+![in librecad](http://www.freecadweb.org/wiki/images/6/65/Exercise_cabin_12.jpg)
+
+* The most important thing about the Draft Workbench, however, is that the geometry you create with it can be used as a base or easily extruded into 3D objects, simply by using the ![icon](http://www.freecadweb.org/wiki/images/thumb/d/df/Part_Extrude.png/16px-Part_Extrude.png) [Extrude](http://www.freecadweb.org/wiki/index.php?title=Part_Extrude) tool from the [Part](http://www.freecadweb.org/wiki/index.php?title=Part_Module) Workbench, or, to stay in Draft, the ![icon](http://www.freecadweb.org/wiki/images/thumb/e/e7/Draft_Trimex.png/16px-Draft_Trimex.png) [Trimex](http://www.freecadweb.org/wiki/index.php?title=Draft_Trimex) (Trim/Extend/Extrude) tool, which under the hood performs a Part Extrusion,  but does it "the Draft way", that is, allows you to indicate and snap the extrusion length graphically. 
+* By changing the **working plane**, for exemple using a face of an extruded object then pressing the Working Plane button, you are also able to draw Draft objects in different planes, for example on top of the walls. These can then be extruded the same way. Windows and openings can also be done by drawing Draft objects on the faces of walls, then extruding them, then using the boolean tools from the Part Workbench, as we saw in the previous chapter.
+
+![3d on top of draft objects](http://www.freecadweb.org/wiki/images/4/45/Exercise_cabin_13.jpg)
 
 **Read more**
 
