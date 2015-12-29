@@ -10,32 +10,33 @@ To showcase the working and possibilities of the Draft Workbench, we will walk t
 
 ![the final floor plan](http://www.freecadweb.org/wiki/images/3/35/Exercise_cabin_01.jpg)
 
-### Preparations
-
-Like with all technical drawing applications, it is wise to set up your environment correctly. The Draft Workbench comes with several pages of preferences settings that allow you to save yourself a lot of time by setting everything to the way you like before starting:
-
 * Switch to the **Draft Workbench**
-* Choose menu **Edit -> Preferences**. An important thing to know: FreeCAD adopts a **late loading** philosophy: Since workbenches can sometimes be very heavy because they will load a lot of software libraries, they will only load fully the first time you activate them. So the Draft preferences pages will only appear after the Draft Workbench has been loaded. There, you can set a couple of defaults to your liking, such as text and dimensions style.
-
+* As in all technical drawing applications, it is wise to set up your environment correctly, it will save you a lot of time. Configure the [grid and working plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane), [text](http://www.freecadweb.org/wiki/index.php?title=Draft_Text) and [dimensions](http://www.freecadweb.org/wiki/index.php?title=Draft_Dimension) settings to your likings in menu **Edit -> Preferences -> Draft**. In this exercise, however, we will act as if these preference settings were left to their default values.
 ![Draft options](http://www.freecadweb.org/wiki/images/1/1a/Freecad_draft_options_01.jpg)
 
-* You can also configure the Draft grid which indicates the current [working plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane). Each intersection of the grid lines provides a snapping point. As we can see on the image above, our house plan will measure 2 meters by 2 meters. We could leave the grid to its default values of 1 meter between lines. But we could also set it to a more convenient value of 5cm (50mm), which will make almost all our points snappable to the grid. However, for the pleasure of exploration, in the example below, we will do as if our 5cm grid was not available.
-* The Draft Workbench also has two special toolbars, one to manage **visual settings** and another to change **snap locations**. From there, you can change the current working plane, turn [construction mode](http://www.freecadweb.org/wiki/index.php?title=Draft_ToggleConstructionMode) on/off, set the line color, face color and line weight for new objects, and set/unset individual [Snap locations](http://www.freecadweb.org/wiki/index.php?title=Draft_Snap):
-
+* The Draft Workbench also has two special toolbars: One with **visual settings**, where you can change the current working plane, turn [construction mode](http://www.freecadweb.org/wiki/index.php?title=Draft_ToggleConstructionMode) on/off, set the line color, face color, line weight and text size to be used for new objects, and another one with **snap locations**. There, you can turn the grid on/of and set/unset individual [Snap locations](http://www.freecadweb.org/wiki/index.php?title=Draft_Snap):
 ![Draft toolbars](http://www.freecadweb.org/wiki/images/3/39/Draft_toolbars.jpg)
 
-### Construction lines
-
-* Let's start by turning construction mode on, which will allow us to draw some guidelines on which we will draw our final geometry.
-* Then, select the ![icon](http://www.freecadweb.org/wiki/images/thumb/1/14/Draft_Rectangle.png/16px-Draft_Rectangle.png) [Rectangle](http://www.freecadweb.org/wiki/index.php?title=Draft_Rectangle) tool and draw two rectangles, one of 2 meters by 2 meters, and another 15cm inside. You can do the second one either by drawing another rectangle, or by using the ![icon](http://www.freecadweb.org/wiki/images/thumb/e/eb/Draft_Offset.png/16px-Draft_Offset.png) [Offset](http://www.freecadweb.org/wiki/index.php?title=Draft_Offset) tool, turning its Copy mode on, and giving it a distance of 15cm:
-
+* Let's start by turning **construction mode** on, which will allow us to draw some guidelines on which we will draw our final geometry.
+* Then, select the ![icon](http://www.freecadweb.org/wiki/images/thumb/1/14/Draft_Rectangle.png/16px-Draft_Rectangle.png) [Rectangle](http://www.freecadweb.org/wiki/index.php?title=Draft_Rectangle) tool and draw a rectangle, starting at point (0,0,0), of 2 meters by 2 meters (leave the Z at zero). Note that most of the Draft commands can be fully performed from the keyboard, without touching the mouse, using their two-letter shortcut. Our first 2x2m rectangle can be done like this: `re 0` **Enter** `0` **Enter** `0` **Enter** `2m` **Enter** `2m` **Enter** `0` **Enter**.
+* Duplicate that rectangle by 15cm inside, using the ![icon](http://www.freecadweb.org/wiki/images/thumb/e/eb/Draft_Offset.png/16px-Draft_Offset.png) [Offset](http://www.freecadweb.org/wiki/index.php?title=Draft_Offset) tool, turning its Copy mode on, and giving it a distance of 15cm:
 ![the first rectangles](http://www.freecadweb.org/wiki/images/f/f0/Exercise_cabin_02.jpg)
 
-* We can then draw a couple of vertical lines, using the ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a8/Draft_Line.png/16px-Draft_Line.png) [Line](http://www.freecadweb.org/wiki/index.php?title=Draft_Line) tool, to indicate where our window and door will be placed. You can use the line tool again to draw the other lines, or draw only one and use the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c5/Draft_Move.png/16px-Draft_Move.png) [Move](http://www.freecadweb.org/wiki/index.php?title=Draft_Move) tool with Copy mode turned on to copy the first line to the other locations. The length of the lines doesn't matter, we just need them to intersect with the two rectangles, in order to have intersection points to snap to.
-
+* We can then draw a couple of vertical lines to define where our doors and windows will be placed, using the ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a8/Draft_Line.png/16px-Draft_Line.png) [Line](http://www.freecadweb.org/wiki/index.php?title=Draft_Line) tool. The crossing of these lines with our two rectangles will give us useful intersections to snap our walls to. Draw the first line from point (15cm, 1m, 0) to point (15cm, 3m, 0).
+* Duplicate that line 5 times, using the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c5/Draft_Move.png/16px-Draft_Move.png) [Move](http://www.freecadweb.org/wiki/index.php?title=Draft_Move) tool with Copy mode turned on. Turn also the Relative mode on, which will allow us to define movements in relative distances, which is eaier than calculate the exact position of each line. Give each new copy any start point, you can leave it at (0,0,0) for example, and the following relative endpoints:
+   * line001: x: 10cm
+   * line002: x: 120cm
+   * line003: x: -55cm, y: -2m
+   * line004: x: 80cm
+   * line005: x: 15cm
 ![the window lines](http://www.freecadweb.org/wiki/images/6/60/Exercise_cabin_03.jpg)
 
+* That is all we need now, so we can switch construction mode off. Check that all the construction geometry has been placed into a "Construction" group, which makes it easy to hide it all at once or even delete it completely later on.
+* Now let's draw our two wall pieces using the ![icon](http://www.freecadweb.org/wiki/images/thumb/0/00/Draft_Wire.png/16px-Draft_Wire.png) [Wire](http://www.freecadweb.org/wiki/index.php?title=Draft_Wire) tool. Make sure the ![icon](http://www.freecadweb.org/wiki/images/thumb/8/8c/Snap_Intersection.png/16px-Snap_Intersection.png) [intersection snap](http://www.freecadweb.org/wiki/index.php?title=Draft_Snap) is turned on, as we will need to snap to the intersections of our lines and rectangles. Draw two wires as follow, by clicking all the points of their contours. To close them, either click onthe first point again, or press the **Close** button:
+![the two walls](http://www.freecadweb.org/wiki/images/b/b8/Exercise_cabin_04.jpg)
 
+* We can change their default grey color to a nice hatch pattern, by selecting both walls, then setting their **Pattern** property to *Simple*, and their **Pattern size** to your liking, for example *0.005*.
+![hatch patterns](http://www.freecadweb.org/wiki/images/5/5c/Exercise_cabin_05.jpg)
 
 **Read more**
 
