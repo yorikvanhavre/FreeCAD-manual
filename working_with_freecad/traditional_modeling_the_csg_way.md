@@ -107,7 +107,7 @@ In the 3D view, you can select individual **vertices**, **edges** or **faces**. 
 
 **A note about shared design**
 
-You might look at the table above, and think its design is not good. The tightening of the feet with the tabletop is probably too weak. You might want to add reforcing pieces, or simply you have other ideas to make it better. This is where sharing becomes interesting. You can download the file made during this exercise from the link below, and modify it to make it better. Then, if you share that improved file, others might be able to make it even better, or use your well-designed table in their projects.
+You might look at the table above, and think its design is not good. The tightening of the feet with the tabletop is probably too weak. You might want to add reforcing pieces, or simply you have other ideas to make it better. This is where sharing becomes interesting. You can download the file made during this exercise from the link below, and modify it to make it better. Then, if you share that improved file, others might be able to make it even better, or use your well-designed table in their projects. Your design might then give other ideas to other people, and maybe you will have helped a tiny bit to make a better world...
 
 **Downloads**
 
