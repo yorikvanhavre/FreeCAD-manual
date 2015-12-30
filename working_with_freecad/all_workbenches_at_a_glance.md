@@ -2,7 +2,7 @@
 
 One of the biggest difficulty for new users of FreeCAD, is to know in which workbench to find a specific tool. The table below will give you an overview of the most important workbenches and their tools. Refer to each [workbench](http://www.freecadweb.org/wiki/index.php?title=Workbenches) page in the FreeCAD documentation for a more complete list.
 
-Four workbenches are also designed to work in pairs, and the latter contains all the tools of the former: Draft with Arch, and Sketcher with PartDesign. However, for clarity, they are separated below.
+Four workbenches are also designed to work in pairs, and one of them is fully included into the other: Arch contains all the Draft tools, and PartDesign all the Sketcher tools. However, for clarity, they are separated below.
 
 ### Part
 
