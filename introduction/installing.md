@@ -48,7 +48,7 @@ One of the big joys of using Linux is the multitude of possibilities to tailor y
 
 Installing FreeCAD on Mac OSX is nowadays as easy as on other platforms. However, since there are less people in the community who own a Mac, the available packages often lag a couple of versions behind the other platforms.
 
-1. Download a zipped package corresponding to your version from  the [download page](https://github.com/FreeCAD/FreeCAD/release). The FreeCAD installers should work on any windows version.
+1. Download a zipped package corresponding to your version from  the [download page](https://github.com/FreeCAD/FreeCAD/release).
 2. Open the Downloads folder, and expand the downloaded zip file:
 ![FreeCAD installation on mac, step 1](http://www.freecadweb.org/wiki/images/7/76/Freecad-mac-01.jpg)
 3. Drag the FreeCAD application from inside the zip to the Applications folder:
