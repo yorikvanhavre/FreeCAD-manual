@@ -7,3 +7,9 @@ When you print objects in 3D, a couple of rules become very important. The first
 Another obvious rule is that you must take care of the real **dimensions** of the object. The printed object will have an exact size. You need to make certain of that size. In certain cases, for example when a part of an object will need to fit into another one, a couple of tenths of millimeters too much, and your object won't fit anymore.
 
 A third rule is that, at least at the time we are writing these words, no machine is able to print a whole assembly of objects at once, for example a car engine. The engine will be printed piece by piece, and then the pieces will be assembled together. So when we model for product design, we generally model one piece at a time. In FreeCAD, as generally in the industry, these independent pieces are called parts, and the workbenchwe are going to use for this is the [Part Design Workbench](http://www.freecadweb.org/wiki/index.php?title=PartDesign_Workbench).
+
+To illustrate how the PartDesign Workbench works, let's model this well-known piece of [lego](https://en.wikipedia.org/wiki/Lego):
+
+![the lego piece](http://www.freecadweb.org/wiki/images/c/c5/Exercise_lego_01.jpg)
+
+The big advantage of it being that the dimensions of the different pieces are easy to obtain on the internet. 
