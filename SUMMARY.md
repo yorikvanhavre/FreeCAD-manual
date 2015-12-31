@@ -22,7 +22,7 @@
   * [All workbenches at a glance](working_with_freecad/all_workbenches_at_a_glance.md)
   * [Traditional modeling, the CSG way](working_with_freecad/traditional_modeling_the_csg_way.md)
   * [Traditional 2D drafting](working_with_freecad/traditional_2d_drafting.md)
-  * Modeling for product design
+  * [Modeling for product design](working_wth_freecad/modeling_for_product_design.md)
   * Preparing models for 3D printing
   * Generating 2D drawings
   * BIM modeling
