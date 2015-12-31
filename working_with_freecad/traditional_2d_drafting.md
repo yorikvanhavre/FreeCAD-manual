@@ -76,7 +76,7 @@ To showcase the working and possibilities of the Draft Workbench, we will walk t
 
 ![order](http://www.freecadweb.org/wiki/images/7/70/Exercise_cabin_11.jpg)
 
-* We can now print our work by placing it on a Drawing sheet, which we will show further in this manual, or directly export our drawing to other CAD applications, by exporting it to a DXF file. Simply select our "Floor plan" group, select menu **File -> Export**, and select the Autodesk DXF format. The file can then be opened in any other 2D CAD application such as [LibreCAD](http://www.librecad.org). You might notice some differences (for example LibreCAD is at the moment unable to express dimension lengths in a specific unit), this can vary from one application to another.
+* We can now print our work by placing it on a Drawing sheet, which we will show further in this manual, or directly export our drawing to other CAD applications, by exporting it to a DXF file. Simply select our "Floor plan" group, select menu **File -> Export**, and select the Autodesk DXF format. The file can then be opened in any other 2D CAD application such as [LibreCAD](http://www.librecad.org). You might notice some differences, depending on the configurations of each application.
 
 ![in librecad](http://www.freecadweb.org/wiki/images/6/65/Exercise_cabin_12.jpg)
 
