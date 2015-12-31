@@ -80,10 +80,14 @@ To showcase the working and possibilities of the Draft Workbench, we will walk t
 
 ![in librecad](http://www.freecadweb.org/wiki/images/6/65/Exercise_cabin_12.jpg)
 
-* The most important thing about the Draft Workbench, however, is that the geometry you create with it can be used as a base or easily extruded into 3D objects, simply by using the ![icon](http://www.freecadweb.org/wiki/images/thumb/d/df/Part_Extrude.png/16px-Part_Extrude.png) [Extrude](http://www.freecadweb.org/wiki/index.php?title=Part_Extrude) tool from the [Part](http://www.freecadweb.org/wiki/index.php?title=Part_Module) Workbench, or, to stay in Draft, the ![icon](http://www.freecadweb.org/wiki/images/thumb/e/e7/Draft_Trimex.png/16px-Draft_Trimex.png) [Trimex](http://www.freecadweb.org/wiki/index.php?title=Draft_Trimex) (Trim/Extend/Extrude) tool, which under the hood performs a Part Extrusion,  but does it "the Draft way", that is, allows you to indicate and snap the extrusion length graphically. 
-* By changing the **working plane**, for exemple using a face of an extruded object then pressing the Working Plane button, you are also able to draw Draft objects in different planes, for example on top of the walls. These can then be extruded the same way. Windows and openings can also be done by drawing Draft objects on the faces of walls, then extruding them, then using the boolean tools from the Part Workbench, as we saw in the previous chapter.
+* The most important thing about the Draft Workbench, however, is that the geometry you create with it can be used as a base or easily extruded into 3D objects, simply by using the ![icon](http://www.freecadweb.org/wiki/images/thumb/d/df/Part_Extrude.png/16px-Part_Extrude.png) [Extrude](http://www.freecadweb.org/wiki/index.php?title=Part_Extrude) tool from the [Part Workbench](http://www.freecadweb.org/wiki/index.php?title=Part_Module), or, to stay in Draft, the ![icon](http://www.freecadweb.org/wiki/images/thumb/e/e7/Draft_Trimex.png/16px-Draft_Trimex.png) [Trimex](http://www.freecadweb.org/wiki/index.php?title=Draft_Trimex) (Trim/Extend/Extrude) tool, which under the hood performs a Part Extrusion,  but does it "the Draft way", that is, allows you to indicate and snap the extrusion length graphically. 
+* By changing the [working plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane), for exemple using a face of an extruded object then pressing the Working Plane button, you are also able to place the working plane anywhere, and therefore draw Draft objects in different planes, for example on top of the walls. These can then be extruded to form other3D solids.
 
 ![3d on top of draft objects](http://www.freecadweb.org/wiki/images/4/45/Exercise_cabin_13.jpg)
+
+* All kinds of openings can also be done as easily by drawing Draft objects on the faces of walls, then extruding them, then using the boolean tools from the Part Workbench to subtract them from another solid, as we saw in the previous chapter.
+
+Fundamentally, what the Draft Workbench does is provide graphical ways to create basic Part operations. While in Part you will usually position objects by setting their placement property by hand, in Draft you can do it on-screen. There are times when one is better, other times when the other is preferable. Don't forget, you can create [custom toolars](http://www.freecadweb.org/wiki/index.php?title=Interface_Customization) in one of these workbenches, add the tools from the other, and get the best of both worlds.
 
 **Downloads**
 
@@ -95,3 +99,4 @@ To showcase the working and possibilities of the Draft Workbench, we will walk t
 
 * The Draft Workbench: http://www.freecadweb.org/wiki/index.php?title=Draft_Module
 * Snapping: http://www.freecadweb.org/wiki/index.php?title=Draft_Snap
+* The Draft working plane: http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane
