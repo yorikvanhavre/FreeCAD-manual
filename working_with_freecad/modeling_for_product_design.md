@@ -26,7 +26,7 @@ Sketches have an edit mode, where their geometry and constraints can be changed.
 
 * Now, let's add three more constraints:
    * Select one of the vertical segments and add a ![icon](http://www.freecadweb.org/wiki/images/thumb/b/ba/Constraint_VerticalDistance.png/16px-Constraint_VerticalDistance.png) [Vectical Distance Constraint](http://www.freecadweb.org/wiki/index.php?title=Constraint_VerticalDistance). Give it a size of 23.7mm.
-   * Select one of the horizontal segments and add a ![icon](http://www.freecadweb.org/wiki/index.php?title=File:Constraint_HorizontalDistance.png) [Horizontal Distance Constraint](http://www.freecadweb.org/wiki/index.php?title=Constraint_HorizontalDistance). Make it 47.7mm.
+   * Select one of the horizontal segments and add a ![icon](http://www.freecadweb.org/wiki/images/thumb/5/57/Constraint_HorizontalDistance.png/16px-Constraint_HorizontalDistance.png) [Horizontal Distance Constraint](http://www.freecadweb.org/wiki/index.php?title=Constraint_HorizontalDistance). Make it 47.7mm.
    * Finally, select one of the corner points, then the origin point (which is the dot at the crossing of the red and green axes), then add a ![icon](http://www.freecadweb.org/wiki/images/thumb/e/e3/Constraint_PointOnPoint.png/16px-Constraint_PointOnPoint.png) [Point-on-Point Constraint](http://www.freecadweb.org/wiki/index.php?title=Constraint_PointOnPoint). The rectangle will then jump to the origin point, and your sketch will turn green, meaning it is now fully constrained. You can try moving its lines or points, nothing will move anymore.
 
 ![fully constrained sketch](http://www.freecadweb.org/wiki/images/6/64/Exercise_lego_03.jpg)
