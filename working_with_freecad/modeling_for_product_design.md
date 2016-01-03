@@ -40,6 +40,26 @@ Note that the last point-on-point constraint was not absolutely necessary. You a
 
 The **Pad** behaves very much like the [Part Extrude](http://www.freecadweb.org/wiki/index.php?title=Part_Extrude) tool that we used in the previous chapter. There are a couple of differences, though, the main one being that a pad cannot be moved. It is attached forever to its sketch. If you want to change the position of the pad, you must move the base sketch. In the current context, where we want to be sure nothing will move out of position, this is an additional security.
 
+* We will now carve the inside of the block, using the ![icon](http://www.freecadweb.org/wiki/images/thumb/6/67/PartDesign_Pocket.png/16px-PartDesign_Pocket.png) [Pocket](http://www.freecadweb.org/wiki/index.php?title=PartDesign_Pocket) tool, which is the PartDesign version of [Part Cut](http://www.freecadweb.org/wiki/index.php?title=Part_Cut). To make a pocket, we will create a sketch on the bottom face of our block, which will be used to remove a part of the block.
+* With the bottom face selected, press the ![icon](http://www.freecadweb.org/wiki/images/thumb/4/46/Sketcher_NewSketch.png/16px-Sketcher_NewSketch.png) [New Sketch](http://www.freecadweb.org/wiki/index.php?title=Sketcher_NewSketch) button.
+* Draw a rectangle on the face.
+
+![the bottom rectangle](http://www.freecadweb.org/wiki/images/4/4a/Exercise_lego_05.jpg)
+
+* We will now constrain the rectangle in relation to the bottom face. To do this, we need to "import" some edges of the face with the ![icon](http://www.freecadweb.org/wiki/images/thumb/b/b5/Sketcher_External.png/16px-Sketcher_External.png) [External geometry](http://www.freecadweb.org/wiki/index.php?title=Sketcher_External) tool. Use this tool on the two vertical lines of the bottom face:
+
+![external geometry](http://www.freecadweb.org/wiki/images/f/f6/Exercise_lego_06.jpg)
+
+You will notice that only edges from the the base face can be added by this tool. When you create a sketch with a face selected, a relation is created between that face and the sketch, which is important for further operations. You can always remap a sketch to another face later with the ![icon](http://www.freecadweb.org/wiki/images/thumb/4/45/Sketcher_MapSketch.png/16px-Sketcher_MapSketch.png) [Map Sketch](http://www.freecadweb.org/wiki/index.php?title=Sketcher_MapSketch) tool.
+
+* The external geometry is not "real", it will be hidden when we leave edit mode. But we can use it to place constraints. Place the 4  following constraints:
+   * Select the two upper left points of the rectangle and the left imported line and add a ![icon](http://www.freecadweb.org/wiki/images/thumb/5/57/Constraint_HorizontalDistance.png/16px-Constraint_HorizontalDistance.png) [Horizontal Distance Constraint](http://www.freecadweb.org/wiki/index.php?title=Constraint_HorizontalDistance) of 1.8mm
+   * Select again the two upper left points of the rectangle and the left imported line and add a ![icon](http://www.freecadweb.org/wiki/images/thumb/b/ba/Constraint_VerticalDistance.png/16px-Constraint_VerticalDistance.png) [Vectical Distance Constraint](http://www.freecadweb.org/wiki/index.php?title=Constraint_VerticalDistance) of 1.8mm
+   * Select the two lower right points of the rectangle and the right imported line and add a ![icon](http://www.freecadweb.org/wiki/images/thumb/5/57/Constraint_HorizontalDistance.png/16px-Constraint_HorizontalDistance.png) [Horizontal Distance Constraint](http://www.freecadweb.org/wiki/index.php?title=Constraint_HorizontalDistance) of 1.8mm
+   * Select again the two lower right points of the rectangle and the right imported line and add a ![icon](http://www.freecadweb.org/wiki/images/thumb/b/ba/Constraint_VerticalDistance.png/16px-Constraint_VerticalDistance.png) [Vectical Distance Constraint](http://www.freecadweb.org/wiki/index.php?title=Constraint_VerticalDistance) of 1.8mm
+
+![the constrained internal rectangle](http://www.freecadweb.org/wiki/images/1/16/Exercise_lego_07.jpg)
+
 **Read more**
 
 * The Sketcher: http://www.freecadweb.org/wiki/index.php?title=Sketcher_Module
