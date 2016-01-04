@@ -60,6 +60,34 @@ You will notice that only edges from the the base face can be added by this tool
 
 ![the constrained internal rectangle](http://www.freecadweb.org/wiki/images/1/16/Exercise_lego_07.jpg)
 
+* Leave edit mode and we can now perform the pocket operation: With the sketch selected, press the ![icon](http://www.freecadweb.org/wiki/images/thumb/6/67/PartDesign_Pocket.png/16px-PartDesign_Pocket.png) [Pocket](http://www.freecadweb.org/wiki/index.php?title=PartDesign_Pocket) buttton. Give it a length of 12.6mm, which will leave the upper face of our pad with a thickness of 1.8mm (remember, the total height of our pad was 14.4mm).
+
+![the pocket](http://www.freecadweb.org/wiki/images/a/a6/Exercise_lego_08.jpg)
+
+* We will now attack the 8 dots on the top face. To do this, since they are a repetition of a same feature, we will use the handy ![icon](http://www.freecadweb.org/wiki/images/thumb/9/98/PartDesign_LinearPattern.png/16px-PartDesign_LinearPattern.png) [Linear Pattern](http://www.freecadweb.org/wiki/index.php?title=PartDesign_LinearPattern) tool of the Part Design Workbench, which allows to model once and repeat the shape.
+* Start by selecting the top face of our block
+* Create a ![icon](http://www.freecadweb.org/wiki/images/thumb/4/46/Sketcher_NewSketch.png/16px-Sketcher_NewSketch.png) [New Sketch](http://www.freecadweb.org/wiki/index.php?title=Sketcher_NewSketch).
+* Create two ![icon](http://www.freecadweb.org/wiki/images/thumb/d/da/Sketcher_Circle.png/16px-Sketcher_Circle.png) [circles](http://www.freecadweb.org/wiki/index.php?title=Sketcher_Circle).
+* Add a ![icon](http://www.freecadweb.org/wiki/images/thumb/5/58/Constraint_Radius.png/16px-Constraint_Radius.png) [Radius Constraint](http://www.freecadweb.org/wiki/index.php?title=Constraint_Radius) of 3.6mm to each of them
+* Import the left edge of the base face with the ![icon](http://www.freecadweb.org/wiki/images/thumb/b/b5/Sketcher_External.png/16px-Sketcher_External.png) [External geometry](http://www.freecadweb.org/wiki/index.php?title=Sketcher_External) tool.
+* Place two vertical constraints and two horizontal constraints of 6mm between the center point of each circle and the corner points of the imported edge, so each circle has its center at 6mm from the border of the face:
+
+![the two upper dots](http://www.freecadweb.org/wiki/images/2/2c/Exercise_lego_09.jpg)
+
+* Notice how, once again, when you lock the position and dimension of everything in your sketch, it becomes fully constrained. This always keeps you on the safe side. You could change the first sketch now, everything we did afterwards would keep tight.
+* Leave edit mode, select this new sketch, and create a ![icon](http://www.freecadweb.org/wiki/images/thumb/7/7e/PartDesign_Pad.png/16px-PartDesign_Pad.png) [Pad](http://www.freecadweb.org/wiki/index.php?title=PartDesign_Pad) of 2.7mm:
+
+![the extruded dots](http://www.freecadweb.org/wiki/images/a/a0/Exercise_lego_10.jpg)
+
+* Notice that, as earlier with the pocket, since we used the top face of our base block as a base for this latest sketch, any PartDesign operation we do with this sketch will correctly be built on top of the base shape: The two dots are not independent objects, they have been extruded directly from our brick. This is the great advantage of working with the Part Design Workbench, as long as you take care of always building one step on top of the previous one, you are actually building one final solid object.
+* We can now duplicate our two dots four times, so we get eight. Select the latest Pad we just created.
+* Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/9/98/PartDesign_LinearPattern.png/16px-PartDesign_LinearPattern.png) [Linear Pattern](http://www.freecadweb.org/wiki/index.php?title=PartDesign_LinearPattern) button.
+* Give it a length of 36mm (which is the total "span" we want our copies to fit in), in the "horizontal sketch axis" direction, and make it 4 occurencs:
+
+![the arrayed pad](http://www.freecadweb.org/wiki/images/d/d3/Exercise_lego_11.jpg)
+
+* Once again, see that this is not just a duplication of an object, it is a *feature* of our final shape that has been duplicated, the final object is still only one solid object.
+
 **Read more**
 
 * The Sketcher: http://www.freecadweb.org/wiki/index.php?title=Sketcher_Module
