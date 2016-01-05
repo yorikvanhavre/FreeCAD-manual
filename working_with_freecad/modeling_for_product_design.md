@@ -129,7 +129,7 @@ But the best of both worlds also exists, which is the [Assembly2 Workbench](http
 
 ![assembly](http://www.freecadweb.org/wiki/images/1/1c/Exercise_lego_16.jpg)
 
-**Download**
+**Downloads**
 
 * The model produced during this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/lego.FCStd
 
