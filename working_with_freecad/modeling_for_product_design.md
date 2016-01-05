@@ -86,9 +86,55 @@ You will notice that only edges from the the base face can be added by this tool
 
 ![the arrayed pad](http://www.freecadweb.org/wiki/images/d/d3/Exercise_lego_11.jpg)
 
-* Once again, see that this is not just a duplication of an object, it is a *feature* of our final shape that has been duplicated, the final object is still only one solid object.
+* Once again, see that this is not just a duplication of an object, it is a *feature* of our shape that has been duplicated, the final object is still only one solid object.
+* Now let's work on the three "tubes" that fill the void we created on the bottom face. We have several possibilities: create a sketch with three circes, pad it then pocket it three times, or create a base sketch with one circle inside the other and pad it to form the complete tube already, or even other combinations. Like always in FreeCAD, there are many ways to do achieve a same result. Sometimes one way will not work the way we want, and we must try other ways. Here, we will take the safest approach, and do things one step at a time.
+* Select the face that is at the bottom of the hollow space we carved earlier inside the block.
+* Create a new sketch, add a circle with a radius of 4.8825mm, import the left border of the face, and constrain it vertically and horizontally at 10.2mm from the upper corner of the face:
+
+![sketch at the bottom](http://www.freecadweb.org/wiki/images/b/b6/Exercise_lego_12.jpg)
+
+* Leave edit mode, and pad this sketch with a distance of 12.6mm
+* Create a linear pattern from this last pad, give it a length of 24mm and 3 occurences. We now have three filled tubes filling the hollow space:
+
+![the three pads](http://www.freecadweb.org/wiki/images/1/1c/Exercise_lego_13.jpg)
+
+* Now let's make the final holes. Select the circular face of the first of our three "pins"
+* Create a new sketch, import the circular boder of our face, create a circle with a radius constraint of 3.6mm, and add a ![icon](http://www.freecadweb.org/wiki/images/thumb/e/e3/Constraint_PointOnPoint.png/16px-Constraint_PointOnPoint.png) [Point-on-Point Constraint](http://www.freecadweb.org/wiki/index.php?title=Constraint_PointOnPoint) between the center of the imported circle and our new circle. We now have a perfectly centered circle,and once again fully constrained:
+
+![the last sketch](http://www.freecadweb.org/wiki/images/7/75/Exercise_lego_14.jpg)
+
+* Leave edit mode, and create a pocket from this sketch, with a length of 12.6mm
+* Create a linear pattern from this pocket, with a length of 24mm and 3 occurences. That's the last step, our piece of lego is now complete, we can give it a nice color of Victory!
+
+![the complete piece](http://www.freecadweb.org/wiki/images/9/9c/Exercise_lego_15.jpg)
+
+You will notice that our modeling history (what appears in the tree view) has become quite long. This is of precious because every single step of what we did can be changed later on. Adapting this model for another kind of brick, for example one with 2x2 dots, instead of 2x4, would be a piece of cake, we would just need to change a couple of dimensions and the number of occurences in linear patterns. We could as easily create bigger pieces that don't exist in the original Lego game.
+
+But we could also need to get rid of the history, for example if we are going to model a castle with this brick, and we don't want to have this whole history repeated 500 times in our file.
+
+There are two simple ways to get rid of the history, one is using the [Create simple copy](http://www.freecadweb.org/wiki/index.php?title=Part_CreateSimpleCopy) tool from the [Part Workbench](http://www.freecadweb.org/wiki/index.php?title=Part_Module), which will create a copy of our piece that doesn't depend anymore on the history (you can delete the whole history afterwards), the other way is exporting the piece as a STEP file and reimporting it.
+
+**Assembling**
+
+But the best of both worlds also exists, which is the [Assembly2 Workbench](https://github.com/hamish2014/FreeCAD_assembly2), an addon that can be installed from the [FreeCAD-addons](https://github.com/FreeCAD/FreeCAD-addons) repository. This Workbench is named "2" because there is also an official built-in Assembly Workbench in development, which is not ready yet. The Assembly2 Workbench, however, already works very well to construct assemblies, and also features a couple of object-to-object constraints which you can use to constrain the position of one object in relation to another. In the example below, however, it is easier to position the pieces using ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c5/Draft_Move.png/16px-Draft_Move.png) [Draft Move](http://www.freecadweb.org/wiki/index.php?title=Draft_Move) and ![icon](http://www.freecadweb.org/wiki/images/thumb/5/5a/Draft_Rotate.png/16px-Draft_Rotate.png) [Draft Rotate](http://www.freecadweb.org/wiki/index.php?title=Draft_Rotate).
+
+* Save the file we did until now
+* Install the [Assembly2 Workbench](https://github.com/hamish2014/FreeCAD_assembly2) and restart FreeCAD
+* Create a new empty document
+* Switch to the Assembly2 workbench
+* Press the **Import a part from another FreeCAD document** button
+* Select the file we saved above
+* The final piece will be imported in the current document. The Assembly2 workbench will determine automatically what is the final piece in our file that needs to be used, and the new object stays linked to the file. If we go back and modify the contents of the first file, we can press the **Update parts imported into the assembly** button to update the pieces here.
+* By using the **Import a part from another FreeCAD document** button several times, and moving and rotating the pieces, we can quickly create a small assembly:
+
+![assembly](http://www.freecadweb.org/wiki/images/1/1c/Exercise_lego_16.jpg)
+
+**Download**
+
+* The model produced during this exercise:
 
 **Read more**
 
 * The Sketcher: http://www.freecadweb.org/wiki/index.php?title=Sketcher_Module
 * The Part Design Workbench: http://www.freecadweb.org/wiki/index.php?title=PartDesign_Workbench
+* The Assembly2 Workbench: https://github.com/hamish2014/FreeCAD_assembly2
