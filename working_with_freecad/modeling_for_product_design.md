@@ -125,13 +125,13 @@ But the best of both worlds also exists, which is the [Assembly2 Workbench](http
 * Press the **Import a part from another FreeCAD document** button
 * Select the file we saved above
 * The final piece will be imported in the current document. The Assembly2 workbench will determine automatically what is the final piece in our file that needs to be used, and the new object stays linked to the file. If we go back and modify the contents of the first file, we can press the **Update parts imported into the assembly** button to update the pieces here.
-* By using the **Import a part from another FreeCAD document** button several times, and moving and rotating the pieces, we can quickly create a small assembly:
+* By using the **Import a part from another FreeCAD document** button several times, and moving and rotating the pieces (with the Draft tools or by manipulating their Placement property), we can quickly create a small assembly:
 
 ![assembly](http://www.freecadweb.org/wiki/images/1/1c/Exercise_lego_16.jpg)
 
 **Download**
 
-* The model produced during this exercise:
+* The model produced during this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/lego.FCStd
 
 **Read more**
 
