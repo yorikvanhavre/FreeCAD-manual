@@ -23,7 +23,9 @@
   * [Traditional modeling, the CSG way](working_with_freecad/traditional_modeling_the_csg_way.md)
   * [Traditional 2D drafting](working_with_freecad/traditional_2d_drafting.md)
   * [Modeling for product design](working_with_freecad/modeling_for_product_design.md)
-  * Preparing models for 3D printing
+  * [Preparing models for 3D printing](working_with_freecad/preparing_models_for_3d_printing.md)
+    * [The easy way, with automatic conversion tools](working_with_freecad/preparing_models_for_3d_printing.md#the-easy-way-using-automatic-conversion-tools)
+    * Creating and controlling G-code
   * Generating 2D drawings
   * BIM modeling
   * Using spreadsheets
