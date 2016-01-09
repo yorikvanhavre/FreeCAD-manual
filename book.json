@@ -1,0 +1,9 @@
+{
+    "styles": {
+        "website": "styles/master.css",
+        "ebook": "styles/master.css",
+        "pdf": "styles/master.css",
+        "mobi": "styles/master.css",
+        "epub": "styles/master.css"
+    }
+}
