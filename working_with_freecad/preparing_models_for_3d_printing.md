@@ -44,15 +44,28 @@ In most cases, though, the default values will give a satisfying result.
 
 #### Using Slic3r
 
+[Slic3r](http://slic3r.org/) is an application that converts STL objects into G-code that can be sent directly to 3D printers. Like FreeCAD, it is free, open-source and runs on Windows, Mac OS and Linux. Correctly configurating things for 3D printing is a complicated process, where you must have a good knowledge of your 3D printer, so it is not very useful to generate G-code before actually going to print (your G-code file might not work well on another printer), but it is useful for us anyway, to check that our STL file will be printable without problems.
+
+This is our exported STL file opened in Slic3r. By using the **preview** tab, and moving the right slider, we can visualize the path that the 3D printer head will follow to construct our object.
+
+![the lego brick in slic3r](http://www.freecadweb.org/wiki/images/9/9c/Exercise_meshing_03.jpg)
+
+When we export G-code from Slic3r, we can also reimport it into FreeCAD using menu **File -> Import**, to check, for example,that there weren't any scale change. The imported G-code might not be at the same location than our original model, because Slic3r might have moved it to a more convenient location, such as the center of the print zone. On the image below, the G-code path was moved back to the original location, and we can check that it fits perfectly the original object:
+
+![the reimported g-code](http://www.freecadweb.org/wiki/images/b/b1/Exercise_meshing_04.jpg)
+
 #### Using the Cura addon
 
 ![3d-printed lego](http://www.freecadweb.org/wiki/images/5/54/3d_printed_lego.jpg)
 
 ### Generating G-code
 
+**Downloads**
+
 **Read more**
 
 * The Mesh Workbench: http://www.freecadweb.org/wiki/index.php?title=Mesh_Module
 * The STL file format: https://en.wikipedia.org/wiki/STL_%28file_format%29
+* Slic3r: http://slic3r.org/
 
 
