@@ -33,7 +33,7 @@ All the mesh handling, in FreeCAD, is done by another specific workbench, the [M
 
 * Select the **Standard** mesher, and leave the deviation value to the default value of **0.10**. Press **Ok**.
 * A mesh object will be created, exactly on top of our solid object. Either hide the solid, or move one of the objects apart, so you can compare both.
-* Change the **View -> Display Mode** of the new mesh object to **Flat Lines**, in order to see how the triangulation occured.
+* Change the **View -> Display Mode** property of the new mesh object to **Flat Lines**, in order to see how the triangulation occured.
 * If you are not happy, and think that the result is too coarse, you can repeat the operation, lowering the deviation value. In the example below, the left mesh used the default value of **0.10**, while the right one uses **0.01**:
 
 ![meshing differences](http://www.freecadweb.org/wiki/images/b/b2/Exercise_meshing_02.jpg)
