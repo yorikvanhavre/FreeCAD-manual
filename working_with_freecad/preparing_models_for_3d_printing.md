@@ -73,6 +73,8 @@ Once you have installed both Cura and the Cura Workbench, you will be able to us
 
 #### Sending your models to external 3D printing services
 
+If you don't own a 3D printer, it is usually very easy to find commercial services that will print and send you the printed objects by mail. Among the famous ones are [Shapeways](http://www.shapeways.com/) and [Sculpteo](http://www.sculpteo.com/), but you will also usually find many others in your own city. In all major cities, you will also nowadays find [Fab labs](https://en.wikipedia.org/wiki/Fab_lab), which are workshops equipped with a range of 3D manufacturing machines, almost always including at least one 3D printer. Fab labs are usually community spaces, that will let you use their machines, for a fee or for free depending on the Fab lab, but also teach you how to use them, and promote other activities around 3D manufacturing.
+
 Unless you find a service which directly supports FreeCAD, the best way to deliver your models for 3D printing is to provide them with STL files. It is best to leave the G-code generation to the person who will do the actual print, since it can require some tweaks depending on the printer. If you took care of the three points we mentioned at the beginning of this chapter, you have all chances to get a good printed result.
 
 ![3d-printed lego](http://www.freecadweb.org/wiki/images/5/54/3d_printed_lego.jpg)
