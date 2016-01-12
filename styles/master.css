@@ -1,2 +1,2 @@
 body { text-align: justify; }
-table { text-align: left; }
+table, ol { text-align: left; }
