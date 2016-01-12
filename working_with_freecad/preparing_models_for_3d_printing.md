@@ -71,7 +71,7 @@ Once you have installed both Cura and the Cura Workbench, you will be able to us
 
 * The generated G-code can also be reimported into FreeCAD (using the slic3r preprocessor) for checking.
 
-### Sending your models to external 3D printing services
+#### Sending your models to external 3D printing services
 
 Unless you find a service which directly supports FreeCAD, the best way to deliver your models for 3D printing is to provide them with STL files. It is best to leave the G-code generation to the person who will do the actual print, since it can require some tweaks depending on the printer. If you took care of the three points we mentioned at the beginning of this chapter, you have all chances to get a good printed result.
 
