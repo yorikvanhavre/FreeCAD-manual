@@ -50,11 +50,30 @@ This is our exported STL file opened in Slic3r. By using the **preview** tab, an
 
 ![the lego brick in slic3r](http://www.freecadweb.org/wiki/images/9/9c/Exercise_meshing_03.jpg)
 
-After we export G-code from Slic3r, we can also reimport it into FreeCAD using menu **File -> Import**, to check, for example, that there weren't any scale change. The imported G-code might not be at the same location than our original model, because Slic3r might have moved it to a more convenient location, such as the center of the print zone. On the image below, the G-code path was moved back to the original location, and we can check that it fits perfectly the original object:
+After we export G-code from Slic3r, we can also reimport it into FreeCAD using menu **File -> Import** and selecting the slic3r preprocessor, to check, for example, that there weren't any scale change. The imported G-code might not be at the same location than our original model, because Slic3r might have moved it to a more convenient location, such as the center of the print zone. On the image below, the G-code path was moved back to the original location, and we can check that it fits perfectly the original object:
 
 ![the reimported g-code](http://www.freecadweb.org/wiki/images/b/b1/Exercise_meshing_04.jpg)
 
 #### Using the Cura addon
+
+[Cura](https://ultimaker.com/en/products/cura-software) is another free and open-source slicer application for Windows, Mac and Linux, maintained by the 3D printer maker [Ultimaker](https://ultimaker.com). Some FreeCAD users have created a [Cura Workbench](https://github.com/cblt2l/FreeCAD-CuraEngine-Plugin) that uses cura internally. The Cura Workbench is available from the [FreeCAD addons](https://github.com/FreeCAD/FreeCAD-addons) repository. To use the Cura Workbench, you also need to install Cura itself, which is not included in the workbench.
+
+Once you have installed both Cura and the Cura Workbench, you will be able to use it to produce the G-code file directly from Part objects, without the need to convert them to meshes, and without the need to open an external application. Producing another G-code file from our Lego brick, using the Cura Workbench this time, is done as follows:
+
+* Load the file containing our Lego brick (it can be downloaded at the end of the previous chapter)
+* Switch to the [Cura Workbench](https://github.com/cblt2l/FreeCAD-CuraEngine-Plugin)
+* Setup the printer space by choosing menu **3D printing -> Create a 3D printer definition**. Since we aren't going to print for real, we can leave the settings as they are. The geometry of the printing bed and available space will be shown in the 3D view.
+* Move the Lego brick to a suitable location, such as the center of the printing bed. Remember that PartDesign objects cannot be moved directly, so you need either to move its very first sketc (the first rectangle), or to move (and print) a copy, which can be made with the [Part -> Create Simple Copy](http://www.freecadweb.org/wiki/index.php?title=Part_CreateSimpleCopy) tool. The copy can be moved, for example with ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c5/Draft_Move.png/16px-Draft_Move.png) [Draft -> Move](http://www.freecadweb.org/wiki/index.php?title=Draft_Move).
+* Select the object to be printed, and select menu **3D printing -> Slice with Cura Engine**.
+* In the task panel that will open, make sure the path to the Cura executable is correctly set. Since we are not going to really print, we can leave all other options as they are. Press **Ok**. Two files will be generated in the same directory as your FreeCAD file, an STL file and a G-code file.
+
+![the cura setup](http://www.freecadweb.org/wiki/images/3/37/Exercise_meshing_05.jpg)
+
+* The generated G-code can also be reimported into FreeCAD (using the slic3r preprocessor) for checking.
+
+### Sending your models to external 3D printing services
+
+Unless you find a service which directly supports FreeCAD, the best way to deliver your models for 3D printing is to provide them with STL files. It is best to leave the G-code generation to the person who will do the actual print, since it can require some tweaks depending on the printer. If you took care of the three points we mentioned at the beginning of this chapter, you have all chances to get a good printed result.
 
 ![3d-printed lego](http://www.freecadweb.org/wiki/images/5/54/3d_printed_lego.jpg)
 
@@ -70,5 +89,7 @@ After we export G-code from Slic3r, we can also reimport it into FreeCAD using m
 * The Mesh Workbench: http://www.freecadweb.org/wiki/index.php?title=Mesh_Module
 * The STL file format: https://en.wikipedia.org/wiki/STL_%28file_format%29
 * Slic3r: http://slic3r.org/
+* Cura: https://ultimaker.com/en/products/cura-software
+* The Cura Workbench: https://github.com/cblt2l/FreeCAD-CuraEngine-Plugin
 
 
