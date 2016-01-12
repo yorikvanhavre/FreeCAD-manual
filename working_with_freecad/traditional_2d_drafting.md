@@ -89,6 +89,8 @@ To showcase the working and possibilities of the Draft Workbench, we will walk t
 
 Fundamentally, what the Draft Workbench does is provide graphical ways to create basic Part operations. While in Part you will usually position objects by setting their placement property by hand, in Draft you can do it on-screen. There are times when one is better, other times when the other is preferable. Don't forget, you can create [custom toolars](http://www.freecadweb.org/wiki/index.php?title=Interface_Customization) in one of these workbenches, add the tools from the other, and get the best of both worlds.
 
+<div class="footer-links">
+
 **Downloads**
 
 * The file created during this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/cabin.FCStd
@@ -101,3 +103,5 @@ Fundamentally, what the Draft Workbench does is provide graphical ways to create
 * The Draft Workbench: http://www.freecadweb.org/wiki/index.php?title=Draft_Module
 * Snapping: http://www.freecadweb.org/wiki/index.php?title=Draft_Snap
 * The Draft working plane: http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane
+
+</div>
