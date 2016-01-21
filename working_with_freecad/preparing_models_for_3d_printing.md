@@ -81,6 +81,16 @@ Unless you find a service which directly supports FreeCAD, the best way to deliv
 
 ### Generating G-code
 
+FreeCAD also offers more advanced ways to generate G-code directly. This is often much more complicated than using automatic tools as we saw above, but has the advantage to let you fully control the output. This is usually not needed when using 3D printers, but becomes very important when dealing with CNC milling, as the machines are much more complex.
+
+G-code path generation in FreeCAD is done with the [Path Workbench](http://www.freecadweb.org/wiki/index.php?title=Path_Workbench). It features tools that generate full machine paths and others that generate only parts of a G-code project, that can be assembled to form a whole milling operation.
+
+Generating CNC milling paths is another subject that is much too vast to fit in this manual, so we are going to show how to build a simple Path project, without caring much about most of the details of real CNC machining.
+
+* Load the file containing our lego piece, and switch to the [Path Workbench](http://www.freecadweb.org/wiki/index.php?title=Path_Workbench).
+
+* Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c2/Path_Project.png/16px-Path_Project.png) [Project](http://www.freecadweb.org/wiki/index.php?title=Path_Project) button. A project is created, that will contain the different pieces of paths.
+
 **Downloads**
 
 * The STL file generated in this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/lego.stl
@@ -93,5 +103,5 @@ Unless you find a service which directly supports FreeCAD, the best way to deliv
 * Slic3r: http://slic3r.org/
 * Cura: https://ultimaker.com/en/products/cura-software
 * The Cura Workbench: https://github.com/cblt2l/FreeCAD-CuraEngine-Plugin
-
+* The Path Workbench: http://www.freecadweb.org/wiki/index.php?title=Path_Workbench
 
