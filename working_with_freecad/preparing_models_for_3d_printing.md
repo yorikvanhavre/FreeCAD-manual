@@ -88,8 +88,19 @@ G-code path generation in FreeCAD is done with the [Path Workbench](http://www.f
 Generating CNC milling paths is another subject that is much too vast to fit in this manual, so we are going to show how to build a simple Path project, without caring much about most of the details of real CNC machining.
 
 * Load the file containing our lego piece, and switch to the [Path Workbench](http://www.freecadweb.org/wiki/index.php?title=Path_Workbench).
+* Since the final piece doesn't contain anymore a rectangular top face, hide the final lego piece, and show the first cubic pad that we did, which has a rectangular top face.
+* Select the top face and press the ![icon](http://www.freecadweb.org/wiki/images/thumb/8/80/Path_FaceProfile.png/16px-Path_FaceProfile.png) [Face Profile](http://www.freecadweb.org/wiki/index.php?title=Path_FaceProfile) button.
+* Set its **Offset** property to 1mm.
+
+![the first loop](http://www.freecadweb.org/wiki/images/0/0e/Exercise_path_01.jpg)
+
+* Then, let's duplicate this first loop a couple of times, so the tool will carve out the whole block. Select the FaceProfile path, and press the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c7/Path_Array.png/16px-Path_Array.png)  [Array](http://www.freecadweb.org/wiki/index.php?title=Path_Array) button.
+* Set the **Copies** property of the array to 8, and the offset to -2mm in the Z direction:
+
+![the first array](http://www.freecadweb.org/wiki/images/a/ae/Exercise_path_02.jpg)
 
 * Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c2/Path_Project.png/16px-Path_Project.png) [Project](http://www.freecadweb.org/wiki/index.php?title=Path_Project) button. A project is created, that will contain the different pieces of paths.
+
 
 **Downloads**
 
