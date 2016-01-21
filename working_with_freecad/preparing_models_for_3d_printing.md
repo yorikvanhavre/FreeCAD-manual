@@ -95,7 +95,7 @@ Generating CNC milling paths is another subject that is much too vast to fit in 
 ![the first loop](http://www.freecadweb.org/wiki/images/0/0e/Exercise_path_01.jpg)
 
 * Then, let's duplicate this first loop a couple of times, so the tool will carve out the whole block. Select the FaceProfile path, and press the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c7/Path_Array.png/16px-Path_Array.png)  [Array](http://www.freecadweb.org/wiki/index.php?title=Path_Array) button.
-* Set the **Copies** property of the array to 8, and the offset to -2mm in the Z direction:
+* Set the **Copies** property of the array to 8, and its **Offset** to -2mm in the Z direction:
 
 ![the first array](http://www.freecadweb.org/wiki/images/a/ae/Exercise_path_02.jpg)
 
