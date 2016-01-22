@@ -1,5 +1,5 @@
 * [Discovering FreeCAD](discovering_freecad/README.md)
-  * [What is FreeCAD](discovering_freecad/what_is_freecad.md)
+  * [What is FreeCAD?](discovering_freecad/what_is_freecad.md)
   * [Installing](discovering_freecad/installing.md)
     * [Installing on Windows](discovering_freecad/installing.md#installing-on-windows)
     * [Installing on Linux](discovering_freecad/installing.md#installing-on-linux)
