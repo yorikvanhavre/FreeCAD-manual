@@ -50,10 +50,6 @@ This is our exported STL file opened in Slic3r. By using the **preview** tab, an
 
 ![the lego brick in slic3r](http://www.freecadweb.org/wiki/images/9/9c/Exercise_meshing_03.jpg)
 
-After we export G-code from Slic3r, we can also reimport it into FreeCAD using menu **File -> Import** and selecting the slic3r preprocessor, to check, for example, that there weren't any scale change. The imported G-code might not be at the same location than our original model, because Slic3r might have moved it to a more convenient location, such as the center of the print zone. On the image below, the G-code path was moved back to the original location, and we can check that it fits perfectly the original object:
-
-![the reimported g-code](http://www.freecadweb.org/wiki/images/b/b1/Exercise_meshing_04.jpg)
-
 #### Using the Cura addon
 
 [Cura](https://ultimaker.com/en/products/cura-software) is another free and open-source slicer application for Windows, Mac and Linux, maintained by the 3D printer maker [Ultimaker](https://ultimaker.com). Some FreeCAD users have created a [Cura Workbench](https://github.com/cblt2l/FreeCAD-CuraEngine-Plugin) that uses cura internally. The Cura Workbench is available from the [FreeCAD addons](https://github.com/FreeCAD/FreeCAD-addons) repository. To use the Cura Workbench, you also need to install Cura itself, which is not included in the workbench.
