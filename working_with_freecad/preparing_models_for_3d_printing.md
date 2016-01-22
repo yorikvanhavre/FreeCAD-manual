@@ -95,12 +95,23 @@ Generating CNC milling paths is another subject that is much too vast to fit in 
 ![the first loop](http://www.freecadweb.org/wiki/images/0/0e/Exercise_path_01.jpg)
 
 * Then, let's duplicate this first loop a couple of times, so the tool will carve out the whole block. Select the FaceProfile path, and press the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c7/Path_Array.png/16px-Path_Array.png)  [Array](http://www.freecadweb.org/wiki/index.php?title=Path_Array) button.
-* Set the **Copies** property of the array to 8, and its **Offset** to -2mm in the Z direction:
+* Set the **Copies** property of the array to 8, and its **Offset** to -2mm in the Z direction, and move the placement of the array by 2mm in the Z direction, so the cutting will start a bit above the pad, and include the height of the dots too.
 
 ![the first array](http://www.freecadweb.org/wiki/images/a/ae/Exercise_path_02.jpg)
 
-* Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c2/Path_Project.png/16px-Path_Project.png) [Project](http://www.freecadweb.org/wiki/index.php?title=Path_Project) button. A project is created, that will contain the different pieces of paths.
+* Now we have defined a path that, when followed by the milling machine, will carve a rectangular volume out of a block of material. We now need to carve out the space between the dots, in order to reveal them. Hide the Pad, and show the final piece again, so we can select the face that lies between the dots.
+* Select the top face, and press the ![icon](http://www.freecadweb.org/wiki/images/thumb/2/21/Path_FacePocket.png/16px-Path_FacePocket.png) [Face Pocket](http://www.freecadweb.org/wiki/index.php?title=Path_FacePocket) button. Set the **Offset** property to 1mm, and the **retraction height** to 20mm. That is the height to where the cutter will travel when switching from one loop to another. Otherwise, the cutter might cut right through one of our dots:
 
+![the face pocket](http://www.freecadweb.org/wiki/images/0/0d/Exercise_path_03.jpg)
+
+* Once again, make an array. Select the FacePocket object, and press the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c7/Path_Array.png/16px-Path_Array.png)  [Array](http://www.freecadweb.org/wiki/index.php?title=Path_Array) button. Set the **Copies** number to 1 and the **offset** to -2mm in the Z direction. Move the placement of the array by 2mm in the Z direction. Our two operations are now done:
+
+![the two operations](http://www.freecadweb.org/wiki/images/5/54/Exercise_path_04.jpg)
+
+* Now all that is left to do is to join these two operations into one. This can be done with a [Path Compound](http://www.freecadweb.org/wiki/index.php?title=Path_Compound) or a [Path Project](http://www.freecadweb.org/wiki/index.php?title=Path_Project). Since we will need nothing more and will be ready to export already, we will use the project. Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c2/Path_Project.png/16px-Path_Project.png) [Project](http://www.freecadweb.org/wiki/index.php?title=Path_Project) button. 
+* Set the **Use Placements** property of the project is to True, because we changed the placement of the arrays, and we want that to be taken into account in the project.
+* In the tree view, drag and drop the two arrays into the project. You can reorder the arrays inside the project if needed, by double-clicking it.
+* The project can now be exported to G-code, by selecting it, choosing menu **File -> Export**, selecting the G-code format, and in the pop-up dialog that will open, selecting a post-procesing script according to your machine.
 
 **Downloads**
 
