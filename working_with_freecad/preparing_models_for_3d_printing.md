@@ -10,15 +10,15 @@ If you have been cautious while modeling, most of the difficulty you might encou
 
 Below, we will assume that the first two criterias are met, and that by now you are able to produce solid objects with correct dimensions. We will now see how to address the third point.
 
-### Exporting to external slicers
+### Exporting to slicers
 
 This is the technique most commonly used for 3D printing. The 3D object is exported to another program (the slicer) which will generate the G-code from the object, by slicing it into thin layers (hence the name), which will reproduce the movements that the 3D printer will do. Since many of those printers are home-built, there are often small differences from one to the other. These programs usually offer advanced configuration possibilities that allow to tailor the output exactly for the particularities of your 3D printer.
 
 Actual 3D printing, however, is a too vast subject for this manual. But we will see how to export and use these slicers to check that the output is correct.
 
-#### Converting objects to meshes
+### Converting objects to meshes
 
-None of the slicers will, at this date, take directly solid geometry as we produce in FreeCAD. So we will need to convert any object we want to 3D print into a [mesh](https://en.wikipedia.org/wiki/Polygon_mesh) firs, that the slicer can use. Fortunately, as much as converting a mesh to a solid is a complicated operation, the contrary, converting a solid to a mesh, is very straightforward. All we need to be careful about, is that it is now that the degradation we mentioned above will occur. We need to check that the degradation stays inside acceptable limits.
+None of the slicers will, at this date, take directly solid geometry as we produce in FreeCAD. So we will need to convert any object we want to 3D print into a [mesh](https://en.wikipedia.org/wiki/Polygon_mesh) first, that the slicer can open. Fortunately, as much as converting a mesh to a solid is a complicated operation, the contrary, converting a solid to a mesh, is very straightforward. All we need to be careful about, is that it is now that the degradation we mentioned above will occur. We need to check that the degradation stays inside acceptable limits.
 
 All the mesh handling, in FreeCAD, is done by another specific workbench, the [Mesh Workbench](http://www.freecadweb.org/wiki/index.php?title=Mesh_Module). This workbench contains, apart from the most important, the tools that convert between Part and Mesh objects, several utilities meant to analyze and repair meshes. Although working with meshes is not the focus of FreeCAD, when working with 3D modeling, you often need to deal with mesh objects, since their use is very widespread among other applications. This workbench allows you to handle them fully in FreeCAD.
 
@@ -40,9 +40,11 @@ All the mesh handling, in FreeCAD, is done by another specific workbench, the [M
 
 In most cases, though, the default values will give a satisfying result.
 
-* We can now export our mesh to a mesh format, such as [STL](https://en.wikipedia.org/wiki/STL_%28file_format%29), which is the most widely used format in 3D printing, by using menu **File -> Export** and choosing the STL file format.
+* We can now export our mesh to a mesh format, such as [STL](https://en.wikipedia.org/wiki/STL_%28file_format%29), which is currently the most widely used format in 3D printing, by using menu **File -> Export** and choosing the STL file format.
 
-#### Using Slic3r
+If you don't own a 3D printer, it is usually very easy to find commercial services that will print and send you the printed objects by mail. Among the famous ones are [Shapeways](http://www.shapeways.com/) and [Sculpteo](http://www.sculpteo.com/), but you will also usually find many others in your own city. In all major cities, you will also nowadays find [Fab labs](https://en.wikipedia.org/wiki/Fab_lab), which are workshops equipped with a range of 3D manufacturing machines, almost always including at least one 3D printer. Fab labs are usually community spaces, that will let you use their machines, for a fee or for free depending on the Fab lab, but also teach you how to use them, and promote other activities around 3D manufacturing.
+
+### Using Slic3r
 
 [Slic3r](http://slic3r.org/) is an application that converts STL objects into G-code that can be sent directly to 3D printers. Like FreeCAD, it is free, open-source and runs on Windows, Mac OS and Linux. Correctly configurating things for 3D printing is a complicated process, where you must have a good knowledge of your 3D printer, so it is not very useful to generate G-code before actually going to print (your G-code file might not work well on another printer), but it is useful for us anyway, to check that our STL file will be printable without problems.
 
@@ -50,7 +52,7 @@ This is our exported STL file opened in Slic3r. By using the **preview** tab, an
 
 ![the lego brick in slic3r](http://www.freecadweb.org/wiki/images/9/9c/Exercise_meshing_03.jpg)
 
-#### Using the Cura addon
+### Using the Cura addon
 
 [Cura](https://ultimaker.com/en/products/cura-software) is another free and open-source slicer application for Windows, Mac and Linux, maintained by the 3D printer maker [Ultimaker](https://ultimaker.com). Some FreeCAD users have created a [Cura Workbench](https://github.com/cblt2l/FreeCAD-CuraEngine-Plugin) that uses cura internally. The Cura Workbench is available from the [FreeCAD addons](https://github.com/FreeCAD/FreeCAD-addons) repository. To use the Cura Workbench, you also need to install Cura itself, which is not included in the workbench.
 
@@ -66,14 +68,6 @@ Once you have installed both Cura and the Cura Workbench, you will be able to us
 ![the cura setup](http://www.freecadweb.org/wiki/images/3/37/Exercise_meshing_05.jpg)
 
 * The generated G-code can also be reimported into FreeCAD (using the slic3r preprocessor) for checking.
-
-#### Sending your models to external 3D printing services
-
-If you don't own a 3D printer, it is usually very easy to find commercial services that will print and send you the printed objects by mail. Among the famous ones are [Shapeways](http://www.shapeways.com/) and [Sculpteo](http://www.sculpteo.com/), but you will also usually find many others in your own city. In all major cities, you will also nowadays find [Fab labs](https://en.wikipedia.org/wiki/Fab_lab), which are workshops equipped with a range of 3D manufacturing machines, almost always including at least one 3D printer. Fab labs are usually community spaces, that will let you use their machines, for a fee or for free depending on the Fab lab, but also teach you how to use them, and promote other activities around 3D manufacturing.
-
-Unless you find a service which directly supports FreeCAD, the best way to deliver your models for 3D printing is to provide them with STL files. It is best to leave the G-code generation to the person who will do the actual print, since it can require some tweaks depending on the printer. If you took care of the three points we mentioned at the beginning of this chapter, you have all chances to get a good printed result.
-
-![3d-printed lego](http://www.freecadweb.org/wiki/images/5/54/3d_printed_lego.jpg)
 
 ### Generating G-code
 
