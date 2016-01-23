@@ -103,6 +103,8 @@ Generating CNC milling paths is another subject that is much too vast to fit in 
 * In the tree view, drag and drop the two arrays into the project. You can reorder the arrays inside the project if needed, by double-clicking it.
 * The project can now be exported to G-code, by selecting it, choosing menu **File -> Export**, selecting the G-code format, and in the pop-up dialog that will open, selecting a post-procesing script according to your machine.
 
+There are many applications available to simulate the real cutting, one of them that is also multi-platform and open-source, like FreeCAD, is [Camotics](http://camotics.org/).
+
 **Downloads**
 
 * The STL file generated in this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/lego.stl
@@ -116,4 +118,4 @@ Generating CNC milling paths is another subject that is much too vast to fit in 
 * Cura: https://ultimaker.com/en/products/cura-software
 * The Cura Workbench: https://github.com/cblt2l/FreeCAD-CuraEngine-Plugin
 * The Path Workbench: http://www.freecadweb.org/wiki/index.php?title=Path_Workbench
-
+* Camotics: http://camotics.org/
