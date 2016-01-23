@@ -24,7 +24,10 @@
   * [Traditional 2D drafting](working_with_freecad/traditional_2d_drafting.md)
   * [Modeling for product design](working_with_freecad/modeling_for_product_design.md)
   * [Preparing models for 3D printing](working_with_freecad/preparing_models_for_3d_printing.md)
-    * [Exporting to external slicers](working_with_freecad/preparing_models_for_3d_printing.md#exporting-to-external-slicers)
+    * [Exporting to slicers](working_with_freecad/preparing_models_for_3d_printing.md#exporting-to-slicers)
+    * [Converting objects to meshes](working_with_freecad/preparing_models_for_3d_printing.md#converting-objects-to-meshes)
+    * [Using Slic3r](working_with_freecad/preparing_models_for_3d_printing.md#using-slicer)
+    * [Using the Cura addon](working_with_freecad/preparing_models_for_3d_printing.md#using-the-cura-addon)
     * [Generating G-code](working_with_freecad/preparing_models_for_3d_printing.md#generating-g-code)
   * Generating 2D drawings
   * BIM modeling
