@@ -29,7 +29,7 @@
     * [Using Slic3r](working_with_freecad/preparing_models_for_3d_printing.md#using-slicer)
     * [Using the Cura addon](working_with_freecad/preparing_models_for_3d_printing.md#using-the-cura-addon)
     * [Generating G-code](working_with_freecad/preparing_models_for_3d_printing.md#generating-g-code)
-  * Generating 2D drawings
+  * [Generating 2D drawings](working_with_freecad/generating_2d_drawings.md)
   * BIM modeling
   * Using spreadsheets
   * Creating FEM analyses
