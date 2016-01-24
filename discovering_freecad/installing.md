@@ -86,10 +86,10 @@ As the FreeCAD project and its community grows quickly, and also because it is e
 2. A [collection of addons](https://github.com/FreeCAD/FreeCAD-addons), most of them additional workbenches, that extend the functionality of FreeCAD for certain tasks. Instructions for installing are given on each separate addon page.
 3. A [collection of macros](https://github.com/FreeCAD/FreeCAD-macros), which are also available [on the FreeCAD wiki](http://www.freecadweb.org/wiki/index.php?title=Macros_recipes) along with documentation about how to use them. The wiki contains many more macros.
 
-If you are using Ubuntu or any of its derivatives, the FreeCAD [PPA](https://launchpad.net/~freecad-maintainers) contains most of these addons. On other platforms, any of the addons, including the Parts library, can easily be installed using an addon-installer macro provided in the addons repository. The following procedure shows how to install the addon-installer (other macros can be installeed the same way)
+If you are using Ubuntu or any of its derivatives, the FreeCAD [PPA](https://launchpad.net/~freecad-maintainers) contains most of these addons. On other platforms, any of the addons, including the Parts library, can easily be installed using an addon-installer macro provided in the addons repository. The following procedure shows how to install the addon-installer (other macros can be installed the same way)
 
 1. Download the addons-installer.FCMacro file from https://github.com/FreeCAD/FreeCAD-addons by clicking it, then right-clicking the "RAW" button, and choosing "Save as".
-2. Copy the macro to your FreeCAD Macros path. You FreeCAD Macros path is indicated at the bottom of the **Execute macro** dialog in FreeCAD:
+2. Copy the macro to your FreeCAD Macros destination path. You FreeCAD Macros destination path is indicated at the bottom of the **Execute macro** dialog in FreeCAD:
 ![the execute macro dialog](http://www.freecadweb.org/wiki/images/1/1e/Macro_installer_01.jpg)
 3. Close and reopen the **Execute macro** dialog, and start the **addons_installer.FCMacro**. The installer will launch, from where you can install, update and uninstall any of the addons:
 
