@@ -1,2 +1,2 @@
 body { text-align: justify; }
-table, ol, .footerlink { text-align: left; }
+table, ol, div + ul { text-align: left; }
