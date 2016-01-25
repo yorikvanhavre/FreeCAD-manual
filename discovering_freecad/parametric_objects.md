@@ -15,7 +15,7 @@ All the intermediary operations (2D shapes, pad, pocket, etc) are still there, a
 Two important things are necessary to know:
 
 1. Recomputation is not always automatic. Heavy operations, that might modify a big portion of your document, and therefore take some time, are not performed automatically. Instead, the object (and all the objects that depend on it) will be marked for recomputation (a small blue icon appears on them in the tree view). You must then press the recompute button to have all the marked objects recomputed.
-2. The dependency tree must always flow in the same direction. Loops are forbidden. You can have object A which depends on object B which depend on object C. But you cannot have object A which depends on object B which depends on object A. That would be a circular dependency. However, you can have many objects that depend on the same object, for example objects B and C both depend on A. Menu [Tools -> Dependency graph][enabling the dependency graph] shows you a dependency diagram like on the image above. It can be useful to detect problems.
+2. The dependency tree must always flow in the same direction. Loops are forbidden. You can have object A which depends on object B which depend on object C. But you cannot have object A which depends on object B which depends on object A. That would be a circular dependency. However, you can have many objects that depend on the same object, for example objects B and C both depend on A. Menu **Tools -> Dependency graph** shows you a dependency diagram like on the image above. It can be useful to detect problems.
 
 Not all objects are parametric in FreeCAD. Often, the geometry that you import from other files won't contain any parameter, and will be simple, non-parametric objects. However, these can often be used as a base, or starting point for newly created parametric objects, depending, of course, on what the parametric object requires and the quality of the imported geometry.
 
@@ -28,5 +28,4 @@ Finally, it is worth noting that custom parametric objects are [easy to program 
 * The properties editor: http://www.freecadweb.org/wiki/index.php?title=Property_editor
 * How to program parametric objects: http://www.freecadweb.org/wiki/index.php?title=Scripted_objects
 * Positioning objects in FreeCAD: http://www.freecadweb.org/wiki/index.php?title=Placement
-
-[enabling the dependency graph]:  http://www.freecadweb.org/wiki/index.php?title=Std_DependencyGraph
+* *Enabling the dependency graph:  http://www.freecadweb.org/wiki/index.php?title=Std_DependencyGraph*
