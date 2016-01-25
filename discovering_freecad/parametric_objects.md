@@ -24,7 +24,7 @@ All objects, however, parametric or not, will have a couple of basic parameters,
 Finally, it is worth noting that custom parametric objects are [easy to program in python](http://www.freecadweb.org/wiki/index.php?title=Scripted_objects).
 
 **Read more**
-
+<div class="footer"></div>
 * The properties editor: http://www.freecadweb.org/wiki/index.php?title=Property_editor
 * How to program parametric objects: http://www.freecadweb.org/wiki/index.php?title=Scripted_objects
 * Positioning objects in FreeCAD: http://www.freecadweb.org/wiki/index.php?title=Placement
