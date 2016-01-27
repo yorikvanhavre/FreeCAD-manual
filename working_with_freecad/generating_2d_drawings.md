@@ -28,6 +28,22 @@ A compound object will be created, that is made of our two base blocks. In the e
 * Select the **A4 Portrait / ISO7200** template. A new tab will open in your FreeCAD window, showing the new page.
 * In the tree view (or in the model tab), select the compound.
 * Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/0/03/Drawing_View.png/16px-Drawing_View.png) [Insert view](http://www.freecadweb.org/wiki/index.php?title=Drawing_View) button.
+* A View object will be created on our page. Give the view the following properties:
+   * X: 123
+   * Y: 172
+   * Scale: 1.5
+   * Rotation: 60
+   * Direction: X: 1, Y: -1, Z:1
+ * We have given an isometric projection to our view (the (1,-1,1) direction), and now we have a nice isometric view of our compound:
+ 
+![the first projection](http://www.freecadweb.org/wiki/images/c/cd/Exercise_drawing_02.jpg)
+
+* Let's repeat the operation with the two remaining blocks. We will set their X and Y values, which indicate the position of the view on the page, in order to show them apart from their "mounted" location, like on the image above. Give each view the following properties:
+   * View of block 03: X: 125.5, Y: 127, Scale: 1.5, Rotation: 60, Direction: (1,-1,1)
+   * View of block 04: X: 123, Y: 94, Scale: 1.5, Rotation: 60, Direction: (1,-1,1)
+ * After that, we obtain the following page:
+ 
+![the four blocks projected](http://www.freecadweb.org/wiki/images/7/79/Exercise_drawing_03.jpg)
 
 **Downloads**
 
