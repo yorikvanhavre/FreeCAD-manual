@@ -39,6 +39,7 @@ Alternatively, some keyboard controls are always available, no matter the naviga
  - the numeric keys, **1 to 6**, for the six standard views, top, front, right, bottom, back and left
  - **O** will set the camara in orthographic mode, 
  - while **P** sets it in perspective mode. 
+ - **CTRL** will allow you to select more than one object or element
 
 These controls are also available from the View menu and some from the View toolbar.
 
