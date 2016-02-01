@@ -15,6 +15,9 @@ In the following exercise, we will see how to create a simple drawing of a chair
 ![the drawing exercise](http://www.freecadweb.org/wiki/images/4/40/Exercise_drawing_01.jpg)
 
 * Load the IkeaChair file from the library. You can choose between the .FCStd version, which will load the full modeling history, or the .step version, which will create only one object, without the history. Since we won't need to model any further now, it is best to choose the .step version, as it will be easier to manipulate.
+
+![the Parts library](http://www.freecadweb.org/wiki/images/6/69/Parts_library.jpg)
+
 * Switch to the [Drawing Workbench](http://www.freecadweb.org/wiki/index.php?title=Drawing_Module)
 * Press the little arrow next to the ![icon](http://www.freecadweb.org/wiki/images/thumb/2/27/Drawing_Landscape_A3.png/16px-Drawing_Landscape_A3.png) [New Drawing Page](http://www.freecadweb.org/wiki/index.php?title=Drawing_Landscape_A3) button.
 * Select the **A4 Portrait / ISO7200** template. A new tab will open in your FreeCAD window, showing the new page.
