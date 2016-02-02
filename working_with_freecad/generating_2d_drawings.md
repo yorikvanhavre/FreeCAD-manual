@@ -28,7 +28,7 @@ In the following exercise, we will see how to create a simple drawing of a chair
    * Y: 150
    * Scale: 0.1
    * Rotation: 270
- * We now have a nice top view (which is the default projection) of our chair:
+* We now have a nice top view (which is the default projection) of our chair:
  
 ![the first projection](http://www.freecadweb.org/wiki/images/c/cd/Exercise_drawing_02.jpg)
 
