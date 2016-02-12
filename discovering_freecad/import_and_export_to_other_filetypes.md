@@ -24,6 +24,7 @@ Some of these file formats have options. These can be configured from menu **Edi
 
 **Read more**
 
+* All file formats supported by FreeCAD: http://www.freecadweb.org/wiki/index.php?title=Import_Export
 * Working with DXF files in FreeCAD: http://www.freecadweb.org/wiki/index.php?title=Draft_DXF
 * Enabling DXF and DWG support: http://www.freecadweb.org/wiki/index.php?title=Dxf_Importer_Install
 * Working with SVG files in FreeCAD: http://www.freecadweb.org/wiki/index.php?title=Draft_SVG
