@@ -42,6 +42,10 @@ Now we need to join these walls together, so they intersect properly. This is no
 
 ![the final wall](http://www.freecadweb.org/wiki/images/7/7b/Exercise_arch_05.jpg)
 
+**Downloads**
+
+* The file produced during this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/house.FCStd
+
 **Read more**
 
 * The Arch Workbench: http://www.freecadweb.org/wiki/index.php?title=Arch_Module
