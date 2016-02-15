@@ -29,7 +29,18 @@ and produce a plan and a section view from it:
 ![the 4 lines](http://www.freecadweb.org/wiki/images/1/15/Exercise_arch_03.jpg)
 
 Notice that we drew always in the same direction (clockwise). This is not necessary, but will ensure that the walls that we will build next all have the same left and right directions. You might also think we could simply have drawn a rectangle here, which is true. But the four lines will allow us to illustrate better how to add one object into another.
-   
+
+* Select the first line, then press the ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a5/Arch_Wall.png/16px-Arch_Wall.png) [Arch Wall](http://www.freecadweb.org/wiki/index.php?title=Arch_Wall) button.
+* Repeat this for the 3 other lines, untilyou have 4 walls.
+* Select the four walls, and set their **Height** property to **3.00m** and their **Alignment** property to **left**. If you didn't draw the lines in the same order as we did above, some of the walls might have their left and right directions flipped, and might need to be set to **right** instead. You will obtain four intersecting walls, on the inside of the baselines:
+
+![the 4 walls](http://www.freecadweb.org/wiki/images/e/e0/Exercise_arch_04.jpg)
+
+Now we need to join these walls together, so they intersect properly. This is not necessary when your walls are drawn in a way that they already connect cleanly, but here we need to, since they are intersecting. In Arch, this is done by electing one of the walls to be the "host", and adding the others to it, as "additions". All arch objects can have any number of additions (objects whose geometry will be added to the host's geometry), and subtractions (objects whose geometry will be subtracted). The additions and subtractions of an object can be managed anytime by double-clicking the object in the tree.
+* Select the four walls with **Ctrl** pressed, the last one being the wall that you chose to become the host
+* Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/d/d2/Arch_Add.png/16px-Arch_Add.png) [Arch Add](http://www.freecadweb.org/wiki/index.php?title=Arch_Add) button. The four walls have now be turned into one:
+
+![the final wall](http://www.freecadweb.org/wiki/images/7/7b/Exercise_arch_05.jpg)
 
 **Read more**
 
