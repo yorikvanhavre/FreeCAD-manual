@@ -44,8 +44,9 @@ Now we need to join these walls together, so they intersect properly. This is no
 
 The individual walls are however still accessible, by expanding the wall in the tree view.
 
-* Let's now place a door. In FreeCAD, doors are considered a special case of windows, so this is done using the ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a4/Arch_Window.png/16px-Arch_Window.png) [Window](http://www.freecadweb.org/wiki/index.php?title=Arch_Window) tool.
+* Let's now place a door. In FreeCAD, doors are considered a special case of windows, so this is done using the [Window](http://www.freecadweb.org/wiki/index.php?title=Arch_Window) tool.
 * Start by selecting the wall. This is not necessary, but a good habit to take. If an object is selected when starting the window tool, you will force the window to be inserted in that object, no matter where you are placing it.
+* Set the [Working Plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane) to **auto** so we are not restricted to the ground plane
 * Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a4/Arch_Window.png/16px-Arch_Window.png) [Window](http://www.freecadweb.org/wiki/index.php?title=Arch_Window) button.
 * In the window creation panel, select the **Simple door** preset, and set its **Width** to 0.9m and its **Height** to 2.1m
 * Make sure the ![icon](http://www.freecadweb.org/wiki/images/thumb/f/f7/Snap_Near.png/16px-Snap_Near.png) [Near snap](http://www.freecadweb.org/wiki/index.php?title=Draft_Near) location is turned on, so we can snap on faces
@@ -60,6 +61,14 @@ The individual walls are however still accessible, by expanding the wall in the 
 * We can now set the precise location by expanding the wall and the window objects in the tree view, and changing the **Placement** property of the base sketch of our door. Set its position to **x = 2m, y = 0, z = 0**. Our window is now exactly where we want it:
 
 ![the final door](http://www.freecadweb.org/wiki/images/a/ab/Exercise_arch_08.jpg)
+
+* Repeat the operation to place a window: Select the wall, press the window tool, select the **Open 2-pane** preset, and place a 1m x 1m window in the same face as the door. Set the placement of the underlying sketch to position **x = 0.6m, y = 0, z = 1.1m**, so the upper line of the window is aligned to the top of the door.
+
+![the window](http://www.freecadweb.org/wiki/images/c/c9/Exercise_arch_09.jpg)
+
+Windows are always built on sketches. It is easy to create custom windows by first creating a sketch on a face, then turning it into a window by selecting it, then pressing the window button. Then, the window creation parameters, that is, which wires of the sketch must be extruded and how much, can be defined by double-clickingthe window in the tree view. Let's now create a slab:
+
+* Set the [Working Plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane) to **XY** plane
 
 **Downloads**
 
