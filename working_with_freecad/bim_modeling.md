@@ -42,6 +42,25 @@ Now we need to join these walls together, so they intersect properly. This is no
 
 ![the final wall](http://www.freecadweb.org/wiki/images/7/7b/Exercise_arch_05.jpg)
 
+The individual walls are however still accessible, by expanding the wall in the tree view.
+
+* Let's now place a door. In FreeCAD, doors are considered a special case of windows, so this is done using the ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a4/Arch_Window.png/16px-Arch_Window.png) [Window](http://www.freecadweb.org/wiki/index.php?title=Arch_Window) tool.
+* Start by selecting the wall. This is not necessary, but a good habit to take. If an object is selected when starting the window tool, you will force the window to be inserted in that object, no matter where you are placing it.
+* Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a4/Arch_Window.png/16px-Arch_Window.png) [Window](http://www.freecadweb.org/wiki/index.php?title=Arch_Window) button.
+* In the window creation panel, select the **Simple door** preset, and set its **Width** to 0.9m and its **Height** to 2.1m
+* Make sure the ![icon](http://www.freecadweb.org/wiki/images/thumb/f/f7/Snap_Near.png/16px-Snap_Near.png) [Near snap](http://www.freecadweb.org/wiki/index.php?title=Draft_Near) location is turned on, so we can snap on faces
+* Place your window roughly on the middle of the front face of the wall:
+
+![Positioning the door](http://www.freecadweb.org/wiki/images/5/5f/Exercise_arch_06.jpg)
+
+* After clicking, our window is placed on the correct face, but not exactly where we want:
+
+![the placed door](http://www.freecadweb.org/wiki/images/8/87/Exercise_arch_07.jpg)
+
+* We can now set the precise location by expanding the wall and the window objects in the tree view, and changing the **Placement** property of the base sketch of our door. Set its position to **x = 2m, y = 0, z = 0**. Our window is now exactly where we want it:
+
+![the final door](http://www.freecadweb.org/wiki/images/a/ab/Exercise_arch_08.jpg)
+
 **Downloads**
 
 * The file produced during this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/house.FCStd
