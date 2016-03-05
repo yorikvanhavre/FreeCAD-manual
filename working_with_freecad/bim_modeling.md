@@ -45,7 +45,7 @@ Now we need to join these walls together, so they intersect properly. This is no
 The individual walls are however still accessible, by expanding the wall in the tree view.
 
 * Let's now place a door. In FreeCAD, doors are considered a special case of windows, so this is done using the [Window](http://www.freecadweb.org/wiki/index.php?title=Arch_Window) tool.
-* Start by selecting the wall. This is not necessary, but a good habit to take. If an object is selected when starting the window tool, you will force the window to be inserted in that object, no matter where you are placing it.
+* Start by selecting the wall. This is not necessary, but a good habit to take. If an object is selected when starting the window tool, you will force the window to be inserted in that object, even if you snap to another object.
 * Set the [Working Plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane) to **auto** so we are not restricted to the ground plane
 * Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a4/Arch_Window.png/16px-Arch_Window.png) [Window](http://www.freecadweb.org/wiki/index.php?title=Arch_Window) button.
 * In the window creation panel, select the **Simple door** preset, and set its **Width** to 0.9m and its **Height** to 2.1m
@@ -69,6 +69,30 @@ The individual walls are however still accessible, by expanding the wall in the 
 Windows are always built on sketches. It is easy to create custom windows by first creating a sketch on a face, then turning it into a window by selecting it, then pressing the window button. Then, the window creation parameters, that is, which wires of the sketch must be extruded and how much, can be defined by double-clickingthe window in the tree view. Let's now create a slab:
 
 * Set the [Working Plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane) to **XY** plane
+* Create a ![icon](http://www.freecadweb.org/wiki/images/thumb/1/14/Draft_Rectangle.png/16px-Draft_Rectangle.png) [rectangle](http://www.freecadweb.org/wiki/index.php?title=Draft_Rectangle) with a **length** of 5m, a height of **4m**, and place it at position x:-0.5m, y:-0.5m, z:0.
+* Select the rectangle
+* Click the ![icon](http://www.freecadweb.org/wiki/images/thumb/3/35/Arch_Structure.png/16px-Arch_Structure.png) [structure](http://www.freecadweb.org/wiki/index.php?title=Arch_Structure) tool to create a slab from the rectangle
+* Set the **height** property of the slab to 0.2m and its **normal** direction to (0,0,-1) because we want it to extrude downwards. We could also simply have moved it 0.2m down, but it is always good practice to keep extruded objects at the same place as their base profile.
+* Set the **Role** property of the slab to **slab**. This is not necessary in FreeCAD, but is important for IFC export, as it will ensure that the object is exported with the correct IFC type.
+
+![the base slab](http://www.freecadweb.org/wiki/images/5/5b/Exercise_arch_10.jpg)
+
+* Let's now use one of the structural presets to make a metallic beam. Click the ![icon](http://www.freecadweb.org/wiki/images/thumb/3/35/Arch_Structure.png/16px-Arch_Structure.png) [structure](http://www.freecadweb.org/wiki/index.php?title=Arch_Structure) button, select a **HEB 180** preset, and set its height to **4m**. Place it anywhere:
+
+![a metallic element](http://www.freecadweb.org/wiki/images/9/9d/Exercise_arch_11.jpg)
+
+* Adjust its **placement** by setting its **rotation** to 90° in the (1,0,0) axis, and its **position** to x:90mm, y:3.5m, z:3.09m. This will position the beam exactly on one of the side walls:
+
+![the positioned beam](http://www.freecadweb.org/wiki/images/f/f7/Exercise_arch_12.jpg)
+
+* We need now to duplicate this beam a couple of times. We could do that one by one using the ![icon](http://www.freecadweb.org/wiki/images/thumb/3/39/Draft_Clone.png/16px-Draft_Clone.png) [clone](http://www.freecadweb.org/wiki/index.php?title=Draft_Clone) tool, but there is a better way, to do all the copies at once using an array:
+* Select the beam
+* Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c8/Draft_Array.png/16px-Draft_Array.png) [Array](http://www.freecadweb.org/wiki/index.php?title=Draft_Array) button
+* Set the **Number X** property of the array to 6, leave the Y and Z numbers to 1
+* Expand the **interval X** property, and press the small  ![icon](http://www.freecadweb.org/wiki/images/thumb/3/38/Bound-expression-unset.png/16px-Bound-expression-unset.png) **expression** icon at the right side of the X field. This will open an [expressions editor](http://www.freecadweb.org/wiki/index.php?title=Expressions) (depending on your operating system, the editor can be located somewhere else than on the image below, such as in the upper left corner of your screen).
+* Write **(4m-180mm)/5** in the expression field, and press **OK**. This will set the x value to 0.764 (4m is the total length of our front wall, 180mm is the width of the beam, which is why it is called HEB180):
+
+![the expression engine](http://www.freecadweb.org/wiki/images/7/74/Exercise_arch_13.jpg)
 
 **Downloads**
 
@@ -79,3 +103,4 @@ Windows are always built on sketches. It is easy to create custom windows by fir
 * The Arch Workbench: http://www.freecadweb.org/wiki/index.php?title=Arch_Module
 * The Draft working plane: http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane
 * The Draft snapping settings: http://www.freecadweb.org/wiki/index.php?title=Draft_Snap
+* The expressions system: http://www.freecadweb.org/wiki/index.php?title=Expressions
