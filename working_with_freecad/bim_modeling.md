@@ -89,10 +89,58 @@ Windows are always built on sketches. It is easy to create custom windows by fir
 * Select the beam
 * Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c8/Draft_Array.png/16px-Draft_Array.png) [Array](http://www.freecadweb.org/wiki/index.php?title=Draft_Array) button
 * Set the **Number X** property of the array to 6, leave the Y and Z numbers to 1
-* Expand the **interval X** property, and press the small  ![icon](http://www.freecadweb.org/wiki/images/thumb/3/38/Bound-expression-unset.png/16px-Bound-expression-unset.png) **expression** icon at the right side of the X field. This will open an [expressions editor](http://www.freecadweb.org/wiki/index.php?title=Expressions) (depending on your operating system, the editor can be located somewhere else than on the image below, such as in the upper left corner of your screen).
-* Write **(4m-180mm)/5** in the expression field, and press **OK**. This will set the x value to 0.764 (4m is the total length of our front wall, 180mm is the width of the beam, which is why it is called HEB180):
+* Expand the **interval X** property, and press the small  ![icon](http://www.freecadweb.org/wiki/images/thumb/3/38/Bound-expression-unset.png/16px-Bound-expression-unset.png) **expression** icon at the right side of the X field. This will open an [expressions editor](http://www.freecadweb.org/wiki/index.php?title=Expressions) (depending on your operating system, the editor can be located somewhere else than on the image below, such as in the upper left corner of your screen):
 
-![the expression engine](http://www.freecadweb.org/wiki/images/7/74/Exercise_arch_13.jpg)
+![the expression engine](http://www.freecadweb.org/wiki/images/7/74/Exercise_arch_13.jpg) 
+
+* Write **(4m-180mm)/5** in the expression field, and press **OK**. This will set the x value to 0.764 (4m is the total length of our front wall, 180mm is the width of the beam, which is why it is called HEB180, and we want a fifth of that space as interval between each beam):
+
+![the beams](http://www.freecadweb.org/wiki/images/6/65/Exercise_arch_14.jpg)
+
+* We can now easily build a simple slab on top of them, by drawing a rectangle directly on the top plane of the beams. Select a top face of one of the beams
+* Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/a/aa/Draft_SelectPlane.png/16px-Draft_SelectPlane.png) [working plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane) button. The working plane is now set to that face.
+* Create a ![icon](http://www.freecadweb.org/wiki/images/thumb/1/14/Draft_Rectangle.png/16px-Draft_Rectangle.png) [rectangle](http://www.freecadweb.org/wiki/index.php?title=Draft_Rectangle), snapping to two opposite points of the border beams:
+
+![the top rectangle](http://www.freecadweb.org/wiki/images/7/78/Exercise_arch_15.jpg) 
+
+* Select the rectangle
+* Click the ![icon](http://www.freecadweb.org/wiki/images/thumb/3/35/Arch_Structure.png/16px-Arch_Structure.png) [structure](http://www.freecadweb.org/wiki/index.php?title=Arch_Structure) button and create a slab with a height of **0.2m**.
+
+That's it, our model is now complete. We should now organize it so it exports correctly to IFC. The IFC format requires that all objects of a building are inside a building object, and optionally, inside a storey. It also requires that all buildings are placed on a site, but the IFC exporter of FreeCAD will add a default site automatically if needed, so we don't need to add one here.
+
+* Select the two slabs, the wall, and the array of beams
+* Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/b/b9/Arch_Floor.png/16px-Arch_Floor.png) [Floor](http://www.freecadweb.org/wiki/index.php?title=Arch_Floor) button
+* Select the floor we just created
+* Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/2/29/Arch_Building.png/16px-Arch_Building.png) [Building](http://www.freecadweb.org/wiki/index.php?title=Arch_Building) button
+
+Our model is now ready to export:
+
+![the organized model](http://www.freecadweb.org/wiki/images/1/17/Exercise_arch_16.jpg)
+
+The [IFC format](https://en.wikipedia.org/wiki/Industry_Foundation_Classes) is one of the most precious assets in a free BIM world, because it allows the exchange of data between any application and actor of the construction world, in an open manner (the format is open, free and maintained by an independent consortium). Exporting your BIM models as IFC ensures that anyone can see and analyze them, no matter the application used.
+
+In FreeCAD, IFC import and export is done by interfacing with another piece of software, called [IfcOpenShell](http://ifcopenshell.org/). To be able to export to IFC from FreeCAD, the [IfcOpenShell-python](http://ifcopenshell.org/python.html) package must be installed on your system. Be sure to select one which uses the same python version as FreeCAD. The python version that FreeCAD uses is informed when opening the **View -> Panels -> Python console** panel in FreeCAD. When that is done, we can now export our model:
+
+* Select the top object you want to export, that is, the Building object.
+* Select menu **File -> Export -> Industry Foundation Classes** and save your file.
+* The resulting IFC file can now be opened ina wide range of applications and viewers (the image below shows the file opened in the free [IfcPlusPlus](http://ifcplusplus.com/) viewer. Checking the exported file in such a viewer application before distributing it to other people is important to check that all the data contained in the file is correct. FreeCAD itself can also be used to re-open the resulting IFC file.
+
+![ifcplusplus](http://www.freecadweb.org/wiki/images/a/a5/Exercise_arch_17.jpg)
+
+We will now place some dimensions. Unlike the [previous chapter](generating_2d_drawings.md), where we drew all the dimensions directly on the Drawing sheet, we will use another method here, and place [Draft dimensions](http://www.freecadweb.org/wiki/index.php?title=Draft_Dimension) directly in the 3D model. These dimensions will then be placed on the Drawing sheet. We will first make two groups for our dimensions, one for the dimensions that will appear in the plan view, and another for those that appear on the elevation.
+
+* Right-click the "house" document in the tree view, and create two new groups: **Plan dimensions** and **Elevation dimensions**.
+* Set the [Working Plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane) to **XY** plane
+* Make sure the ![icon](http://www.freecadweb.org/wiki/images/thumb/9/99/Snap_WorkingPlane.png/16px-Snap_WorkingPlane.png) [restrict](http://www.freecadweb.org/wiki/index.php?title=Draft_WorkingPlane) snap location is turned on, so everything you draw stays on the working plane.
+* Draw a couple of ![icon](http://www.freecadweb.org/wiki/images/thumb/b/b0/Draft_Dimension.png/16px-Draft_Dimension.png) [dimensions](http://www.freecadweb.org/wiki/index.php?title=Draft_Dimension), for example as on the image below. Pressing **Shift** and **Ctrl** while snapping the dimension points will give you additional options.
+
+![the horizontal dimensions](http://www.freecadweb.org/wiki/images/d/d4/Exercise_arch_18.jpg)
+
+* Select all your dimensions, and drag them to the **Plan dimensions** group in the tree view
+* Set the [Working Plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane) to **XZ** plane, that is, the frontal vertical plane.
+* Repeat the operation, draw a couple of dimensions, and place them in the appropriate group.
+
+![the vertical dimensions](http://www.freecadweb.org/wiki/images/2/21/Exercise_arch_19.jpg)
 
 **Downloads**
 
@@ -104,3 +152,6 @@ Windows are always built on sketches. It is easy to create custom windows by fir
 * The Draft working plane: http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane
 * The Draft snapping settings: http://www.freecadweb.org/wiki/index.php?title=Draft_Snap
 * The expressions system: http://www.freecadweb.org/wiki/index.php?title=Expressions
+* The IFC format: https://en.wikipedia.org/wiki/Industry_Foundation_Classes
+* IfcOpenShell: http://ifcopenshell.org/
+* IfcPlusPlus: http://ifcplusplus.com/
