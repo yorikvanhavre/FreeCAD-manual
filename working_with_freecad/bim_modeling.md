@@ -138,9 +138,60 @@ We will now place some dimensions. Unlike the [previous chapter](generating_2d_d
 
 * Select all your dimensions, and drag them to the **Plan dimensions** group in the tree view
 * Set the [Working Plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane) to **XZ** plane, that is, the frontal vertical plane.
-* Repeat the operation, draw a couple of dimensions, and place them in the appropriate group.
+* Repeat the operation, draw a couple of dimensions, and place them in the **Elevation dimensions** group.
 
 ![the vertical dimensions](http://www.freecadweb.org/wiki/images/2/21/Exercise_arch_19.jpg)
+
+We will now prepare a set of views from our model, to be paced on a Drawing page. We can do that with the tools from the Drawing Workbench, as we have seen in the previous chapter, but the Arch Workbench also offers an all-in-one advanced tool to produce plan, section and elevation views, called [Section Plane](http://www.freecadweb.org/wiki/index.php?title=Arch_SectionPlane). We will now add two of these section planes, to create a plan view and an elevation view.
+* Select the building object in the tree view
+* Press the ![icon](http://www.freecadweb.org/wiki/index.php?title=File:Arch_SectionPlane.png) [Section Plane](http://www.freecadweb.org/wiki/index.php?title=Arch_SectionPlane) button.
+* Set its **Display Height** property to 5m, its **Display Length** to 6m, so we encompass our house (this is not needed, but will look better, as it will show naturally what it is used for), and its **Placement** position at x:2m, y:1.5m, z:1.5m.
+* Check the list of objects considered by the Section Plane by double-clicking it in the tree view. Section Planes only render specified objects from the model, not all of them. The objects considered by the Section Plane can be changed here.
+
+![the first section plane](http://www.freecadweb.org/wiki/images/c/c3/Exercise_arch_20.jpg)
+
+* Repeat the operation to create another section plane, give it the same display length and height, and give it the following **Placement**: position: x:2m, y:-2m, z:1.5m, angle: 90°, axis: x:1, y:0, z:0. Make sure this new section plane also considers the building object.
+
+![the two planes](http://www.freecadweb.org/wiki/images/3/33/Exercise_arch_21.jpg)
+
+* Now we have everything we need, and we can create our Drawing page. Start by switching to the [Drawing Workbench](http://www.freecadweb.org/wiki/index.php?title=Drawing_Module), and create a new default ![icon](http://www.freecadweb.org/wiki/images/thumb/2/27/Drawing_Landscape_A3.png/16px-Drawing_Landscape_A3.png) [A3 page](http://www.freecadweb.org/wiki/index.php?title=Drawing_Landscape_A3) (or select another template if you wish).
+* Select the first section plane, used for the plan view
+* Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/f/ff/Drawing_DraftView.png/16px-Drawing_DraftView.png)[Draft View](http://www.freecadweb.org/wiki/index.php?title=Drawing_DraftView) button. This tool offers a couple of additional features over the standard [Drawing View](http://www.freecadweb.org/wiki/index.php?title=Drawing_View) tool, and supports the Section Planes from the Arch Workbench.
+* Give the new view the following properties:
+   * X: 50
+   * Y: 140
+   * Scale: 0.03
+   * Line width: 0.15
+   * Show Cut True
+   * Show Fill: True
+* Select the other section plane, and create a new Draft View, with the followng properties:
+   * X: 250
+   * Y: 150
+   * Scale: 0.03
+   * Rendering: Solid
+
+![the two views](http://www.freecadweb.org/wiki/images/f/f2/Exercise_arch_22.jpg)
+
+We will now create two more Draft Views, one for each group of dimensions.
+
+* Select the Plan dimensions group
+* Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/f/ff/Drawing_DraftView.png/16px-Drawing_DraftView.png)[Draft View](http://www.freecadweb.org/wiki/index.php?title=Drawing_DraftView) button.
+* Give the new view the following properties:
+   * X: 50
+   * Y: 140
+   * Scale: 0.03
+   * Line width: 0.15
+   * Font size: 10mm
+* Repeat the operation for the other group, with the following settings:
+   * X: 250
+   * Y: 150
+   * Scale: 0.03
+   * Line width: 0.15
+   * Font size: 10mm
+   * Direction: 0,-1,0
+   * Rotation: 90°
+
+Our page is now ready, and we can export it to SVG or DXF formats, or print it. The SVG format allows to open the file illustration applications such as [inkscape](http://www.inkscape.org), with which you can quickly enhance technical drawings and turn them into much nicer presentation drawings.
 
 **Downloads**
 
@@ -156,3 +207,4 @@ We will now place some dimensions. Unlike the [previous chapter](generating_2d_d
 * The IFC format: https://en.wikipedia.org/wiki/Industry_Foundation_Classes
 * IfcOpenShell: http://ifcopenshell.org/
 * IfcPlusPlus: http://ifcplusplus.com/
+* Inkscape: http://www.inkscape.org
