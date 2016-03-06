@@ -145,6 +145,7 @@ We will now place some dimensions. Unlike the [previous chapter](generating_2d_d
 **Downloads**
 
 * The file produced during this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/house.FCStd
+* The IFC file exported from the above file: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/house.ifc
 
 **Read more**
 
