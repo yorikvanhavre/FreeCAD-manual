@@ -89,7 +89,7 @@ Windows are always built on sketches. It is easy to create custom windows by fir
 * Select the beam
 * Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c8/Draft_Array.png/16px-Draft_Array.png) [Array](http://www.freecadweb.org/wiki/index.php?title=Draft_Array) button
 * Set the **Number X** property of the array to 6, leave the Y and Z numbers to 1
-* Expand the **interval X** property, and press the small  ![icon](http://www.freecadweb.org/wiki/images/thumb/3/38/Bound-expression-unset.png/16px-Bound-expression-unset.png) **expression** icon at the right side of the X field. This will open an [expressions editor](http://www.freecadweb.org/wiki/index.php?title=Expressions) (depending on your operating system, the editor can be located somewhere else than on the image below, such as in the upper left corner of your screen):
+* Expand the **interval X** property, and press the small  ![icon](http://www.freecadweb.org/wiki/images/thumb/3/38/Bound-expression-unset.png/16px-Bound-expression-unset.png) **expression** icon at the right side of the X field. This will open an [expressions editor](http://www.freecadweb.org/wiki/index.php?title=Expressions):
 
 ![the expression engine](http://www.freecadweb.org/wiki/images/7/74/Exercise_arch_13.jpg) 
 
