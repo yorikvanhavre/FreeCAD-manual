@@ -31,7 +31,7 @@
     * [Generating G-code](working_with_freecad/preparing_models_for_3d_printing.md#generating-g-code)
   * [Generating 2D drawings](working_with_freecad/generating_2d_drawings.md)
   * [BIM modeling](working_with_freecad/bim_modeling.md)
-  * Using spreadsheets
+  * [Using spreadsheets](working_with_freecad/using_spreadsheets.md)
   * Creating FEM analyses
   * Creating renderings
 * Python scripting
