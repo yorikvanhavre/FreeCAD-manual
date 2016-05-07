@@ -32,6 +32,8 @@
   * [Generating 2D drawings](working_with_freecad/generating_2d_drawings.md)
   * [BIM modeling](working_with_freecad/bim_modeling.md)
   * [Using spreadsheets](working_with_freecad/using_spreadsheets.md)
+    * [Reading properties](working_with_freecad/using_spreadsheets.md#reading-properties)
+    * [Writing properties](working_with_freecad/using_spreadsheets.md#writing-properties)
   * Creating FEM analyses
   * Creating renderings
 * Python scripting
