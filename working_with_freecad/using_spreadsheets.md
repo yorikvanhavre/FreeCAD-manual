@@ -34,7 +34,7 @@ In FreeCAD, to these common behaviours, has been added one very interesting: The
 
 ![changing values](http://www.freecadweb.org/wiki/images/8/8b/Exercise_spreadsheet_04.jpg)
 
-The [Spreadsheet Workbench] page will describe more in detail all the possible operations and functions that you can use in spreadsheets.
+The [Spreadsheet Workbench](http://www.freecadweb.org/wiki/index.php?title=Spreadsheet_Module) page will describe more in detail all the possible operations and functions that you can use in spreadsheets.
 
 ### Writing properties
 
@@ -69,6 +69,10 @@ Finally, note that the constraints inside a sketch can also receive the value of
 You can also give aliases to dimensional constraints (horizontal, vertical or distance)  in a sketch (you can then use that value from outside the sketch as well):
 
 ![setting constraint alias](http://www.freecadweb.org/wiki/images/a/a7/Exercise_spreadsheet_09.jpg)
+
+**Download**
+
+* The file produced in this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/spreadsheet.fcstd
 
 **Read more**
 
