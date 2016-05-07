@@ -6,6 +6,8 @@ In FreeCAD, however, spreadsheets have an additional utility: Their cells can re
 
 In the following example, we will create a couple of objects, retrieve some of their properties in a spreadsheet, then use the spreadsheet to directly drive properties of other objects.
 
+### Reading properties
+
 * Start by switching to the [Part Workbench](http://www.freecadweb.org/wiki/index.php?title=Part_Workbench), and create a couple of objects: a ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a5/Part_Box.png/16px-Part_Box.png) [box](http://www.freecadweb.org/wiki/index.php?title=Part_Box), a ![icon](http://www.freecadweb.org/wiki/images/thumb/d/d4/Part_Cylinder.png/16px-Part_Cylinder.png) [cylinder](http://www.freecadweb.org/wiki/index.php?title=Part_Cylinder) and a ![icon](http://www.freecadweb.org/wiki/images/thumb/4/4b/Part_Sphere.png/16px-Part_Sphere.png) [sphere](http://www.freecadweb.org/wiki/index.php?title=Part_Sphere).
 * Edit their **Placement** property (or use the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c5/Draft_Move.png/16px-Draft_Move.png) [Draft Move](http://www.freecadweb.org/wiki/index.php?title=Draft_Move) tool) to place them a little apart, so we can watch better the effects of what we'll do:
 
@@ -19,7 +21,54 @@ In the following example, we will create a couple of objects, retrieve some of t
 
 The spreadsheet editor of FreeCAD, although it is not as complete and powerful as the more complete spreadsheet applications we listed above, has nevertheless most of the basic tools and functions that are commonly used, such as the possibility to change the aspect of the cells (size, color, alignment), join and split cells, use formulas such as **=2+2**, or reference other cells with **=B1**. 
 
-In FreeCAD, to these common behaviours, has been added one very interesting: The possibility to reference not only other cells, but other objects from the document.
+In FreeCAD, to these common behaviours, has been added one very interesting: The possibility to reference not only other cells, but other objects from the document, and retrieve values from their properties. For example, let's retrieve a couple of properties from the 3 objects we created above. Properties are what we can see in the properties editor window, under the **Data** tab, when an object is selected.
+
+* Let's start by entering a couple of texts in the cells A1, A2 amd A3, so we remember what is what later on, for example **Cube Length**, **Cylinder Radius** and **Sphere Radius**. To enter text, just write in the "Contents" filed above the spreadsheet, or double-click a cell.
+* Now let's retrieve the actual length of our cube. In cell B1, type **=Cube.Length**. You will notice that the spreadhseet has an autocompletion mechanism, which is actually the same as the expression editor we used in the previous chapter.
+* Do the same for cell B2 (**=Cylinder.Radius**) and B3 (**=Sphere.Radius**).
+
+![entering expressions](http://www.freecadweb.org/wiki/images/3/3e/Exercise_spreadsheet_03.jpg)
+
+* Although these results are expressed with their units, the values can be manipulated as any number, try for example entering in cell C1: **=B1*2**.
+* We can now change one of these values in the propertties editor, and the change will be immediately reflected in the spreadsheet. For example, let's change the length of our cube to **20mm**:
+
+![changing values](http://www.freecadweb.org/wiki/images/8/8b/Exercise_spreadsheet_04.jpg)
+
+The [Spreadsheet Workbench] page will describe more in detail all the possible operations and functions that you can use in spreadsheets.
+
+### Writing properties
+
+Another very interesting use of the Spreadsheet Workbench in FreeCAD is to do the contrary of what we have been doing until now: Instead of reading the values of properties of 3D objects, we can also assign values to these objects. Remember, however, one of the fundamental rules of FreeCAD: Circular dependencies are forbidden. We can therefore not use the same spreadsheet to read **and** write values to a 3D object. That would make the object depend on the spreadsheet, which would also depend on the object. Instead, we will create another spreadsheet.
+
+* We can now close the spreadsheet tab (under the 3D view). This is not mandatory, there is no problem in keeping several spreadsheet windows open.
+* Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/cb/Spreadsheet_Create.png/16px-Spreadsheet_Create.png) **New Spreadsheet** button again
+* Change the name of the new spreadsheet to something more meaningful, suchas **Input** (do this by right-clicking the new spreadsheet object, and choosing **Rename**).
+* Double-click the Input spreadsheet to open the spreadsheet editor.
+* In cell A1, let's put a descriptive text, for example: "Cube dimensions"
+* In cell B1, write **=5mm** (using the = sign makes sure the value is interpreted as a unit value, not a text).
+* Now to be able to use this value outside the spreadsheet, we need to give a name, or alias, to the B1 cell.  Right-click the cells, click **Properties** and select the **Alias** tab. Give it a name, such as **cubedims**:
+
+![setting alias](http://www.freecadweb.org/wiki/images/0/08/Exercise_spreadsheet_05.jpg)
+
+* Press **OK**, then close the spreadsheet tab
+* Select the cube object
+* In the properties editor, click the little ![icon](http://www.freecadweb.org/wiki/images/thumb/3/38/Bound-expression-unset.png/16px-Bound-expression-unset.png) **expression** icon at the right side of the **Length** field. This will openthen [expressions editor](http://www.freecadweb.org/wiki/index.php?title=Expressions), where you can write **Spreadsheet001.cubedims**. Repeat this for Height and Width:
+
+![using spreadsheet aliases](http://www.freecadweb.org/wiki/images/8/8a/Exercise_spreadsheet_06.jpg)
+
+You might wonder why we had to use "Spreadsheet001" instead of "Input" in the expression above. This is beacause each object, in a FreeCAD document, has an **internal name**, which is unique in the document, and a **label**, which is what appears in the tree view. If you uncheck the appropriate option in the preferences settings, FreeCAD will allow you to give the same label to more than one object. This is why all operations that must identify an object with absolutely no doubt, will use the internal name instead of the label, which could designate more than one object. The easiest way to know the internal name of an object is by keeping the **selection panel** open, it will always indicate the internal name of a selected object:
+
+![checking real names](http://www.freecadweb.org/wiki/images/7/74/Exercise_spreadsheet_07.jpg)
+
+By using cell aliases in spreadsheets, we are able to use a spreadsheet to store "master values" in a FreeCAD document. This can be used, for example, to have a model of a piece of certain dimensions, and to store these dimensions in a spreadsheet. It becomes then very easy to produce another model with different dimensions, it is just a matter of opening the file and changing a couple of dimensions in the spreadsheet.
+
+Finally, note that the constraints inside a sketch can also receive the value of a spreadsheet cell:
+
+![setting constraints](http://www.freecadweb.org/wiki/images/6/63/Exercise_spreadsheet_08.jpg)
+
+You can also give aliases to dimensional constraints (horizontal, vertical or distance)  in a sketch (you can then use that value from outside the sketch as well):
+
+![setting constraint alias](http://www.freecadweb.org/wiki/images/a/a7/Exercise_spreadsheet_09.jpg)
 
 **Read more**
 
