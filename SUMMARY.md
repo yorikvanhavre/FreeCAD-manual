@@ -34,7 +34,7 @@
   * [Using spreadsheets](working_with_freecad/using_spreadsheets.md)
     * [Reading properties](working_with_freecad/using_spreadsheets.md#reading-properties)
     * [Writing properties](working_with_freecad/using_spreadsheets.md#writing-properties)
-  * Creating FEM analyses
+  * [Creating FEM analyses](working_with_freecad/creating_fem_analyses.md)
   * Creating renderings
 * Python scripting
   * A gentle introduction
