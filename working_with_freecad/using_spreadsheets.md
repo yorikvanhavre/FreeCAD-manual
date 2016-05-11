@@ -72,7 +72,7 @@ You can also give aliases to dimensional constraints (horizontal, vertical or di
 
 **Download**
 
-* The file produced in this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/spreadsheet.fcstd
+* The file produced in this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/spreadsheet.FCStd
 
 **Read more**
 
