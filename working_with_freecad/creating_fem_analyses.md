@@ -18,7 +18,7 @@ We will start with the house we modelled in the [BIM modeling](bim_modeling.md) 
 * Delete or hide the page object, the section planes and the dimensions, so we stay only with our model
 * Hide the window, the door and the ground slab
 * Also hide the metal beams from the roof. Since they are very different objects from the rest of the house, we will simplify our calculation by not including it. Instead, we will consider that the roof slab is directly placed on top of the wall.
-* Now move the roof slab dowwn so it rests on top of the wall: Edit the **Rectangle** object that we used as a base of the roof slab, and change it's **Placement->Position->X** value from 3.18m to 3.00m
+* Now move the roof slab down so it rests on top of the wall: Edit the **Rectangle** object that we used as a base of the roof slab, and change it's **Placement->Position->X** value from 3.18m to 3.00m
 * Our model is now clean:
 
 ![the clean model](http://www.freecadweb.org/wiki/images/6/65/Exercise_fem_02.jpg)
