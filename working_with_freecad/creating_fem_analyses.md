@@ -2,7 +2,7 @@
 
 FEM stands for [Finite Element Method](https://en.wikipedia.org/wiki/Finite_element_method). It is a vast mathematical subject, but in FreeCAD we can resume it as a way to calculate propagations inside a 3D object, by cutting it into small pieces, and analyzing the impact of each small piece over its neighbours. This has several uses in the engineering and electomagnetism fields, but we will look here more in depth at one use that is already well developed in FreeCAD, which is simulating deformations in objects which are submitted to forces and weights.
 
-Obtaining such simulation is done in FreeCAD with the [FEM Workbench](http://www.freecadweb.org/wiki/index.php?title=Fem_Workbench). It involves different steps: Preparing the geometry, setting its material, performing the meshing (division into smaller parts, like we did in the "[Preparing objects for 3D printing](preparing_models_for_3d_printing.md)" chapter, and finally calculating the simulation.
+Obtaining such simulation is done in FreeCAD with the [FEM Workbench](http://www.freecadweb.org/wiki/index.php?title=Fem_Workbench). It involves different steps: Preparing the geometry, setting its material, performing the meshing (division into smaller parts, like we did in the [Preparing objects for 3D printing](preparing_models_for_3d_printing.md) chapter, and finally calculating the simulation.
 
 ![fem deformation](http://www.freecadweb.org/wiki/images/4/42/Exercise_fem_01.jpg)
 
@@ -17,8 +17,8 @@ We will start with the house we modelled in the [BIM modeling](bim_modeling.md) 
 * Load the [house model](https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/house.FCStd) we modeled earlier
 * Delete or hide the page object, the section planes and the dimensions, so we stay only with our model
 * Hide the window, the door and the ground slab
-* Also hide the metal beams from the roof. Since they are very different objects from the rest of the house, we will simplify our calculation by not including it.
-* Now let's join the roof slab with the walls. Edit the **Rectangle** object that we used as a base of the roof slab, and change it's **Placement->Position->X** value from 3.18m to 3.00m
+* Also hide the metal beams from the roof. Since they are very different objects from the rest of the house, we will simplify our calculation by not including it. Instead, we will consider that the roof slab is directly placed on top of the wall.
+* Now move the roof slab dowwn so it rests on top of the wall: Edit the **Rectangle** object that we used as a base of the roof slab, and change it's **Placement->Position->X** value from 3.18m to 3.00m
 * Our model is now clean:
 
 ![the clean model](http://www.freecadweb.org/wiki/images/6/65/Exercise_fem_02.jpg)
