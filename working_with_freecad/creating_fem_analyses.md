@@ -50,6 +50,24 @@ We will start with the house we modelled in the [BIM modeling](bim_modeling.md) 
 
 ![fixed constraint](http://www.freecadweb.org/wiki/images/a/a0/Exercise_fem_07.jpg)
 
+* We will now add a load on the top face, that could represente, for example, a massive weight being spread on the roof. For this we will use a pressure constraint. Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/4/42/FEM_PressureConstraint.png/16px-FEM_PressureConstraint.png) [Pressure Constraint](http://www.freecadweb.org/wiki/index.php?title=FEM_PressureConstraint) button.
+* Click the top face of the roof, set the pressure to **10MPa** (the pressure is applied by square millimeter) and click the OK button. Our force is now applied:
+
+![pressure](http://www.freecadweb.org/wiki/images/a/a2/Exercise_fem_08.jpg)
+
+* We are now ready to start the calculation. Select the **CalculiX** object in the tree view, and press the ![icon](http://www.freecadweb.org/wiki/images/thumb/4/4a/FEM_Calculation.png/16px-FEM_Calculation.png) [Start Calculation](http://www.freecadweb.org/wiki/index.php?title=FEM_Calculation) button.
+* In the task panel that will open, click first the **Write .inp file** button to create the input file for CalculiX, then the **Run CalculiX** button. A few moments later, the calculation will be done:
+
+![calculix](http://www.freecadweb.org/wiki/images/c/c2/Exercise_fem_09.jpg)
+
+* We can now look at the results. Close the task panel, and see that a new **Results** object has been added to our analysis.
+* Double-click the Results object
+* Set the type of result that you want to see on the mesh, for example "absolute displacement", tick the **show** checkbox under **Displacement**, and move the slider next to it. You will be able to see the deformation growing as you apply more force:
+
+![the results](http://www.freecadweb.org/wiki/images/5/53/Exercise_fem_10.jpg)
+
+The results displayed by the FEM workbench are of course currently not enough to perform real-life decisions about structures dimensionning and materials. However, they can already give precious information about how the forces flow through a structure, and which are the weak areas that will bear the more stress.
+
 **Read more**
 
 * The FEM Workbench: http://www.freecadweb.org/wiki/index.php?title=Fem_Workbench
