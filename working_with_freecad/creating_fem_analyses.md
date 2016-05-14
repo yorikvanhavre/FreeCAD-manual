@@ -68,6 +68,10 @@ We will start with the house we modelled in the [BIM modeling](bim_modeling.md) 
 
 The results displayed by the FEM workbench are of course currently not enough to perform real-life decisions about structures dimensionning and materials. However, they can already give precious information about how the forces flow through a structure, and which are the weak areas that will bear the more stress.
 
+**Downloads**
+
+* The file created during this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/fem.FCStd
+
 **Read more**
 
 * The FEM Workbench: http://www.freecadweb.org/wiki/index.php?title=Fem_Workbench
