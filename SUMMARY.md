@@ -36,8 +36,8 @@
     * [Writing properties](working_with_freecad/using_spreadsheets.md#writing-properties)
   * [Creating FEM analyses](working_with_freecad/creating_fem_analyses.md)
   * [Creating renderings](working_with_freecad/creating_renderings.md)
-* Python scripting
-  * A gentle introduction
+* [Python scripting](python_scripting/README.md)
+  * [A gentle introduction](python_scripting/a_gentle_introduction.md)
   * Creating and manipulating geometry
   * Creating parametric objects
   * Creating interface tools
