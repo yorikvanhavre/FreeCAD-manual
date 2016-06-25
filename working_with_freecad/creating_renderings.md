@@ -63,6 +63,7 @@ You can extend greatly the render possibilities of FreeCAD by creating new templ
 **Downloads**
 
 * The table model: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/table.FCStd
+* The file produced during this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/render.FCStd
 
 **Read more**
 
@@ -70,4 +71,3 @@ You can extend greatly the render possibilities of FreeCAD by creating new templ
 * Blender: http://www.blender.org
 * POV-Ray: http://www.povray.org
 * Luxrender: http://www.luxrender.net
-* 
