@@ -62,7 +62,15 @@ This will print the current height of our box. Now let's try to change that:
 
 `box.Height = 5`
 
-If you select your box with the mouse, you will see that in the properties panel, under the **Data** tab, our **Height** property appears with the new value. All properties of a FreeCAD object that appear in the **Data** and **View** tabs are directly accessible by python too, by their names, like we did with the Height property. Try changing the other dimensions of that box.
+If you select your box with the mouse, you will see that in the properties panel, under the **Data** tab, our **Height** property appears with the new value. All properties of a FreeCAD object that appear in the **Data** and **View** tabs are directly accessible by python too, by their names, like we did with the Height property. Data properties are accessed directly from the object itself, for example:
+
+`box.Length`
+
+View properties are stored inside a **ViewObject**. Each FreeCAd object possesses a ViewObject, which stores the vieual properties of the object. When running FreeCAD without its Graphical Interface (for example when launching it from a terminal with the -c command line option, or using it from another Python script), the ViewObject is not available, since there is no visual at all.
+
+For example, to access the line color of our box:
+
+`box.ViewObject.LineColor`
 
 ### Vectors and Placements
 
@@ -87,9 +95,6 @@ otherpla = FreeCAD.Placement()
 otherpla.Base = FreeCAD.Vector(5,5,0)
 box.Placement = otherpla
 ```
-
-Now you must understand a couple of important concepts before we get further. 
-
 
 
 **Read more**
