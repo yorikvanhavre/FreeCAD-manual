@@ -16,9 +16,11 @@ In this chapter, we will discover very generally the Python language. If you are
 
 There are two easy ways to write python code in FreeCAD: From the python console, or from the Macro editor (Tools -> Macros). In the console, you write python commands one by one, which are executed when you press return, while the macros can contain a more complex script made of several lines, which is executed only when the macro is launched from the Macros window.
 
-In this chapter, you will be able to use both methods, either by copying/pasting each line one by one in the python console and pressing Return after each line, or by copying/pasting the entire code in a new Macro window. 
+In this chapter, you will be able to use both methods, either by copying/pasting each line one by one in the python console and pressing Return after each line, or by copying/pasting the entire code in a new Macro window.
 
-### Exploring FreeCAD
+If this is the first time you are doing Python coding, consider reading this short [introduction to Python programming](http://www.freecadweb.org/wiki/index.php?title=Introduction_to_Python) before going further, it will make the basic concepts of Python clearer.
+
+### Manipulating FreeCAD objects
 
 Let's start by creating a new empty document:
 
@@ -61,6 +63,34 @@ This will print the current height of our box. Now let's try to change that:
 `box.Height = 5`
 
 If you select your box with the mouse, you will see that in the properties panel, under the **Data** tab, our **Height** property appears with the new value. All properties of a FreeCAD object that appear in the **Data** and **View** tabs are directly accessible by python too, by their names, like we did with the Height property. Try changing the other dimensions of that box.
+
+### Vectors and Placements
+
+Vectors are a very fundamental concept in any 3D application. It is a list of 3 numbers (x, y and z), describing a point or position in the 3D space. A lot of things can be done with vectors, such as additions, subtractions, projections and much more. In FreeCAD vectors work like this:
+
+```
+myvec = FreeCAD.Vector(2,0,0)
+print(myvec)
+prnimarkdownt(myvec.x)
+print(myvec.y)
+othervec = FreeCAD.Vector(0,3,0)
+sumvec = myvec.add(othervec)
+```
+
+Another common feature of FreeCAD objects is their **Placement**. As we saw in earlier chapters, each object has a Placement property, which contains the position (Base) and orientation (Rotation) of the object. It is easy to manipulate from Python, for example to move our object:
+
+```
+print(box.Placement)
+print(box.Placement.Base)
+box.Placement.Base = sumvec
+otherpla = FreeCAD.Placement()
+otherpla.Base = FreeCAD.Vector(5,5,0)
+box.Placement = otherpla
+```
+
+Now you must understand a couple of important concepts before we get further. 
+
+
 
 **Read more**
 
