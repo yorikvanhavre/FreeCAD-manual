@@ -38,6 +38,9 @@
   * [Creating renderings](working_with_freecad/creating_renderings.md)
 * [Python scripting](python_scripting/README.md)
   * [A gentle introduction](python_scripting/a_gentle_introduction.md)
+    * [Writing Python code](python_scripting/a_gentle_introduction.md#writing-python-code)
+    * [Manipulating FreeCAD objects](python_scripting/a_gentle_introduction.md#manipulating-freecad-objects)
+    * [Vectors and Placements](python_scripting/a_gentle_introduction.md#vectors-and-placements)
   * Creating and manipulating geometry
   * Creating parametric objects
   * Creating interface tools
