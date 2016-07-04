@@ -14,9 +14,9 @@ In this chapter, we will discover very generally the Python language. If you are
 
 ### Writing python code
 
-There are two easy ways to write python code in FreeCAD: From the python console, or from the Macro editor (Tools -> Macros). In the console, you write python commands one by one, which are executed when you press return, while the macros can contain a more complex script made of several lines, which is executed only when the macro is launched from the Macros window.
+There are two easy ways to write python code in FreeCAD: From the python console (menu **View -> Panels -> Python Console**), or from the Macro editor (menu **Tools -> Macros -> New**). In the console, you write python commands one by one, which are executed when you press return, while the macros can contain a more complex script made of several lines, which is executed only when the macro is launched from the same Macros window.
 
-In this chapter, you will be able to use both methods, either by copying/pasting each line one by one in the python console and pressing Return after each line, or by copying/pasting the entire code in a new Macro window.
+In this chapter, you will be able to use both methods, but it is highly recommended to use the Python Console, since it will immediately inform you of any error you could do while typing.
 
 If this is the first time you are doing Python coding, consider reading this short [introduction to Python programming](http://www.freecadweb.org/wiki/index.php?title=Introduction_to_Python) before going further, it will make the basic concepts of Python clearer.
 
@@ -95,7 +95,6 @@ otherpla = FreeCAD.Placement()
 otherpla.Base = FreeCAD.Vector(5,5,0)
 box.Placement = otherpla
 ```
-
 
 **Read more**
 
