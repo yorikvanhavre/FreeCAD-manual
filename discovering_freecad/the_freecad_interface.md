@@ -39,9 +39,9 @@ Let's have a better look at the different parts of the interface:
 * **The report view** is normally hidden, but it is a good idea to leave open as it will list any information, warnings or errors to help you decipher (or debug) what you may have done wrong.
 * **The Python console** is also hidden by default. This is where you can interact with the contents of the document using the [Python language](https://en.wikipedia.org/wiki/Python_%28programming_language%29). Since every action you do on the FreeCAD interface actually executes a piece of Python code, having this open allows you to watch the code unfold in real time—allowing you a wonderful and easy way to learn a little Python on the way, almost without noticing it.
 
-Any of the panels above can be turned on/off from menu **View -> Panels**.
-
 ![FreeCAD interface screenshot 05](http://www.freecadweb.org/wiki/images/4/4f/Freecad-interface-07.jpg)
+
+Any of the panels above can be turned on/off from menu **View -> Panels**.
 
 ### Customizing the interface
 
