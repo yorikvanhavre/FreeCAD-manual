@@ -128,7 +128,7 @@ E2 = L2.toShape()
 ...
 ```
 
-Once we have a series of Edges, we can now form a Wire, by giving it a list of Edges. We don't need to take care of the order. [OpenCasCade](http://opencascade.org/), the geometry "engine" of FreeCAD, is extraordinarily tolerant to unordered geometry. It will sort out what to do:
+Once we have a series of Edges, we can now form a Wire, by giving it a list of Edges. We don't need to take care of the order. [OpenCasCade](https://en.wikipedia.org/wiki/Open_Cascade_Technology), the geometry "engine" of FreeCAD, is extraordinarily tolerant to unordered geometry. It will sort out what to do:
 
 `W = Part.Wire([E1,E2,E3,E4])`
 
