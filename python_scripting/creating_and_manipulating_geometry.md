@@ -12,7 +12,7 @@ Take a minute to explore the contents of the Part module, by typing `Part.` and 
 
 `Part.makeBox(3,5,7)`
 
-When you press Enter after typing the line above, nothing will appear in the 3D view, but something like this will be printed on the PYthon Console:
+When you press Enter after typing the line above, nothing will appear in the 3D view, but something like this will be printed on the Python Console:
 
 `<Solid object at 0x5f43600>`
 
