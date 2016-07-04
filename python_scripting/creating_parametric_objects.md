@@ -48,6 +48,7 @@ class ParametricRectangle:
     # (in a macro, for example) where the FreeCAD module has not been imported automatically
     import Part,FreeCAD
     # first we need to make sure the values of Length and Width are not 0
+    # otherwise the Part.Line will complain thatboth points are equal
     if (obj.Length == 0) or (obj.Width == 0):
       # if yes, exit this method without doing anything
       return
