@@ -41,7 +41,7 @@ Let's have a better look at the different parts of the interface:
 
 ![FreeCAD interface screenshot 05](http://www.freecadweb.org/wiki/images/4/4f/Freecad-interface-07.jpg)
 
-Any of the panels above can be turned on/off from menu **View -> Panels**.
+Any of the panels above can be turned on/off from menu View -> Panels.
 
 ### Customizing the interface
 
