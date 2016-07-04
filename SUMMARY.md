@@ -41,7 +41,7 @@
     * [Writing Python code](python_scripting/a_gentle_introduction.md#writing-python-code)
     * [Manipulating FreeCAD objects](python_scripting/a_gentle_introduction.md#manipulating-freecad-objects)
     * [Vectors and Placements](python_scripting/a_gentle_introduction.md#vectors-and-placements)
-  * Creating and manipulating geometry
+  * [Creating and manipulating geometry](python_scripting/creating_and_manipulating_geometry.md)
   * Creating parametric objects
   * Creating interface tools
 * The community
