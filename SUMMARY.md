@@ -43,5 +43,5 @@
     * [Vectors and Placements](python_scripting/a_gentle_introduction.md#vectors-and-placements)
   * [Creating and manipulating geometry](python_scripting/creating_and_manipulating_geometry.md)
   * [Creating parametric objects](python_scripting/creating_parametric_objects.md)
-  * Creating interface tools
+  * [Creating interface tools](python_scripting/creating_interface_tools.md)
 * The community
