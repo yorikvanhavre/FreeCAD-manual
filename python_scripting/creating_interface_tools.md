@@ -33,15 +33,81 @@ Let's start by creating the widget. Start Qt Creator, then menu **File -> New Fi
 
 ![other labels](http://www.freecadweb.org/wiki/images/c/cf/Exercise_python_08.jpg)
 
-* Now place 3 **Double Spin Box** widgets next to our Length, Width and Height labels. For each of them, in the lower left panel, which shows all the available settings for the selected widget, locate **Suffix** and set their suffix to **mm**:
+* Now place 3 **Double Spin Box** widgets next to our Length, Width and Height labels. For each of them, in the lower left panel, which shows all the available settings for the selected widget, locate **Suffix** and set their suffix to **mm**. FreeCAD has a more advanced widget, that can handle different units, but that is not available in Qt Creator by default (but can be [compiled](http://www.freecadweb.org/wiki/index.php?title=CompileOnUnix#Qt_designer_plugin)), so for now we will use a standard Double Spin Box, and we add the "mm" suffix to make sure the user knows in which units they work:
 
 ![the spin boxes](http://www.freecadweb.org/wiki/images/a/aa/Exercise_python_09.jpg)
 
-* FreeCAD has a more advanced widget, that can handle different units, but that is not available in Qt Creator by default (but can be compiled)
+* Now our widget is done, we just need to make sure of one last thing. Since FreeCAD will need to access that widget and read the Length, Width and Height values, we need to give proper names to those widgets, so we can easily retrive them from within FreeCAD. Click each of the Double Spin Boxes, and in the upper right window, double-click their Object Name, and change them to something easy to remember, for example: BoxLength, BoxWidth and BoxHeight:
 
+![editing widget names](http://www.freecadweb.org/wiki/images/2/2c/Exercise_python_10.jpg)
 
+* Save the file, you can now close Qt Creator, the rest will be done in Python.
+* Open FreeCAD and create a new macro from menu **Macro -> Macros -> Create**
+* Paste the following code. Make sure you change the file path to match where you saved the .ui file created in QtCreator:
+
+```
+import FreeCAD,FreeCADGui,Part
+
+# CHANGE THE LINE BELOW
+path_to_ui = "C:\Users\yorik\Documents\dialog.ui"
+
+class BoxTaskPanel:
+    def __init__(self):
+        # this will create a Qt widget from our ui file
+        self.form = FreeCADGui.PySideUic.loadUi(path_to_ui)
+
+    def accept(self):
+        length = self.form.BoxLength.value()
+        width = self.form.BoxWidth.value()
+        height = self.form.BoxHeight.value()
+        if (length == 0) or (width == 0) or (height == 0):
+            print("Error! None of the values can be 0!")
+            # we bail out without doing anything
+            return
+        box = Part.makeBox(length,width,height)
+        Part.show(box)
+        FreeCADGui.Control.closeDialog()
+        
+panel = BoxTaskPanel()
+FreeCADGui.Control.showDialog(panel)
+```
+
+In the code above, we used a convenience function (PySideUic.loadUi) from the FreeCADGui module. That function loads a .ui file, creates a Qt Widget from it, and maps names, so we can easily access the subwidget by their names (ex: self.form.BoxLength).
+
+The "accept" function is also a convenience offered by Qt. When there is a "OK" button in a dialog (which is the case by default when using the FreeCAD Tasks panel), any funcion named "accept" will automatically be executed when the "OK" button is pressed. Similarily, you can also add a "reject" function which gets executed when the "Cancel" button is pressed. In our case, we ommitted that function, so pressing "Cancel" will do the default behaviour (do nothing and close the dialog).
+
+If we implement any of the accept or reject functions, their default behaviour (do nothing and close) will not occur anymore. So we need to close the Task panel ourselves. This is done with:
+
+`FreeCADGui.Control.closeDialog()`
+
+Once we have our BoxTaskPanel that has 1) a widget called "self.form" and 2) if needed, accept and reject functions, we can open the task panel with it, which is done with these two last lines:
+
+```
+panel = BoxTaskPanel()
+FreeCADGui.Control.showDialog(panel)
+```
+
+Note that the widget created by PySideUic.loadUi is not specific to FreeCAD, it is a standard Qt widget which can be used with other Qt tools. For example, we could have shown a separate dialog box with it. Try this in the Python Console of FreeCAD (using the correct path to your .ui file of course):
+
+```
+from PySide import QtGui
+w = FreeCADGui.PySideUic.loadUi("C:\Users\yorik\Documents\dialog.ui")
+w.show()
+```
+
+Of course we didn't add any "OK" or "Cancel" button to our dialog, since it was made to be used from the FreeCAD Task panel, which already provides such buttons. So there is no way to close the dialog (other than pressing its Window Close button). But the function show() creates a non-modal dialog, which means it doesn't block the rest of the interface. So, while our dialog is still open, we can read the values of the fields:
+
+`w.BoxHeight.value()`
+
+This is very useful for testing.
+
+Finally, don't forget there is much more documentation about using Qt widgets on the FreeCAD Wiki, in the [Python Scripting](http://www.freecadweb.org/wiki/index.php?title=Power_users_hub) section, which contains a [dialog creation tutorial](http://www.freecadweb.org/wiki/index.php?title=Dialog_creation), a special 3-part [PySide tutorial](http://www.freecadweb.org/wiki/index.php?title=PySide) that covers the subject extensively.
 
 **Read more**
 
 * Qt Creator: https://en.wikipedia.org/wiki/Qt_Creator
 * Installing Qt Creator: https://www.qt.io/ide/
+* Python scripting documentation: http://www.freecadweb.org/wiki/index.php?title=Power_users_hub
+* Dialog creation tutorial: http://www.freecadweb.org/wiki/index.php?title=Dialog_creation
+* PySide tutorials: http://www.freecadweb.org/wiki/index.php?title=PySide
+* PySide documentation: http://srinikom.github.io/pyside-docs/index.html
