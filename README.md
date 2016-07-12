@@ -10,4 +10,6 @@ FreeCAD is also fundamentally a social project, as it is developed and maintaine
 
 This manual is an experiment at taking the opposite way from the [official FreeCAD documentation wiki](http://www.freecadweb.org/wiki). The wiki is written collaboratively by dozens of community members and, like most wikis, it contains huge amounts of information, but is very hard to access and navigate by newcomers. This turns it a precious resource for reference, but not a very practical tool to learn FreeCAD. This manual will walk you through the same information available on the wiki. However, we hope that the more step-by-step pace, based on examples, and the more unified tone given by a smaller number of authors, will make it more suitable for a first contact with FreeCAD, and that it will become a perfect companion for the wiki.
 
+This manual has been written for the current stable version of FreeCAD which is version **0.16**.
+
 All the contents of this manual are published under the [Creative Commons 4.0](http://creativecommons.org/licenses/by/4.0/) license, and can be freely used, downloaded, copied, and modified. The source files of this manual are hosted on [github](https://github.com/yorikvanhavre/FreeCAD-manual).
