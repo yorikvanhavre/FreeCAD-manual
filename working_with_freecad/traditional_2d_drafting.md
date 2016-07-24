@@ -50,7 +50,7 @@ To showcase the working and possibilities of the Draft Workbench, we will walk t
 
 ![Window lines](http://www.freecadweb.org/wiki/images/d/de/Exercise_cabin_06.jpg)
 
-* We will now change the door line to create an opened door symbol. Start by rotating the line using the ![icon](http://www.freecadweb.org/wiki/images/thumb/5/5a/Draft_Rotate.png/16px-Draft_Rotate.png) [Rotate](http://www.freecadweb.org/wiki/index.php?title=File:Draft_Rotate.png) tool. Click the enpoint of the line as rotation center, give it a start angle of **0**, and an end angle of **-90**.
+* We will now change the door line to create an opened door symbol. Start by rotating the line using the ![icon](http://www.freecadweb.org/wiki/images/thumb/5/5a/Draft_Rotate.png/16px-Draft_Rotate.png) [Rotate](http://www.freecadweb.org/wiki/index.php?title=Draft_Rotate) tool. Click the enpoint of the line as rotation center, give it a start angle of **0**, and an end angle of **-90**.
 * Then create the opening arc with the ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a8/Draft_Arc.png/16px-Draft_Arc.png) [Arc](http://www.freecadweb.org/wiki/index.php?title=Draft_Arc) tool. Pick the same point as the rotation center we used in the previous step as center, click the other point of the line to give the radius, then the start and end points as follow:
 
 ![the door arc](http://www.freecadweb.org/wiki/images/b/bc/Exercise_cabin_07.jpg)
