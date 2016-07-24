@@ -144,7 +144,7 @@ We will now place some dimensions. Unlike the [previous chapter](generating_2d_d
 
 We will now prepare a set of views from our model, to be paced on a Drawing page. We can do that with the tools from the Drawing Workbench, as we have seen in the previous chapter, but the Arch Workbench also offers an all-in-one advanced tool to produce plan, section and elevation views, called [Section Plane](http://www.freecadweb.org/wiki/index.php?title=Arch_SectionPlane). We will now add two of these section planes, to create a plan view and an elevation view.
 * Select the building object in the tree view
-* Press the ![icon](http://www.freecadweb.org/wiki/index.php?title=File:Arch_SectionPlane.png) [Section Plane](http://www.freecadweb.org/wiki/index.php?title=Arch_SectionPlane) button.
+* Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/a/ab/Arch_SectionPlane.png/16px-Arch_SectionPlane.png) [Section Plane](http://www.freecadweb.org/wiki/index.php?title=Arch_SectionPlane) button.
 * Set its **Display Height** property to 5m, its **Display Length** to 6m, so we encompass our house (this is not needed, but will look better, as it will show naturally what it is used for), and its **Placement** position at x:2m, y:1.5m, z:1.5m.
 * Check the list of objects considered by the Section Plane by double-clicking it in the tree view. Section Planes only render specified objects from the model, not all of them. The objects considered by the Section Plane can be changed here.
 
