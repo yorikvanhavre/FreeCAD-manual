@@ -82,12 +82,12 @@ You will notice that only edges from the the base face can be added by this tool
 * Notice that, as earlier with the pocket, since we used the top face of our base block as a base for this latest sketch, any PartDesign operation we do with this sketch will correctly be built on top of the base shape: The two dots are not independent objects, they have been extruded directly from our brick. This is the great advantage of working with the Part Design Workbench, as long as you take care of always building one step on top of the previous one, you are actually building one final solid object.
 * We can now duplicate our two dots four times, so we get eight. Select the latest Pad we just created.
 * Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/9/98/PartDesign_LinearPattern.png/16px-PartDesign_LinearPattern.png) [Linear Pattern](http://www.freecadweb.org/wiki/index.php?title=PartDesign_LinearPattern) button.
-* Give it a length of 36mm (which is the total "span" we want our copies to fit in), in the "horizontal sketch axis" direction, and make it 4 occurencs:
+* Give it a length of 36mm (which is the total "span" we want our copies to fit in), in the "horizontal sketch axis" direction, and make it 4 occurences:
 
 ![the arrayed pad](http://www.freecadweb.org/wiki/images/d/d3/Exercise_lego_11.jpg)
 
 * Once again, see that this is not just a duplication of an object, it is a *feature* of our shape that has been duplicated, the final object is still only one solid object.
-* Now let's work on the three "tubes" that fill the void we created on the bottom face. We have several possibilities: create a sketch with three circes, pad it then pocket it three times, or create a base sketch with one circle inside the other and pad it to form the complete tube already, or even other combinations. Like always in FreeCAD, there are many ways to do achieve a same result. Sometimes one way will not work the way we want, and we must try other ways. Here, we will take the safest approach, and do things one step at a time.
+* Now let's work on the three "tubes" that fill the void we created on the bottom face. We have several possibilities: create a sketch with three circles, pad it then pocket it three times, or create a base sketch with one circle inside the other and pad it to form the complete tube already, or even other combinations. Like always in FreeCAD, there are many ways to do achieve a same result. Sometimes one way will not work the way we want, and we must try other ways. Here, we will take the safest approach, and do things one step at a time.
 * Select the face that is at the bottom of the hollow space we carved earlier inside the block.
 * Create a new sketch, add a circle with a radius of 4.8825mm, import the left border of the face, and constrain it vertically and horizontally at 10.2mm from the upper corner of the face:
 
