@@ -93,7 +93,7 @@ Now that our five pieces are complete, it is a good time to give them more prope
 
 **The internal structure of Part objects**
 
-As we saw above, it is possible in FreeCAD to select not only whole objects, but parts fo them, such as the circular border of our screw hole. This is a good time to have a quick look at how Part objects are constructed internally. Every workbench that produces Part geometry will be based on these:
+As we saw above, it is possible in FreeCAD to select not only whole objects, but parts for them, such as the circular border of our screw hole. This is a good time to have a quick look at how Part objects are constructed internally. Every workbench that produces Part geometry will be based on these:
 
 * **Vertices**: These are points (usually endpoints) on which all the rest is built. For example, a line has two vertices.
 * **Edges**: the edges are linear geometry like lines, arcs, ellipses or [NURBS](https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline) curves. They usually have two vertices, but some special cases have only one (a closed circle for example).
