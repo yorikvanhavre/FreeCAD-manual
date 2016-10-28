@@ -1,6 +1,6 @@
 ## Installing
 
-FreeCAD uses the [LGPL](https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License) license, which makes you free to download, install, redistribute and use FreeCAD the way you want, regardless of the type of work you'll do with it (commercial or non-commercial). You are not bound to any clause or restriction, and the files you produce with it are fully yours. The only thing that the license prohibits, really, is to claim that you programmed FreeCAD yourself!
+FreeCAD uses the [LGPL](https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License) license, which means you are free to download, install, redistribute and use FreeCAD the way you want, regardless of the type of work you'll do with it (commercial or non-commercial). You are not bound to any clause or restriction, and the files you produce with it are fully yours. The only thing that the license prohibits, really, is to claim that you programmed FreeCAD yourself!
 
 FreeCAD runs without any difference on Windows, Mac OS and Linux. However, the ways to install it differ slightly depending on your platform. On Windows and Mac, the FreeCAD community provides precompiled packages (installers) ready to download, while on Linux, the source code is made available to Linux distributions maintainers, who are then responsible for packaging FreeCAD for their specific distribution. As a result, on Linux, you can usually install FreeCAD right from the software manager application.
 
