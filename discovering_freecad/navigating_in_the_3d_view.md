@@ -16,8 +16,7 @@ You can look at that scene from any angle, like if you were holding a camera. Th
 
 ### The FreeCAD 3D view
 
-Navigating in the FreeCAD 3D view can be done with a mouse, a Space Navigator device, the keyboard, a touchpad, or a combination of those. FreeCAD proposes several 
-[navigation modes](http://www.freecadweb.org/wiki/index.php?title=Mouse_Model), which determine how the three basic view manipulation operations (pan, rotate and zoom) are done, as well as how to select objects on the screen are performed. Navigation modes are accessed from the Preferences screen, or directly by right-clicking anywhere on the 3D view:
+Navigating in the FreeCAD 3D view can be done with a mouse, a Space Navigator device, the keyboard, a touchpad, or a combination of those. FreeCAD can use several [navigation modes](http://www.freecadweb.org/wiki/index.php?title=Mouse_Model), which determine how the three basic view manipulation operations (pan, rotate and zoom) are done, as well as how to select objects on the screen. Navigation modes are accessed from the Preferences screen, or directly by right-clicking anywhere on the 3D view:
 
 ![Accessing navigation modes](http://www.freecadweb.org/wiki/images/2/2e/Freecad-interface-05.jpg)
 
@@ -34,18 +33,21 @@ Each of these modes attributes different mouse buttons, or mouse + keyboard comb
 Alternatively, some keyboard controls are always available, no matter the navigation mode: 
 
  - **CTRL +** and **CTRL -** to zoom in and zoom out 
- - The **arrow keys** to shift the view left/right and up/down 
- - **SHIFT + left arrow** and **SHIFT + right arrow** to rotate the view by 90 degrees 
+ - The **arrow keys** to shift (pan) the view left/right and up/down 
+ 
+ [comment]: # (- **SHIFT + left arrow** and **SHIFT + right arrow** to rotate the view by 90 degrees )
  - the numeric keys, **1 to 6**, for the six standard views, top, front, right, bottom, back and left
+ 
  - **O** will set the camara in orthographic mode, 
  - while **P** sets it in perspective mode. 
+ 
  - **CTRL** will allow you to select more than one object or element
 
 These controls are also available from the View menu and some from the View toolbar.
 
 ### Selecting objects
 
-Objects in the 3D view can be selected by clicking them with the corresponding mouse button, depending on the navigation mode. A single click will select the object, and one of its subcomponents (edge, face, vertex). Double-clicking will select the object, and all its subcomponents. You can select more than one subcomponent, or even different subcomponents from different objects, by pressing the CTRL key. Clicking with the selection button on an empty portion of the 3D view will deselect everything.
+Objects in the 3D view can be selected by clicking them with the corresponding mouse button, depending on the navigation mode. (For the rest of the manual we'll assume the default CAD navigation.) A single click will select the object, and one of its subcomponents (edge, face, vertex). Double-clicking will select the object, and all its subcomponents. You can select more than one subcomponent, or even different subcomponents from different objects, by pressing the CTRL key. With multiple items selected, keeping the CTRL key pressed, and pressing a selected item removes it from the selection.  Clicking with the selection button on an empty portion of the 3D view will deselect everything.
 
 A panel called "Selection view", available from the View menu, can also be turned on, which shows you what is currently selected:
 
