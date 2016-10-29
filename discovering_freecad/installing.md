@@ -8,7 +8,7 @@ The official FreeCAD download page for Windows and Mac OS is https://github.com/
 
 **FreeCAD versions**
 
-The official releases of FreeCAD, that you can find on the page above and in your distribution's software manager, are stable versions. However, the development of FreeCAD is fast! New features and bug fixes are added almost every single day. Since it can sometimes take a long time between stable releases, you might be interested in trying a more bleeding-edge version of FreeCAD. These development versions, or pre-releases, are uploaded from time to time to the [download page](https://github.com/FreeCAD/FreeCAD/releases) mentioned above, or, if you are using Ubuntu, the FreeCAD community also maintains [PPA](https://launchpad.net/~freecad-maintainers/+archive/ubuntu/freecad-daily) (Personal Package Archives) or 'daily builds' which are regularly updated with the most recent changes.
+The official releases of FreeCAD, on the page above or in your distribution's software manager, are stable versions. However, the development of FreeCAD is fast! New features and bug fixes are added almost every single day. Since it can sometimes take a long time between stable releases, you might be interested in trying a more bleeding-edge version of FreeCAD. These development versions, or pre-releases, are uploaded from time to time to the [download page](https://github.com/FreeCAD/FreeCAD/releases) mentioned above, or, if you are using Ubuntu, the FreeCAD community also maintains [PPA](https://launchpad.net/~freecad-maintainers/+archive/ubuntu/freecad-daily) (Personal Package Archives) or 'daily builds' which are regularly updated with the most recent changes.
 
 If you are installing FreeCAD in a virtual machine, please be aware that the performance might be low, or in some cases unusable due to the limits of [OpenGL](https://en.wikipedia.org/wiki/OpenGL) support on most virtual machines.
 
@@ -75,7 +75,7 @@ Once FreeCAD is installed, you might want to open it and set a couple of prefere
 5. **Authoring and license**: You can set the default settings that will be used for your new files. Consider making your files shareable right from the start, by using a friendlier, [copyleft](https://en.wikipedia.org/wiki/Copyleft) license like [Creative Commons](https://creativecommons.org/).
 6. **Redirect python messages to output view**: These two options are always good to mark, as they will permit you to see what's wrong in the Report View when there's a problem with running a particular python script.
 ![freecad basic options, step 3](http://www.freecadweb.org/wiki/images/1/19/Freecad-basic-options03.jpg)
-7. **Units**: Here you can set the default units system you wish to use.
+7. **Units**: Here you can set the default units you wish to use.  It will be easier working the examples later, to stay in MKS.
 ![freecad basic options, step 4](http://www.freecadweb.org/wiki/images/c/c5/Freecad-basic-options04.jpg)
 
 ### Installing additional content
