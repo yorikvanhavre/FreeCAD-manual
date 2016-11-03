@@ -35,7 +35,7 @@ Alternatively, some keyboard controls are always available, no matter the naviga
  - **CTRL +** and **CTRL -** to zoom in and zoom out 
  - The **arrow keys** to shift (pan) the view left/right and up/down 
  
- [comment]: # (- **SHIFT + left arrow** and **SHIFT + right arrow** to rotate the view by 90 degrees )
+ [comment]: # (- **SHIFT + left arrow** and **SHIFT + right arrow** to rotate the view by 90 degrees  Tracker issue 2756)
  - the numeric keys, **1 to 6**, for the six standard views, top, front, right, bottom, back and left
  
  - **O** will set the camara in orthographic mode, 
