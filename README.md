@@ -1,6 +1,6 @@
 # A FreeCAD manual
 
-
+**Note**: The manual has been moved to the [official FreeCAD wiki](https://www.freecadweb.org/wiki) which is now its new home. If you wish to propose edits, please do them there, as this repository will be kept only for generating the ebook versions and will not be directly edited anymore.
 
 ## Introduction
 
