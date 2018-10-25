@@ -69,6 +69,9 @@ Our page can now be exported to SVG to be worked further in graphical applicatio
 * The file created during this exercise: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/drawing.FCStd
 * The SVG sheet produced from that file: https://github.com/yorikvanhavre/FreeCAD-manual/blob/master/files/drawing.svg
 
+**Scripting with 2D Drawings**
+To script with 2D drawings can be a challenging process. For the moment we will discuss this with the 0.16 version of FreeCAD. In general, you can only place one part onto the sheet, so you will need to recursively compound your various parts into 1 part. The second difficulty in producing automated drawings is in the placement of the views. In general there is a way to dump SVG of 1 view, but not of all the views at once. As such, you need to selectively dump the SVG of the views you are after, and then place them onto the SVG of the drawing sheet with SVG methods. 
+
 **Read more**
 
 * The Drawing Workbench: http://www.freecadweb.org/wiki/index.php?title=Drawing_Module
