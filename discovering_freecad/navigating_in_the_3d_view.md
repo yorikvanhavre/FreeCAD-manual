@@ -4,7 +4,7 @@
 
 If this is your first contact with a 3D application, you will need to grab some concepts first. If not, you can safely skip this section.
 
-The FreeCAD 3D space is an [euclidian space](https://en.wikipedia.org/wiki/Euclidean_space). It has an origin point and three axes: X, Y and Z. If you look at your scene from above, conventionally, the X axis points to the right, the Y axis to the back, and the Z axis upwards. In the lower right corner of the FreeCAD view, you can always see from where you are viewing the scene:
+The FreeCAD 3D space is an [euclidian space](https://en.wikipedia.org/wiki/Euclidean_space). It has an origin point and three axes: X, Y and Z. If you look at your scene from above, conventionally, the increasing, positive, X axis points to the right, the positive Y axis to the back, and the positive Z axis upwards. In the lower right corner of the FreeCAD view, you can always see from where you are viewing the scene:
 
 ![axes](http://www.freecadweb.org/wiki/images/a/af/Axes_orientation.png) 
 
@@ -57,4 +57,4 @@ You can also use the Selection View to select objects by searching for a particu
 
 **Read more**
 
-* The FreeCAD navigation modes: http://www.freecadweb.org/wiki/index.php?title=Mouse_Model
+* [The FreeCAD navigation modes:](https://www.freecadweb.org/wiki/index.php?title=Mouse_Model)
