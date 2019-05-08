@@ -101,6 +101,26 @@ otherpla.Base = FreeCAD.Vector(5,5,0)
 box.Placement = otherpla
 ```
 
+Placement can be a difficult concept to grasp at first. Calling FreeCAD.Placement, you can optionally enter in position, rotation, and center values. This will generate you a placement matrix.
+
+For example,
+
+```
+yaw = 3.5
+pos = App.Vector(0, 0, 0)
+rot = App.Rotation(yaw, 0, 0)
+center = App.Vector(0, 0, 0)
+newplace = App.Placement(pos, rot, center)
+```
+
+After that, you can alter your placement matrix by multiplying it,
+
+```
+pitch = 2.3
+rot = App.Rotation(0, pitch, 0)
+newplace = App.Placement(pos, rot, center).multiply(newplace)
+```
+
 **Read more**
 
 * Python: https://www.python.org/
