@@ -26,7 +26,7 @@ The Part Workbench provides basic tools for working with solid parts: primitives
 
 ### Draft
 
-The Draft Workbench provides tools to do basic 2D CAD drafting tasks: lines, circles, etc... and a series of generic handy tools such as move, rotate or scale. It also provides several drawing aids, such as grid and snapping. It is principally meant to draw the guidelines for Arch objects, but also serves as FreeCAD's "swiss knife".
+The Draft Workbench provides tools to do basic 2D CAD drafting tasks: lines, circles, etc... and a series of generic handy tools such as move, rotate or scale. It also provides several drawing aids, such as grid and snapping. It is principally meant to draw the guidelines for Arch objects, but also serves as FreeCAD's "swiss army knife".
 
 | Tool | Description | Tool | Description |
 | ---- | ----------- | ---- | ----------- |

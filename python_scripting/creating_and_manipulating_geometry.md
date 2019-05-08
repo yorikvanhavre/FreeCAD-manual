@@ -4,11 +4,11 @@ In the previous chapters, we learned about the different workbenches of FreeCAD,
 
 We also saw that the big majority of the FreeCAD workbenches depend on a very fundamental one: the [Part Workbench](http://www.freecadweb.org/wiki/index.php?title=Part_Workbench). In fact, may other workbenches, such as [Draft](http://www.freecadweb.org/wiki/index.php?title=Draft_Module) or [Arch](http://www.freecadweb.org/wiki/index.php?title=Arch_Module), do exactly what we will do in this chapter: They use Python code to create and manipulate Part geometry.
 
-So the first thing we need to do to work with Part geometry, is to do the Python equivalent to switching to the Part Workbench: import the Part module:
+So the first thing we need to do to work with Part geometry, is to do the Python equivalent of switching to the Part Workbench: import the Part module:
 
 `import Part`
 
-Take a minute to explore the contents of the Part module, by typing `Part.` and browsing through the different methods offered there. The Part module offers several convenience fuctions such as makeBox, makeCircle, etc... which will instantly build an object for you. Try this, for example:
+Take a minute to explore the contents of the Part module, by typing `Part.` and browsing through the different methods offered there. The Part module offers several convenience functions such as makeBox, makeCircle, etc... which will instantly build an object for you. Try this, for example:
 
 `Part.makeBox(3,5,7)`
 
@@ -16,7 +16,7 @@ When you press Enter after typing the line above, nothing will appear in the 3D 
 
 `<Solid object at 0x5f43600>`
 
-This is where an important concept takes place. What we created here is a Part Shape. It is not a FreeCAD document object (yet). In FreeCAD, objects and their geometry are independent. Think of a FreeCAD document object as a container, that will host a shape. Parametric objects will also have properties such as Length and Width, and will **recalculate** their Shape on-the-fly, whenever one of the properties changes.What we did here is calculate a shape manually.
+This is where an important concept takes place. What we created here is a Part Shape. It is not a FreeCAD document object (yet). In FreeCAD, objects and their geometry are independent. Think of a FreeCAD document object as a container, that will host a shape. Parametric objects will also have properties such as Length and Width, and will **recalculate** their Shape on-the-fly, whenever one of the properties change. What we did here is calculate a shape manually.
 
 We can now easily create a "generic" document object in the current document (make sure you have at least one new document open), and give it a box shape like we just made:
 
@@ -29,7 +29,7 @@ FreeCAD.ActiveDocument.recompute()
 
 Note how we handled `myObj.Shape`, see that it is done exactly like we did in the previous chapter, when we changed other properties of an object, such as `box.Height = 5`. In fact, **Shape** is also a property, just like **Height**. Only it takes a Part Shape, not a number. In next chapter we will have a deeper look at how those parametric objects are constructed.
 
-For now, let's explore our Part Shapes more in detail. At the end of the chapter about [traditional modeling with the Part Workbench](../working_with_freecad/traditional_modeling_the_csg_way.md) we showed a table that explains how Part Shapes are constructed, and their different components (Vertices, edges, faces, etc). The exact same components exist here and can be retrieved from Python. All Part Shape always have the following attributes:Vertexes, Edges, Wires, Faces, Shells and Solids. All of them are lists, that can contain any number of elements or be empty:
+For now, let's explore our Part Shapes more in detail. At the end of the chapter about [traditional modeling with the Part Workbench](../working_with_freecad/traditional_modeling_the_csg_way.md) we showed a list that explains how Part Shapes are constructed, and their different components (Vertices, edges, faces, etc). The exact same components exist here and can be retrieved from Python. All Part Shapes have the following attributes: Vertexes, Edges, Wires, Faces, Shells and Solids. All of them are lists, that can contain any number of elements or be empty:
 
 ```
 print(boxShape.Vertexes)
@@ -128,11 +128,11 @@ E2 = L2.toShape()
 ...
 ```
 
-Once we have a series of Edges, we can now form a Wire, by giving it a list of Edges. We don't need to take care of the order. [OpenCasCade](https://en.wikipedia.org/wiki/Open_Cascade_Technology), the geometry "engine" of FreeCAD, is extraordinarily tolerant to unordered geometry. It will sort out what to do:
+Once we have a series of Edges, we can now form a Wire, by giving it a list of Edges. We need to enter them in order:
 
-`W = Part.Wire([E1,E2,E3,E4])`
+`W = Part.Wire([E1,E4,E2,E3])`
 
-And we can check if our Wire was correctly understood, and that it is correclty closed:
+And we can check if our Wire was correctly understood, and that it is correctly closed:
 
 `print( W.isClosed() )`
 
@@ -165,7 +165,7 @@ myObj2.Shape = P
 FreeCAD.ActiveDocument.recompute()
 ```
 
-Altenatively, the Part module also provides a shortcut that does the above operation quicker (but you cannot choose the name of the object):
+Alternately, the Part module also provides a shortcut that does the above operation quicker (but you cannot choose the name of the object):
 
 `Part.show(P)`
 
