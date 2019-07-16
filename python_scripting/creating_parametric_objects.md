@@ -61,10 +61,10 @@ class ParametricRectangle:
     v4 = FreeCAD.Vector(0,obj.Width,0)
     
     # we create 4 edges
-    e1 = Part.Line(v1,v2).toShape()
-    e2 = Part.Line(v2,v3).toShape()
-    e3 = Part.Line(v3,v4).toShape()
-    e4 = Part.Line(v4,v1).toShape()
+    e1 = Part.makeLine(v1,v2)
+    e2 = Part.makeLine(v2,v3)
+    e3 = Part.makeLine(v3,v4)
+    e4 = Part.makeLine(v4,v1)
     
     # we create a wire
     w = Part.Wire([e1,e2,e3,e4])
