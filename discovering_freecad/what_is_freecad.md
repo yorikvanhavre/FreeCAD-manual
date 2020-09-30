@@ -14,6 +14,6 @@ The official website of FreeCAD is at http://www.freecadweb.org
 
 **Read more:**
 
-* About FreeCAD: http://www.freecadweb.org/wiki/index.php?title=About_FreeCAD
-* List of features: http://www.freecadweb.org/wiki/index.php?title=Feature_list
+* About FreeCAD: http://wiki.freecadweb.org/About_FreeCAD
+* List of features: http://wiki.freecadweb.orgFeature_list
 * Screenshots and user cases: http://forum.freecadweb.org/viewforum.php?f=24
