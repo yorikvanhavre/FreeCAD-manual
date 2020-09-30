@@ -12,6 +12,12 @@ This manual is an experiment at taking the opposite way from the [official FreeC
 
 This manual has been originally written for the stable version of FreeCAD at that time, which was version **0.16**. It is now in the process of being updated to the upcoming **0.19**.
 
+PDF, EPUB and MOBI versions of the original editions can be found in the [Releases](../../Releases) section. You can also read it directly from [github pages](http://yorikvanhavre.github.io/FreeCAD-manual/)
+
 All the contents of this manual are published under the [Creative Commons 4.0](http://creativecommons.org/licenses/by/4.0/) license, and can be freely used, downloaded, copied, and modified. The source files of this manual are hosted on [github](https://github.com/yorikvanhavre/FreeCAD-manual).
 
 This book has been written originally by Yorik, but using a lot of information built by FreeCAD users, mostly from the FreeCAD wiki. It has then been corrected or updated by many other people. The real author of this book is actually the whole FreeCAD community!
+
+-----
+
+[TABLE OF CONTENTS](SUMMARY.md)
