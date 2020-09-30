@@ -12,6 +12,8 @@ FreeCAD also benefits from the huge, accumulated experience of the open-source w
 
 The official website of FreeCAD is at http://www.freecadweb.org
 
+-----
+
 **Read more:**
 
 * About FreeCAD: http://wiki.freecadweb.org/About_FreeCAD
