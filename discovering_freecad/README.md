@@ -1,7 +1,5 @@
 # Discovering FreeCAD
 
------
-
 In this section:
 
 * [What is FreeCAD?](what_is_freecad.md)
