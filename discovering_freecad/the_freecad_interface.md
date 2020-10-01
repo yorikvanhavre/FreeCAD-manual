@@ -1,10 +1,12 @@
 ## The FreeCAD interface
 
-FreeCAD uses the [Qt framework](https://en.wikipedia.org/wiki/Qt_(software)) to draw and manage its interface. This framework is used in a wide range of applications, so the FreeCAD interface is very classical and presents no particular difficulty to understand. Most buttons are standard and will be found where you expect them (File -> Open, Edit -> Paste, etc). Here is the look of FreeCAD when you open it for the first time, just after installing, showing you the start center:
+
+
+FreeCAD uses the [Qt framework](https://en.wikipedia.org/wiki/Qt_(software)) to draw and manage its interface. This framework is used in a wide range of applications. The FreeCAD interface is pretty classical and presents no particular difficulty to understand. Most buttons are standard and will be found where you expect them (File -> Open, Edit -> Paste, etc). Here is the look of FreeCAD when you open it for the first time, just after installing, showing you the [start center](https://wiki.freecadweb.org/Start_Workbench):
 
 ![FreeCAD interface screenshot 01](http://www.freecadweb.org/wiki/images/4/49/Freecad-interface-01.jpg)
 
-The start center is a convenient "welcome screen", that shows useful information for newcomers, like the latest files you have been working on, what's new in the FreeCAD world, or quick info about the most common Workbenches. It will also notify you if a new stable version of FreeCAD is available.
+The start center is a convenient "welcome screen", that shows useful information for newcomers, like the latest files you have been working on, what's new in the FreeCAD world, and some general information like how to get help. It will also notify you if a new stable version of FreeCAD is available.
 
 Close the Start Page tab (click on the tab x near the bottom) and create a new document (Ctrl-N):
 
@@ -12,9 +14,9 @@ Close the Start Page tab (click on the tab x near the bottom) and create a new d
 
 ### Workbenches
 
-Note that some of the icons have changed between the two screencaptures above. This is where the most important concept used in the FreeCAD interface comes into play: Workbenches. 
+Note that some of the icons have changed between the two screenshots above. This is where the most important concept used in the FreeCAD interface comes into play: Workbenches. 
 
-Workbenches are group of tools (toolbar buttons, menus, and other interface controls) that are grouped together by specialty. Think of a workshop  where you have different people working together: A person who works with metal, another with wood. Each of them has, in their workshop, a separate table with specific tools for his/her job. However, they can all work on the same objects. The same happens in FreeCAD.
+Workbenches are group of tools (toolbar buttons, menus, and other interface controls) that are grouped together by speciality. Think of a workshop  where you have different people working together: A person who works with metal, another with wood. Each of them has, in their workshop, a separate table with specific tools for his/her job. However, they can all work on the same objects. The same happens in FreeCAD.
 
 The most important control of the FreeCAD interface is the Workbench selector, which you use to switch from one Workbench to another:
 

@@ -1,6 +1,14 @@
+![](images/readme-cover.jpg)
+
+
+
+
+
 # A FreeCAD manual
 
 **Important Note**: The manual has been moved to the [official FreeCAD wiki](https://wiki.freecadweb.org/Manual) which is now its new home. If you wish to propose edits, please do them there, as this repository will be kept only for generating the ebook versions and will not be directly edited anymore.
+
+
 
 ## Introduction
 
@@ -14,10 +22,21 @@ This manual has been originally written for the stable version of FreeCAD at tha
 
 PDF, EPUB and MOBI versions of the original editions can be found in the [Releases](../../Releases) section. You can also read it directly from [github pages](http://yorikvanhavre.github.io/FreeCAD-manual/)
 
-All the contents of this manual are published under the [Creative Commons 4.0](http://creativecommons.org/licenses/by/4.0/) license, and can be freely used, downloaded, copied, and modified. The source files of this manual are hosted on [github](https://github.com/yorikvanhavre/FreeCAD-manual).
+All the contents of this manual are published under the [Creative Commons 4.0](http://creativecommons.org/licenses/by/4.0/) license, and can be freely used, downloaded, copied, and modified. The source files of this manual are hosted on [github](https://github.com/yorikvanhavre/FreeCAD-manual). At this address, you can also find and download all the [files](https://github.com/yorikvanhavre/FreeCAD-manual/tree/master/files) that have been created during the different exercises that are part of this book.
 
-This book has been written originally by Yorik, but using a lot of information built by FreeCAD users, mostly from the FreeCAD wiki. It has then been corrected or updated by many other people. The real author of this book is actually the whole FreeCAD community!
 
------
 
-[TABLE OF CONTENTS](SUMMARY.md)
+#### About the author(s)
+
+This book has been written originally by [Yorik van Havre](https://yorik.uncreated.net), (and corrected, proof-read or updated by [many other people](https://github.com/yorikvanhavre/FreeCAD-manual/graphs/contributors)) but using a lot of information built by FreeCAD users, mostly from the [FreeCAD wiki](https://wiki.freecadweb.org). The real author of this book is actually the whole FreeCAD community!
+
+
+
+### Contents
+
+* [Discovering FreeCAD](discovering_freecad/README)
+* [Working with FreeCAD](working_with_freecad/README)
+* [Python scripting](python_scripting/README)
+* [The community](the_community)
+* [summary](SUMMARY)
+

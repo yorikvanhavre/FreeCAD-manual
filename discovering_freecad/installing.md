@@ -1,5 +1,7 @@
 ## Installing
 
+
+
 FreeCAD uses the [LGPL license](https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License), which means you are free to download, install, redistribute and use FreeCAD the way you want, regardless of the type of work you'll do with it (commercial or non-commercial). You are not bound to any clause or restriction, and the files you produce with it are fully yours. The only thing that the license prohibits, really, is to claim that you programmed FreeCAD yourself!
 
 FreeCAD runs without any difference on Windows, Mac OS and Linux. However, the ways to install it differ slightly depending on your platform. The FreeCAD community provides pre-compiled packages (installers) ready to download, for Linux, Windows and Mac. On Linux, the source code is also made available to Linux distributions maintainers, who are then responsible for packaging FreeCAD for their specific distribution. As a result, on Linux, you can usually install FreeCAD right from the software manager application.
@@ -13,6 +15,8 @@ The official releases of FreeCAD, on the page above or in your distribution's so
 Development versions are usually very stable, as they must pass a series of automatic tests before being published. Many FreeCAD users use a development version as their main work version. Unless you have a special reason to use a stable version (for example you must provide support for it, or redistribute it to your clients), you are highly advised to try a development version, as you will benefit from all the latest improvements and fixes.
 
 If you are installing FreeCAD in a virtual machine, please be aware that the performance might be low, or in some cases unusable due to the limits of [OpenGL](https://en.wikipedia.org/wiki/OpenGL) support on most virtual machines.
+
+
 
 ### Installing on Windows
 
@@ -29,6 +33,8 @@ If you are installing FreeCAD in a virtual machine, please be aware that the per
 
 Packaging FreeCAD and creating an installer takes some time and dedication, so usually, development (also called pre-release) versions are provided as .zip or [.7z](https://www.7-zip.org/) archives. These don't need to be installed, just unpack them and launch FreeCAD by double-clicking the FreeCAD.exe file that you will find inside. This also allows you to keep both the stable and "unstable" versions together on the same computer.
 
+
+
 ### Installing on Linux
 
 On most modern Linux distributions (Ubuntu, Fedora, OpenSUSE, Debian, Mint, Elementary, etc), FreeCAD can be installed with the click of a button, directly from the software management application provided by your distribution (the aspect of it can differ from the images below, each distribution uses its own tool).
@@ -41,6 +47,8 @@ On most modern Linux distributions (Ubuntu, Fedora, OpenSUSE, Debian, Mint, Elem
 **Alternative ways**
 
 One of the big joys of using Linux is the multitude of possibilities to tailor your software, so don't restrain yourself. On Ubuntu and derivatives, FreeCAD can also be installed from a [PPA](https://launchpad.net/~freecad-maintainers) maintained by the FreeCAD community (it contains both stable and development versions) and since this is open-source software, you can also easily [compile FreeCAD yourself](http://www.freecadweb.org/wiki/index.php?title=Compiling).
+
+
 
 ### Installing on  Mac OS
 
@@ -56,25 +64,38 @@ Installing FreeCAD on Mac OSX is nowadays as easy as on other platforms. However
 5. If the system prevents FreeCAD to launch, due to restricted permissions for applications not coming from the App store, you will need to enable it in the system settings:
 ![FreeCAD installation on mac, step 4](../images/Freecad-mac-04.jpg)
 
+
+
 ### Uninstalling
 
 Hopefully you won't want to do that, but it is good to know anyway. On Windows and Linux, uninstalling FreeCAD is very straightforward. Use the standard "remove software" option found in the control panel on Windows, or remove it with the same software manager you used to install FreeCAD on Linux. On Mac, all you need to do is remove it from the Applications folder.
+
+
 
 ### Setting basic preferences
 
 Once FreeCAD is installed, you might want to open it and set a couple of preferences. Preferences settings in FreeCAD are located under menu **Edit -> Preferences**. You can browse through the different pages to see if there is anything else you would want to change, but here are a couple of basic ones:
 
 1. **Language**: FreeCAD will automatically pick the language of your operating system, but you might want to change that. FreeCAD is fully translated into 8 or 9 languages, plus many others for which the translation is not complete yet. You can easily make that better, by [helping to translate FreeCAD](https://crowdin.com/project/freecad).
+
 ![freecad basic options, step 1](../images/Freecad-basic-options01.jpg)
+
 2. **Auto-load module**: Normally, FreeCAD will start showing you the [start center](https://wiki.freecadweb.org/Start_Workbench). But you can skip this and begin a FreeCAD session directly in the workbench of your choice. [Workbenches](http://www.freecadweb.org/wiki/index.php?title=Workbenches) will be explained in detail in the [next chapter](the_freecad_interface.md).
 3. **Create document at startup**: Combined with the option above, this starts FreeCAD ready for work.
+
 ![freecad basic options, step 2](../images/Freecad-basic-options02.jpg)
+
 4. **Storage options**: As any complex application, FreeCAD might crash from time to time. Here you can configure a few options that will help you to recover your work in case of a crash.
 5. **Authoring and license**: FreeCAD files can contain an author name, and a license. You can set default values there, and you might also like to make your files shareable right from the start, by using a friendlier, [copyleft](https://en.wikipedia.org/wiki/Copyleft) license like [Creative Commons](https://creativecommons.org/).
 6. **Redirect python messages to output view**: These two options are always good to mark, as they will permit you to see what's wrong in the Report View when there's a problem with running a particular python script.
+
 ![freecad basic options, step 3](../images/Freecad-basic-options03.jpg)
+
 7. **Units**: Here you can set the default units you wish to see measurements in.  This only affects the display, as FreeCAD always works in real-world units. You can change this anytime, without modifying the model.
+
 ![freecad basic options, step 4](../images/Freecad-basic-options04.jpg)
+
+
 
 ### Installing additional content
 
@@ -91,7 +112,11 @@ All the content above can be viewed and installed directly from withing FreeCAD,
 
 
 
+The addons manager allows you to very simply install, uninstall and update any external workbench or macro. Be sure to read the descriptions before installing!
 
+
+
+-----
 
 **Read more**
 
