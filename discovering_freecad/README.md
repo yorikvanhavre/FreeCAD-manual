@@ -7,7 +7,7 @@ In this section:
   * [Installing on Windows](installing.md#installing-on-windows)
   * [Installing on Linux](installing.md#installing-on-linux)
   * [Installing on Mac OS](installing.md#installing-on-mac-os)
-  * [Uninstalling](installing.md#uninstalling)
+  * [Uninstalling FreeCAD](installing.md#uninstalling)
   * [Setting basic preferences](installing.md#setting-basic-preferences)
   * [Installing additional content](installing.md#installing-additional-content)
 * [The FreeCAD interface](the_freecad_interface.md)

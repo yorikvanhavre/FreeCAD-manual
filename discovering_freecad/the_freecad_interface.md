@@ -12,6 +12,8 @@ Close the Start Page tab (click on the tab x near the bottom) and create a new d
 
 ![FreeCAD interface screenshot 02](../images/Freecad-interface-02.jpg)
 
+
+
 ### Workbenches
 
 Note that some of the icons have changed between the two screenshots above. This is where the most important concept used in the FreeCAD interface comes into play: **Workbenches**. 
@@ -25,6 +27,8 @@ The most important control of the FreeCAD interface is the workbench selector, w
 Workbenches often confuse new users, since it's not always easy to know in which workbench to look for a specific tool. But they are quick to learn, and after a short while, they will feel natural. Workbenches are a convenient way to organize the multitude of tools FreeCAD has to offer.  In addition, Workbenches are also fully customizable (see below).
 
 Later in this manual, you will find a table showing the most common workbenches and the tools they contain.
+
+
 
 ### The interface
 
@@ -45,6 +49,8 @@ Let's have a better look at the different parts of the interface:
 ![FreeCAD interface screenshot 05](../images/Freecad-interface-07.jpg)
 
 Any of the panels or toolbars onthe FreeCAD interface can be turned on/off from menu *View -> Panels* or *View -> Toolbars*.
+
+
 
 ### Customizing the interface
 

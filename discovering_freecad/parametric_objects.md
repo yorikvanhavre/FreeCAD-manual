@@ -1,5 +1,7 @@
 ## Parametric objects
 
+
+
 FreeCAD is designed for parametric modeling. This means that the geometry that you create, instead of being freely sculptable, is produced by rules and parameters. For example, a cylinder might be produced from a radius and a height. With these two parameters, the program has enough information to build the cylinder.
 
 Parametric objects, in FreeCAD, are in reality small pieces of a program that run whenever one of the parameters has changed. Objects can have a lot of different kinds of parameters: numbers (integers like 1, 2, 3 or floating-point values like 3.1416), real-world sizes (1mm, 2.4m, 4.5ft), (x,y,z) coordinates, text strings ("hello!") or even another object.
@@ -10,7 +12,7 @@ In the example below, a solid, cubic object (Pad) is based on a rectangular 2D s
 
 All the intermediary operations (2D shapes, pad, pocket, etc) are still there, and you can still change any of their parameters anytime. The whole chain will be rebuilt (recomputed) whenever needed.
 
-![parametric modeling example](http://www.freecadweb.org/wiki/images/4/47/Parametric_objects.jpg)
+![parametric modeling example](../images/Parametric_objects.jpg)
 
 Two important things are necessary to know:
 
@@ -22,6 +24,14 @@ Not all objects are parametric in FreeCAD. Often, the geometry that you import f
 All objects, however, parametric or not, will have a couple of basic parameters, such as a Name, which is unique in the document and cannot be edited, a Label, which is a user-defined name that can be edited, and a  [placement](http://www.freecadweb.org/wiki/index.php?title=Placement), which holds its position in the 3D space.
 
 Finally, it is worth noting that custom parametric objects are [easy to program in python](http://www.freecadweb.org/wiki/index.php?title=Scripted_objects).
+
+
+
+## Expressions
+
+
+
+-----
 
 **Read more**
 
