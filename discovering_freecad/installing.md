@@ -74,7 +74,7 @@ Hopefully you won't want to do that, but it is good to know anyway. On Windows a
 
 ### Setting basic preferences
 
-Once FreeCAD is installed, you might want to open it and set a couple of preferences. Preferences settings in FreeCAD are located under menu **Edit -> Preferences**. You can browse through the different pages to see if there is anything else you would want to change, but here are a couple of basic ones:
+Once FreeCAD is installed, you might want to open it and set a couple of preferences. Preferences settings in FreeCAD are located under menu *Edit → Preferences*. You can browse through the different pages to see if there is anything else you would want to change, but here are a couple of basic ones:
 
 1. **Language**: FreeCAD will automatically pick the language of your operating system, but you might want to change that. FreeCAD is fully translated into 8 or 9 languages, plus many others for which the translation is not complete yet. You can easily make that better, by [helping to translate FreeCAD](https://crowdin.com/project/freecad).
 
@@ -107,7 +107,7 @@ There, among other things, you will find:
 2. A [collection of additional workbenches](https://github.com/FreeCAD/FreeCAD-addons), most of them additional workbenches, that extend the functionality of FreeCAD for certain tasks. Instructions for installing are given on each separate addon page.
 3. A [collection of macros](https://github.com/FreeCAD/FreeCAD-macros), which are also available [on the FreeCAD wiki](http://www.freecadweb.org/wiki/index.php?title=Macros_recipes) along with documentation about how to use them.
 
-All the content above can be viewed and installed directly from withing FreeCAD, using the [Addons Manager](https://wiki.freecadweb.org/Std_AddonMgr), found under menu **Tools -> Addons Manager**
+All the content above can be viewed and installed directly from withing FreeCAD, using the [Addons Manager](https://wiki.freecadweb.org/Std_AddonMgr), found under menu **Tools → Addons Manager**
 ![the execute macro dialog](../images/Macro_installer_01.jpg)
 
 

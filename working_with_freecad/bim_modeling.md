@@ -21,7 +21,7 @@ Notice in the sheet title block the cone on it's side.  The graphic is denoting 
 We are assuming that the exercises in the previous chapters have been preformed, there will be less discussion on previously covered concepts.
  
 * Open FreeCAD, create a new document, and switch to the [Arch Workbench](http://www.freecadweb.org/wiki/index.php?title=Arch_Module).
-* Open menu **Edit -> Preferences -> Draft -> Grid and Snapping** and set the **grid spacing** setting to 1000mm, so we have a one meter-based grid, which will be convenient for the size of our building.
+* Open menu **Edit → Preferences → Draft → Grid and Snapping** and set the **grid spacing** setting to 1000mm, so we have a one meter-based grid, which will be convenient for the size of our building.
 * On the **snapping toolbar**, make sure the ![icon](http://www.freecadweb.org/wiki/images/thumb/f/f5/Snap_Grid.png/16px-Snap_Grid.png) [grid snap](http://www.freecadweb.org/wiki/index.php?title=Draft_ToggleGrid) button is enabled, so we can use the grid  as much as possible.
 * Set the [Working Plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane) to **XY** plane
 * Draw four lines with the ![icon](http://www.freecadweb.org/wiki/images/thumb/a/a8/Draft_Line.png/16px-Draft_Line.png) [Draft Line](http://www.freecadweb.org/wiki/index.php?title=Draft_Line) tool. You can enter coordinates manually, or simply pick the points on the grid with the mouse (if you enter points in manually, insure the Relative mode is not on):
@@ -133,11 +133,11 @@ Our model is now ready to export:
 
 The [IFC format](https://en.wikipedia.org/wiki/Industry_Foundation_Classes) is one of the most precious assets in a free BIM world, because it allows the exchange of data between any application and a construction user, in an open manner (the format is open, free and maintained by an independent consortium). Exporting your BIM models as IFC ensures that anyone can see and analyze them, no matter the application used.
 
-In FreeCAD, IFC import and export is done by interfacing with another piece of software, called [IfcOpenShell](http://ifcopenshell.org/). To be able to export to IFC from FreeCAD, the [IfcOpenShell-python](http://ifcopenshell.org/python.html) package must be installed on your system. Be sure to select one which uses the same python version as FreeCAD. The python version that FreeCAD uses is displayed when opening the **View -> Panels -> Python console** panel in FreeCAD. Or if it is already open scroll back to the start.  When **ifcopenshell **is installed, we can now export our model:
+In FreeCAD, IFC import and export is done by interfacing with another piece of software, called [IfcOpenShell](http://ifcopenshell.org/). To be able to export to IFC from FreeCAD, the [IfcOpenShell-python](http://ifcopenshell.org/python.html) package must be installed on your system. Be sure to select one which uses the same python version as FreeCAD. The python version that FreeCAD uses is displayed when opening the **View → Panels → Python console** panel in FreeCAD. Or if it is already open scroll back to the start.  When **ifcopenshell **is installed, we can now export our model:
 
 * If your FreeCAD version is less than 0.17 skip the export and move on to the dimensioning below.
 * Select the object you want to export, that is, the Building object .
-* Select menu **File -> Export . . .**   select file type: **Industry Foundation Classes (*.ifc)** and save your file.
+* Select menu **File → Export . . .**   select file type: **Industry Foundation Classes (*.ifc)** and save your file.
 * The resulting IFC file can now be opened in a wide range of applications and viewers (the image below shows the file opened in the free [IfcPlusPlus](http://ifcplusplus.com/) viewer. Checking the exported file in such a viewer application before distributing it to other people is important to check that all the data contained in the file is correct. FreeCAD itself can also be used to re-open the resulting IFC file.
 
 ![ifcplusplus](http://www.freecadweb.org/wiki/images/a/a5/Exercise_arch_17.jpg)
@@ -149,7 +149,7 @@ We will now place some dimensions. Unlike the [previous chapter](generating_2d_d
 * Make sure the ![icon](http://www.freecadweb.org/wiki/images/thumb/9/99/Snap_WorkingPlane.png/16px-Snap_WorkingPlane.png) [restrict](http://www.freecadweb.org/wiki/index.php?title=Draft_WorkingPlane) snap location is turned on, so everything you draw stays on the working plane.
 * Draw a couple of ![icon](http://www.freecadweb.org/wiki/images/thumb/b/b0/Draft_Dimension.png/16px-Draft_Dimension.png) [dimensions](http://www.freecadweb.org/wiki/index.php?title=Draft_Dimension), for example as on the image below. Pressing **Shift** and **Ctrl** while snapping the dimension points will give you additional options.  If you cannot see the dimension it is likely that the font size is too small.  Highlight the dimension(s,) View tab, Font Size Property.  A font size of 250mm might be a good starting point.  
 
-After adding a few dimensions, it will be come tiring (and time squandering) changing properties for each dimension.  Once you have a good idea of the changes needed, you can edit the preferences to create dimensions as desired.  Top menu **Edit **--> **Preferences** --> **Draft **--> **Text and dimensions **tab.  Make the changes you have decided are needed. 
+After adding a few dimensions, it will be come tiring (and time squandering) changing properties for each dimension.  Once you have a good idea of the changes needed, you can edit the preferences to create dimensions as desired.  Top menu **Edit **→ **Preferences** → **Draft **→ **Text and dimensions **tab.  Make the changes you have decided are needed. 
 
 ![the horizontal dimensions](http://www.freecadweb.org/wiki/images/d/d4/Exercise_arch_18.jpg)
 
@@ -225,7 +225,7 @@ Complete the title block, click on Page in the Model tree, in the Data tab to th
 
 Save file.
 
-Our page is now ready, and we can export it to SVG or DXF formats, or print it. The SVG format allows to open the file illustration applications such as [inkscape](http://www.inkscape.org), with which you can quickly enhance technical drawings and turn them into much nicer presentation drawings. It offers many more possibilities than the DXF format.  Highlight the drawing **Page **in the Model tree, in the top menu **File** --> **Export . . . **  Set the **File Type: ** Drawing (*.svg, *.svgz, *.dxf) add a **File Name** with a svg extension, and click Save.
+Our page is now ready, and we can export it to SVG or DXF formats, or print it. The SVG format allows to open the file illustration applications such as [inkscape](http://www.inkscape.org), with which you can quickly enhance technical drawings and turn them into much nicer presentation drawings. It offers many more possibilities than the DXF format.  Highlight the drawing **Page **in the Model tree, in the top menu **File** → **Export . . . **  Set the **File Type: ** Drawing (*.svg, *.svgz, *.dxf) add a **File Name** with a svg extension, and click Save.
 
 **Downloads**
 

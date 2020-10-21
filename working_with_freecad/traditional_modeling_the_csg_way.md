@@ -16,10 +16,10 @@ To illustrate the working of the Part Workbench, we will model this table, using
 
 ![Complete table](http://www.freecadweb.org/wiki/images/9/99/Exercise_table_complete.jpg)
 
-Let's open FreeCAD and create a new document (**Ctrl+N** or menu File -> New),    
+Let's open FreeCAD and create a new document (**Ctrl+N** or menu File → New),    
 
 The following text assumes some 'default' configurations:
-- You will want to be in metric, menu Edit --> Preferences --> Units Tab --> Standard --> OK
+- You will want to be in metric, menu Edit → Preferences → Units Tab → Standard → OK
 - The default navigation style; right click on the empty view space follow the Navigation Styles in the list click on CAD  
 
 Switch to the Part Workbench, and begin with the first foot:
@@ -32,7 +32,7 @@ Switch to the Part Workbench, and begin with the first foot:
 It is wise to keep an eye on which item is highlighted in the Model tree as it identifies the object being modified.
     * Adjust geometry view with the Fit ![icon](http://www.freecadweb.org/wiki/images/0/0e/Std_ViewFitAll.png) icon
     * Adjust the view with the Axonometric ![icon](http://www.freecadweb.org/wiki/images/a/a2/View-axometric.svg) View icon
-* Duplicate the cube (still highlighted in Model tab) by pressing **Ctrl+C** then **Ctrl+V** (or menu Edit -> Copy and Paste) (No change will be evident, as the second object is overlaying the first.)
+* Duplicate the cube (still highlighted in Model tab) by pressing **Ctrl+C** then **Ctrl+V** (or menu Edit → Copy and Paste) (No change will be evident, as the second object is overlaying the first.)
 * Select the new object that has been created (Click on Cube001 in the Model tab)
 * Change its position by editing its Placement property: (in the Data tab on the left)
 (The Placement line will have two cells a Property and a Value Cell.  At the end of the value cell will be 3 dots, select the three dots, they form a button that may not be readily apparent.  The button may need two clicks.  The Task tab should open up and Placement fields become available.) 
@@ -50,7 +50,7 @@ You should obtain two overlapping high boxes, one 8mm apart from the other:
 
 Observe that the newly created object, called "Cut", still contains the two cubes we used as operands.  In fact, the two cubes are still there in the document, they have merely been hidden and grouped under the Cut object in the tree.  You can still see and select them by expanding the arrow next to the Cut object, and, if you wish, turn them visible again by right-clicking them or change any of their properties.  (If you click on the grayed out object and duplicate it, you will duplicate hidden objects.  Right clicking on an object will bring up a menu where you can Toggle Visibility.)
 
-Now might be a good time to save the work in a file, menu File -->Save As (filename) --> Save
+Now might be a good time to save the work in a file, menu File →Save As (filename) → Save
 
 * Now let's create the three other feet by duplicating our base cube 6 other times. Since it is still in the clipboard, you can simply paste (Ctrl+V) 6 times. (Don't be afraid, they are overlaying each other and we can edit them separately using their entry in the model tree.)  Change their position as follows:
    * cube002: x: 0, y: 80cm
@@ -118,7 +118,7 @@ As you can see, each foot has become a quite long series of operations. All this
 
 Another detail of FreeCAD is the concept of 3D object and 3D operation tends to blend into the same thing. The Cut is at the same time an operation, and the 3D object resulting from this operation. In FreeCAD this is called a "feature", rather than object or operation.
 
-* Now let's do the tabletop, it will be a simple block of wood, let's do it with another **Cube** with length: 126cm, width: 86cm, height: 8cm.   Again it initially will not be visible, as it will come in small, overlaying the bottom of the first foot.  Select the last cube in the Model tree and in the Data tab enter the final dimensions.  Using the 3 dot button at the end of the Position line, enter the Translation  x: 10mm, y: 10mm, z, 67cm.   In the **View** tab, you can give it a nice brownish, wood-like color by changing its **Shape Color** property (insure that the latest Cube is selected in the Model tree, menu View --> Appearance . . . --> Shape Color (select Button) and choose a color --> OK --> Close):
+* Now let's do the tabletop, it will be a simple block of wood, let's do it with another **Cube** with length: 126cm, width: 86cm, height: 8cm.   Again it initially will not be visible, as it will come in small, overlaying the bottom of the first foot.  Select the last cube in the Model tree and in the Data tab enter the final dimensions.  Using the 3 dot button at the end of the Position line, enter the Translation  x: 10mm, y: 10mm, z, 67cm.   In the **View** tab, you can give it a nice brownish, wood-like color by changing its **Shape Color** property (insure that the latest Cube is selected in the Model tree, menu View → Appearance . . . → Shape Color (select Button) and choose a color → OK → Close):
 
 ![the tabletop](http://www.freecadweb.org/wiki/images/f/f2/Exercise_table_06.jpg)
 

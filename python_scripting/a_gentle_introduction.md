@@ -6,7 +6,7 @@
 
 [Python](https://en.wikipedia.org/wiki/Python_%28programming_language%29) is a widely popular, open-source programming language, very often used as a scripting language, embedded in applications, as is the case with FreeCAD. It also has a series of features that makes it specially interesting for us FreeCAD users: It is very easy to learn, specially for people who have never programmed before.  It is embedded in many other applications, which makes it a very valuable tool to learn.  You will be able to use it in many other applications, such as [Blender](http://www.blender.org), [Inkscape](http://www.inkscape.org) or [GRASS](http://grass.osgeo.org/).
 
-FreeCAD makes extensive use of Python. With it, you can access and control almost any feature of FreeCAD. You can, for example, create new objects, modify their geometry, analyze their contents, or even create new interface controls, tools and panels. Some workbenches of FreeCAD and most of the addon workbenches are fully programmed in Python. FreeCAD has an advanced Python console, available from menu **View->Panels->Python console**. It is often useful to perform operations for which there is no toolbar button yet, or to check shapes for problems, or to perform repetitive tasks:
+FreeCAD makes extensive use of Python. With it, you can access and control almost any feature of FreeCAD. You can, for example, create new objects, modify their geometry, analyze their contents, or even create new interface controls, tools and panels. Some workbenches of FreeCAD and most of the addon workbenches are fully programmed in Python. FreeCAD has an advanced Python console, available from menu **View→Panels→Python console**. It is often useful to perform operations for which there is no toolbar button yet, or to check shapes for problems, or to perform repetitive tasks:
 
 ![the Python console](http://www.freecadweb.org/wiki/images/c/cf/Exercise_python_01.jpg)
 
@@ -18,7 +18,7 @@ In this chapter, we will discover very generally the Python language. If you are
 
 ### Writing Python code
 
-There are two easy ways to write Python code in FreeCAD: From the Python console (menu **View -> Panels -> Python Console**), or from the Macro editor (menu **Tools -> Macros -> New**). In the console, you write Python commands one by one, which are executed when you press return, while the macros can contain a more complex script made of several lines, which is executed only when the macro is launched from the same Macros window.
+There are two easy ways to write Python code in FreeCAD: From the Python console (menu **View → Panels → Python Console**), or from the Macro editor (menu **Tools → Macros → New**). In the console, you write Python commands one by one, which are executed when you press return, while the macros can contain a more complex script made of several lines, which is executed only when the macro is launched from the same Macros window.
 
 In this chapter, you will be able to use both methods, but it is highly recommended to use the Python Console, since it will immediately inform you of any typing error.
 

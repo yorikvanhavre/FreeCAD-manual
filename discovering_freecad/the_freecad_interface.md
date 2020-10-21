@@ -2,7 +2,7 @@
 
 
 
-FreeCAD uses the [Qt framework](https://en.wikipedia.org/wiki/Qt_(software)) to draw and manage its interface. This framework is used in a wide range of applications. The FreeCAD interface is pretty classical and presents no particular difficulty to understand. Most buttons are standard and will be found where you expect them (File -> Open, Edit -> Paste, etc). Here is the look of FreeCAD when you open it for the first time, just after installing, showing you the [start page](https://wiki.freecadweb.org/Start_Workbench):
+FreeCAD uses the [Qt framework](https://en.wikipedia.org/wiki/Qt_(software)) to draw and manage its interface. This framework is used in a wide range of applications. The FreeCAD interface is pretty classical and presents no particular difficulty to understand. Most buttons are standard and will be found where you expect them (File → Open, Edit → Paste, etc). Here is the look of FreeCAD when you open it for the first time, just after installing, showing you the [start page](https://wiki.freecadweb.org/Start_Workbench):
 
 ![FreeCAD interface screenshot 01](../images/Freecad-interface-01.jpg)
 
@@ -43,12 +43,12 @@ Let's have a better look at the different parts of the interface:
 		* View (properties that affect how the geometry looks like on screen). 
 	* The **Tasks** tab is where FreeCAD will prompt you for values specific to the tool you're currently using at the time—for example, entering a 'length' value when the Line tool is being used. It will close automatically after pressing the OK (or Cancel) button. Also, by double-clicking the related object in the combo view, most tools will allow you to reopen that task panel in order to modify the settings. 
 	* The **properties view** panel shows the properties of selected objects, and allows you to change the values of these properties. If more than one object is selected, only the properties they have in common are displayed. When you give a new value to a property, this will affect all selected objects.
-* **The report view** is usually kept hidden, but you might need to open it sometimes, as it will list any information, warnings or errors to help you decipher (or debug) what you may have done wrong.  Turn it on/off under *View menu -> Panels -> Report View*.
-* **The Python console** is where you can interact with the contents of the document using the [Python language](https://en.wikipedia.org/wiki/Python_%28programming_language%29). Since every action you do on the FreeCAD interface actually executes a piece of Python code, having this open allows you to watch the code unfold in real time—allowing you a wonderful and easy way to learn a little Python on the way, almost without noticing it.  Turn it on/off under *View menu -> Panels -> Python Console*.
+* **The report view** is usually kept hidden, but you might need to open it sometimes, as it will list any information, warnings or errors to help you decipher (or debug) what you may have done wrong.  Turn it on/off under *View menu → Panels → Report View*.
+* **The Python console** is where you can interact with the contents of the document using the [Python language](https://en.wikipedia.org/wiki/Python_%28programming_language%29). Since every action you do on the FreeCAD interface actually executes a piece of Python code, having this open allows you to watch the code unfold in real time—allowing you a wonderful and easy way to learn a little Python on the way, almost without noticing it.  Turn it on/off under *View menu → Panels → Python Console*.
 
 ![FreeCAD interface screenshot 05](../images/Freecad-interface-07.jpg)
 
-Any of the panels or toolbars onthe FreeCAD interface can be turned on/off from menu *View -> Panels* or *View -> Toolbars*.
+Any of the panels or toolbars onthe FreeCAD interface can be turned on/off from menu *View → Panels* or *View → Toolbars*.
 
 
 
@@ -56,11 +56,11 @@ Any of the panels or toolbars onthe FreeCAD interface can be turned on/off from 
 
 The interface of FreeCAD is deeply customizable. All panels and toolbars can be moved to different places or stacked one with another. They can also be closed and reopened when needed from the View menu or by right-clicking on an empty area of the interface. There are, however, many more options available, such as creating custom toolbars with tools from any of the workbenches, or assigning and changing keyboard shortcuts.
 
-These advanced customization options are available from the *Tools -> Customize* menu:
+These advanced customization options are available from the *Tools → Customize* menu:
 
 ![FreeCAD interface screenshot 05](../images/Freecad-interface-06.jpg)
 
-The FreeCAD interface also offers several themes (inteface colors and icons). The theme can be changed under menu *Edit -> Preferences -> General -> Stylesheet*.
+The FreeCAD interface also offers several themes (inteface colors and icons). The theme can be changed under menu *Edit → Preferences → General → Stylesheet*.
 
 
 

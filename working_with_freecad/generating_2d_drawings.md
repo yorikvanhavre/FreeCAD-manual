@@ -10,7 +10,7 @@ The Drawing Workbench allows you to create sheets, which can be blank or use a p
 
 Drawing sheets, once complete, can be printed or exported as [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics), PDF or [DXF](https://en.wikipedia.org/wiki/AutoCAD_DXF) files.
 
-In the following exercise, we will see how to create a simple drawing of a chair model found in the [FreeCAD library](https://github.com/FreeCAD/FreeCAD-library) (Furniture -> Chairs -> IkeaChair). The FreeCAD library can easily be added to your FreeCAD installation (refer to the [installing](../discovering_freecad/installing.md#installing-additional-content) chapter of this manual), or you can simply download the model from the library webpage, or via the direct link provided at the end of this chapter.
+In the following exercise, we will see how to create a simple drawing of a chair model found in the [FreeCAD library](https://github.com/FreeCAD/FreeCAD-library) (Furniture → Chairs → IkeaChair). The FreeCAD library can easily be added to your FreeCAD installation (refer to the [installing](../discovering_freecad/installing.md#installing-additional-content) chapter of this manual), or you can simply download the model from the library webpage, or via the direct link provided at the end of this chapter.
 
 ![the drawing exercise](http://www.freecadweb.org/wiki/images/4/40/Exercise_drawing_01.jpg)
 
@@ -62,7 +62,7 @@ We will now place dimensions and indications on our drawing. There are two ways 
 * Now place two texts using the **Add text** tool, and change their **text** property to your liking.  (Highlight the Text line in the Model tree and in the Data tab, the text property value change to the desired verbiage.)
 * Our drawing is now complete, all that is left to do is to enter information into the sheet title block. With most of the default FreeCAD templates, this can be done easily, by changing the **Editable Texts** property of the page. (Highlight the Page line of the Model tree, Data tab, Editable Texts Property, mouse click on the three periods at the end of the value cell. It may take more than one mouse click on the periods.  In the window that pops up, paint the desired text, type new text in its place, making all the desired line changes. Click OK when done.)
 
-Our page can now be exported to SVG to be worked further in graphical applications like [inkscape](http://www.inkscape.org), or to DXF by selecting menu **File -> Export**. The Drawing Dimensioning workbench also features its own **DXF export** tool, which also supports the annotations added with that workbench. The DXF format is importable in almost all existing 2D CAD applications. Drawing pages can also be directly printed or exported to PDF.
+Our page can now be exported to SVG to be worked further in graphical applications like [inkscape](http://www.inkscape.org), or to DXF by selecting menu **File → Export**. The Drawing Dimensioning workbench also features its own **DXF export** tool, which also supports the annotations added with that workbench. The DXF format is importable in almost all existing 2D CAD applications. Drawing pages can also be directly printed or exported to PDF.
 
 **Downloads**
 

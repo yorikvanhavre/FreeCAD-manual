@@ -8,17 +8,15 @@ A FreeCAD document contains all the objects of your scene. It can contain groups
 
 
 
-Inside the document, the objects can be moved into [groups](https://wiki.freecadweb.org/Std_Group), and have a unique name. Managing groups, objects and object names is done mainly from the **Tree view**. There, you can create groups, move objects to groups, delete objects or groups. By right-clicking in the tree view or on an object, you can rename objects, change their color, hide or show them, or possibly other operations, depending on the current workbench.
+Inside the document, objects can be organized into [groups](https://wiki.freecadweb.org/Std_Group), which are like folders on your computer. Managing groups, objects and object labels is done mainly from the **Tree view**. There, you can create groups, move objects to groups, delete objects or groups. By right-clicking in the tree view or on an object, you can rename objects, change their color, hide or show them, or possibly other operations, depending on the current workbench.
 
 ![tree options](../images/Freecad-document-02.jpg)
 
 
 
-The objects inside a FreeCAD document can be of different types. Each workbench can add its own types of objects, for example the [Mesh Workbench](http://www.freecadweb.org/wiki/index.php?title=Mesh_Module) adds mesh objects, the [Part Workbench](http://www.freecadweb.org/wiki/index.php?title=Part_Module) adds Part objects, etc.
+Objects inside a FreeCAD document can be of different types. Each workbench can add its own types of objects, for example the [Mesh Workbench](http://www.freecadweb.org/wiki/index.php?title=Mesh_Module) adds support for [mesh](https://en.wikipedia.org/wiki/Triangle_mesh) objects, the [Part Workbench](http://www.freecadweb.org/wiki/index.php?title=Part_Module) for solid, [BREP](https://en.wikipedia.org/wiki/Boundary_representation)-based objects, etc (these concepts will be better explained later in this manual).  There are even non-geometric objects, that live in the tree, but have no visible existence in the 3D view (Groups are an example of such objects). Objects always live in one specific document. Objects from other documents can be linked into the current document using [Link](https://wiki.freecadweb.org/App_Link) objects.
 
 There is always only one active document at a time. That's the document that appears in the current 3D view, the document you are currently working on. If you switch tabs to another document, that one becomes the active document. Most operations always work on the active document.
-
-Objects always live in one specific document, but objects from other documents can be linked into the current document using [Link](https://wiki.freecadweb.org/App_Link) objects.
 
 FreeCAD documents are saved with the **.FCStd** extension, which is a zip-based compound format, similar to [LibreOffice](https://www.libreoffice.org). If something goes very wrong, it is often possible to unzip it and fix the problem or rescue the data.
 

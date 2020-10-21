@@ -24,7 +24,7 @@ We will use the table we have been modeling in the [tradtional modeling](traditi
 
 * Start by loading the table.FCStd file that we modeled earlier or from the link at the bottom of this chapter.
 * Press the small down arrow next to the ![icon](http://www.freecadweb.org/wiki/images/thumb/5/59/Raytracing_New.png/16px-Raytracing_New.png) [New Povray project](http://www.freecadweb.org/wiki/index.php?title=Raytracing_New) button, and choose the **RadiosityNormal** template
-* A warning message might appear telling you that the current 3D view is not in perspective mode and the rendering will therefore differ. Correct this by choosing **No**, choosing menu **View->Perspective view** and choosing the RadiosityNormal template again.
+* A warning message might appear telling you that the current 3D view is not in perspective mode and the rendering will therefore differ. Correct this by choosing **No**, choosing menu **View→Perspective view** and choosing the RadiosityNormal template again.
 * You might also try other templates after you created a new project, simply by editing its **Template** property.
 * A new project has now been created:
 
@@ -56,7 +56,7 @@ We will use the table we have been modeling in the [tradtional modeling](traditi
 
 * If you leave that window open,Luxrender will continue calculating and rendering forever, progressively refining the image. It is up to you to decide when the image has reach a sufficient quality for your needs, and stop the render.
 * There are also many controls to play with, on the left panel. All these controls will change the aspect of the image being rendered on the fly, without stopping the rendering.
-* When you feel the quality is good enough, simply press **Render->stop**, and then **File->Export to image->Tonemapped low dynamic range** to save the rendered image to a png file.
+* When you feel the quality is good enough, simply press **Render→stop**, and then **File→Export to image→Tonemapped low dynamic range** to save the rendered image to a png file.
 
 You can extend greatly the render possibilities of FreeCAD by creating new templates for povray or luxrender. This is explained in the [Raytracing Workbench documentation](http://www.freecadweb.org/wiki/index.php?title=Raytracing_Module).
 

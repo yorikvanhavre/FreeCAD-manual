@@ -26,21 +26,21 @@ All the mesh handling, in FreeCAD, is done by another specific workbench, the [M
 * Open the FreeCAD file containing the Lego piece.
 * Switch to the [Mesh Design Workbench](http://www.freecadweb.org/wiki/index.php?title=Mesh_Module)
 * Select the Lego brick
-* Select from the top menu **Meshes -> Create Mesh from Shape**
+* Select from the top menu **Meshes → Create Mesh from Shape**
 * A task panel will open with several options. Some additional meshing algorithms (Mefisto or Netgen) might not be available, depending on how your version of FreeCAD was compiled. The Standard meshing algorithm will always be present. It offers less possibilities than the two others, but is totally sufficient for small objects that fit into the maximum print size of a 3D printer.
 
 ![the meshing options](http://www.freecadweb.org/wiki/images/d/de/Exercise_meshing_01.jpg)
 
 * Select the **Standard** mesher, and leave the deviation value to the default value of **0.10**. Press **Ok**.
 * A mesh object will be created, exactly on top of our solid object. Either hide the solid, or move one of the objects apart, so you can compare both.
-* Change the **View -> Display Mode** property of the new mesh object to **Flat Lines**, in order to see how the triangulation occurred.
+* Change the **View → Display Mode** property of the new mesh object to **Flat Lines**, in order to see how the triangulation occurred.
 * If you are not happy, and think that the result is too coarse, you can repeat the operation, lowering the deviation value. In the example below, the left mesh used the default value of **0.10**, while the right one uses **0.01**.  If we would look at the Task tab for the two meshes, (highlight the (Meshed) line in the Model tree, and click on Task tab) we might see 716 points and 1428 facets in the coarser deviation with 3440 points and 6876 facets with the smaller deviation.  The higher the number of points and facets, the more accurately the mesh follows the model curves, with an increasing complexity/file size:
 
 ![meshing differences](http://www.freecadweb.org/wiki/images/b/b2/Exercise_meshing_02.jpg)
 
 In most cases, though, the default values will give a satisfying result.
 
-* We can now export our mesh to a mesh format, such as [STL](https://en.wikipedia.org/wiki/STL_%28file_format%29), which is currently the most widely used format in 3D printing, by using menu **File -> Export** and choosing the STL file format.
+* We can now export our mesh to a mesh format, such as [STL](https://en.wikipedia.org/wiki/STL_%28file_format%29), which is currently the most widely used format in 3D printing, by using menu **File → Export** and choosing the STL file format.
 
 If you don't own a 3D printer, it is usually very easy to find commercial services that will print and send you the printed objects by mail. Among the famous ones are [Shapeways](http://www.shapeways.com/) and [Sculpteo](http://www.sculpteo.com/), but you will also usually find many others in your own city. In all major cities, you will also nowadays find [Fab labs](https://en.wikipedia.org/wiki/Fab_lab), which are workshops equipped with a range of 3D manufacturing machines, almost always including at least one 3D printer. Fab labs are usually community spaces, that will let you use their machines, for a fee or for free depending on the Fab lab, but also teach you how to use them, and promote other activities around 3D manufacturing.
 
@@ -60,9 +60,9 @@ Once you have installed both Cura and the Cura Workbench, you will be able to us
 
 * Load the file containing our Lego brick (it can be downloaded at the end of the previous chapter)
 * Switch to the [Cura Workbench](https://github.com/cblt2l/FreeCAD-CuraEngine-Plugin)
-* Setup the printer space by choosing menu **3D printing -> Create a 3D printer definition**. Since we aren't going to print for real, we can leave the settings as they are. The geometry of the printing bed and available space will be shown in the 3D view.
-* Move the Lego brick to a suitable location, such as the center of the printing bed. Remember that PartDesign objects cannot be moved directly, so you need either to move its very first sketch (the first rectangle), or to move (and print) a copy, which can be made with the [Part -> Create Simple Copy](http://www.freecadweb.org/wiki/index.php?title=Part_CreateSimpleCopy) tool. The copy can be moved, for example with ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c5/Draft_Move.png/16px-Draft_Move.png) [Draft -> Move](http://www.freecadweb.org/wiki/index.php?title=Draft_Move).
-* Select the object to be printed, and select menu **3D printing -> Slice with Cura Engine**.
+* Setup the printer space by choosing menu **3D printing → Create a 3D printer definition**. Since we aren't going to print for real, we can leave the settings as they are. The geometry of the printing bed and available space will be shown in the 3D view.
+* Move the Lego brick to a suitable location, such as the center of the printing bed. Remember that PartDesign objects cannot be moved directly, so you need either to move its very first sketch (the first rectangle), or to move (and print) a copy, which can be made with the [Part → Create Simple Copy](http://www.freecadweb.org/wiki/index.php?title=Part_CreateSimpleCopy) tool. The copy can be moved, for example with ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c5/Draft_Move.png/16px-Draft_Move.png) [Draft → Move](http://www.freecadweb.org/wiki/index.php?title=Draft_Move).
+* Select the object to be printed, and select menu **3D printing → Slice with Cura Engine**.
 * In the task panel that will open, make sure the path to the Cura executable is correctly set. Since we are not going to really print, we can leave all other options as they are. Press **Ok**. Two files will be generated in the same directory as your FreeCAD file, an STL file and a G-code file.
 
 ![the cura setup](http://www.freecadweb.org/wiki/images/3/37/Exercise_meshing_05.jpg)
@@ -101,7 +101,7 @@ Generating CNC milling paths is another subject that is much too vast to fit in 
 * Now all that is left to do is to join these two operations into one. This can be done with a [Path Compound](http://www.freecadweb.org/wiki/index.php?title=Path_Compound) or a [Path Project](http://www.freecadweb.org/wiki/index.php?title=Path_Project). Since we will need nothing more and will be ready to export already, we will use the project. Press the ![icon](http://www.freecadweb.org/wiki/images/thumb/c/c2/Path_Project.png/16px-Path_Project.png) [Project](http://www.freecadweb.org/wiki/index.php?title=Path_Project) button. 
 * Set the **Use Placements** property of the project is to True, because we changed the placement of the arrays, and we want that to be taken into account in the project.
 * In the tree view, drag and drop the two arrays into the project. You can reorder the arrays inside the project if needed, by double-clicking it.
-* The project can now be exported to G-code, by selecting it, choosing menu **File -> Export**, selecting the G-code format, and in the pop-up dialog that will open, selecting a post-processing script according to your machine.
+* The project can now be exported to G-code, by selecting it, choosing menu **File → Export**, selecting the G-code format, and in the pop-up dialog that will open, selecting a post-processing script according to your machine.
 
 There are many applications available to simulate the real cutting, one of them that is also multi-platform and open-source, like FreeCAD, is [Camotics](http://camotics.org/).
 

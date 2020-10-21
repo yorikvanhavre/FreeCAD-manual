@@ -80,7 +80,7 @@ class ParametricRectangle:
     obj.Shape = f
 ```
 
-Instead of pasting the above code in the Python console, we'd better save it somewhere, so we can reuse and modify it later. For example in a new macro (menu Tools -> Macros -> Create). Name it, for example, "ParamRectangle". However, FreeCAD macros are saved with a .FCMacro extension, which Python doesn't recognize when using `import`. So, before using the above code, we will need to rename the ParamRectangle.FCMacro file to ParamRectangle.py. This can be done simply from your file explorer, by navigating to the Macros folder indicated in menu Tools -> Macros.
+Instead of pasting the above code in the Python console, we'd better save it somewhere, so we can reuse and modify it later. For example in a new macro (menu Tools → Macros → Create). Name it, for example, "ParamRectangle". However, FreeCAD macros are saved with a .FCMacro extension, which Python doesn't recognize when using `import`. So, before using the above code, we will need to rename the ParamRectangle.FCMacro file to ParamRectangle.py. This can be done simply from your file explorer, by navigating to the Macros folder indicated in menu Tools → Macros.
 
 Once that is done, we can now do this in the Python Console:
 
@@ -103,7 +103,7 @@ Of course it would be tedious to have to type these 4 lines of Python code each 
 
 Now, when we type `import ParamRectangle`, a new parametric rectangle will automatically be created.  Even better, we can add a toolbar button that will do just that:
 
-* Open menu **Tools -> Customize**
+* Open menu **Tools → Customize**
 * Under the "Macros" tab, select our ParamRectangle.py macro, fill in the details as you wish, and press "Add":
  
 ![creating a custom tool](http://www.freecadweb.org/wiki/images/5/57/Exercise_python_04.jpg)

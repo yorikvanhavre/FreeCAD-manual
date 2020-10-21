@@ -23,12 +23,12 @@ In the following exercise, we will first create a panel with Qt Creator that ask
 
 ![the panel](http://www.freecadweb.org/wiki/images/0/0b/Exercise_python_07.jpg)
 
-Let's start by creating the widget. Start Qt Creator, then menu **File -> New File or Project -> Files and Classes -> Qt -> Qt Designer Form -> Dialog without buttons**. Click **Next**, give it a filename to save, click **Next**, leave all project fields to their default value ("<none>"), and **Create**. FreeCAD's Task system will automatically add OK/Cancel buttons, that's why we chose here a dialog without buttons.
+Let's start by creating the widget. Start Qt Creator, then menu **File → New File or Project → Files and Classes → Qt → Qt Designer Form → Dialog without buttons**. Click **Next**, give it a filename to save, click **Next**, leave all project fields to their default value ("<none>"), and **Create**. FreeCAD's Task system will automatically add OK/Cancel buttons, that's why we chose here a dialog without buttons.
 
 ![qt creator started](http://www.freecadweb.org/wiki/images/9/91/Exercise_python_06.jpg)
 
 * Find the **Label** in the list in the left panel, and drag it onto the canvas of our widget. Double-click the recent placed Label, and change its text to **Length**.
-* Right-click the widget canvas, and choose **Lay out-> Lay out in a Grid**. This will turn our widget into a grid with currently only one cell, occupied by ourfirst label. We can now add the next items at the left, right, top or bottom of our first label, and the grid wil lexpand automatically.
+* Right-click the widget canvas, and choose **Lay out→ Lay out in a Grid**. This will turn our widget into a grid with currently only one cell, occupied by ourfirst label. We can now add the next items at the left, right, top or bottom of our first label, and the grid wil lexpand automatically.
 * Add two more labels below the first one, and change their text to Width and Height:
 
 ![other labels](http://www.freecadweb.org/wiki/images/c/cf/Exercise_python_08.jpg)
@@ -42,7 +42,7 @@ Let's start by creating the widget. Start Qt Creator, then menu **File -> New Fi
 ![editing widget names](http://www.freecadweb.org/wiki/images/2/2c/Exercise_python_10.jpg)
 
 * Save the file, you can now close Qt Creator, the rest will be done in Python.
-* Open FreeCAD and create a new macro from menu **Macro -> Macros -> Create**
+* Open FreeCAD and create a new macro from menu **Macro → Macros → Create**
 * Paste the following code. Make sure you change the file path to match where you saved the .ui file created in QtCreator:
 
 ```
