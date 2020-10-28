@@ -24,7 +24,7 @@ FreeCAD can import and export from/to many file formats. Here is a list of the m
 FreeCAD supports [many more file formats](https://wiki.freecadweb.org/Import_Export). Menu *File → Import* and *File → Export* dialogs will show you all the available options.
 
 Some of these file formats have options. These can be configured from menu *Edit → Preferences → Import/export*:
-![Import/export preferences](http://www.freecadweb.org/wiki/images/4/41/Import_preferences.jpg)
+![Import/export preferences](../images/Import_preferences.jpg)
 
 
 
