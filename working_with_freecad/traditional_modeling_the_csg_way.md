@@ -25,7 +25,9 @@ In this exercise, we will assume some default settings. Feel free to adjust to y
 - We will work in metric units. Set units system to "metric/MKS" under menu *Edit → Preferences → Units*
 - We will use the default (CAD) navigation style. To change the navigation style, right click anywhere on the 3D view and choose another one
 
-Now on to modeling!
+
+
+#### Modeling the metallic feet
 
 * Let's open FreeCAD and create a new document, if not already done (**Ctrl+N** or menu *File → New*)
 * Switch to the Part Workbench
@@ -121,6 +123,10 @@ As you can see, each foot has become a quite long series of operations. All this
 
 In FreeCAD and other feature-based modelers, the concepts of 3D object and 3D operation tend to blend into the same thing. The "Cut" we did above is at the same time an operation, and the 3D object resulting from this operation. In FreeCAD you will therefore often see these called "features" rather than "objects" or "operations".
 
+
+
+#### Modeling the tabletop
+
 * Now let's model the tabletop. It will be a simple block of wood, let's do it with another **Cube** with length: 126cm, width: 86cm, height: 8cm. Again, it will initially not be visible, as it will come in small, overlaying the bottom of the first foot.  Select the new cube in the model tree and in the **Data** tab enter the final dimensions. Set also its position to X: 10mm, Y: 10mm, Z: 67cm.   In the **View** tab, you can give it a nice brownish, wood-like color by changing its **Shape Color** property. As always, before modifying any property, make sure that the correct cube is selected in the model tree.
 
 ![the tabletop](../images/Exercise_table_06.jpg)
@@ -130,6 +136,10 @@ In FreeCAD and other feature-based modelers, the concepts of 3D object and 3D op
 Notice that, although the legs are 8mm thick, we placed our table top 10mm away, leaving 2mm between them. This is not necessary, of course, it won't happen with the real table, but it is a common thing to do in that kind of "assembled" models, it helps people who look at the model to understand that these are independent parts, that will need to be attached together manually later. And this 2mm spacing is so small that it would not affect the cutting dimensions of the different pieces. It can be considered a "tolerance value".
 
 * Now that our five pieces (4 metallic feet and a wooden table top) are complete, it is a good time to give them more proper names than "Cut015". By right-clicking the objects in the tree view (or pressing **F2**), you can rename them to something more meaningful to yourself or to another person who would open your file later. It is often said that simply giving descriptive names to your objects is much more important than the way you model them.
+
+
+
+#### Placing the screws
 
 * We will now place some screws. There is an extremely useful addon developed by a member of the FreeCAD community, that you can install from the [addons manager](https://wiki.freecadweb.org/Std_AddonMgr), called [Fasteners](https://github.com/shaise/FreeCAD_FastenersWB), that makes the insertion of screws very easy. The addons manager is located under menu *Tools*.
 * Once you have installed the Fasteners Workbench and restarted FreeCAD, it will appear in the workbenches list, and we can switch to it. Adding a screw to one of our holes is done by first selecting the circular edge of our hole, in the 3D view:
@@ -156,10 +166,10 @@ As we saw above, it is possible in FreeCAD to select not only whole objects, but
 
 * **Vertices**: These are points (usually endpoints) on which all the rest is built. For example, a line has two vertices.
 * **Edges**: the edges are linear geometry like lines, arcs, ellipses or [NURBS](https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline) curves. They usually have two vertices, but some special cases have only one (a closed circle for example).
-* **Wires**: A wire is a sequence of edges connected by their endpoints. It can contain edges of any type, and it can be closed or not.
-* **Faces**: Faces can be planar or curved, and can be formed by one closed wire, which forms the border of the face, or more than one, in case the face has holes.
-* **Shells**: Shells are simply a group of faces connected by their edges. It can be open or closed.
-* **Solids**: When a shell is tightly closed, that is, it does not "leak", it becomes a solid. Solids carry the notion of inside and outside. Many workbench rely on this to make sure the objects they produce can be built in the real world.
+* **Wires**: A wire is a sequence of edges connected by their endpoints. It can contain edges of any type, and it can be closed or not. In other applications, it is sometimes called "polyline".
+* **Faces**: Faces can be planar or curved, and is formed by at least one, outer closed wire, which forms the border of the face, and optionally more inner wires, in case the face has holes.
+* **Shells**: Shells are simply a group of faces connected by one or more of their edges. It can be open or closed.
+* **Solids**: When a shell is tightly closed, that is, it does not "leak", it can become a solid. Solids carry the notion of inside and outside. Many workbenches rely on solids to make sure the objects they produce can be built in the real world.
 * **Compounds**: Compounds are simply aggregates of other shapes, no matter their type, into a single shape.
 
 In the 3D view, you can select individual **vertices**, **edges** or **faces**. Selecting one of these also selects the whole object.
@@ -170,7 +180,7 @@ In the 3D view, you can select individual **vertices**, **edges** or **faces**. 
 
 You might look at the table above, and think its design is not good. The attachment of the feet to the tabletop is probably too weak. You might want to add reinforcing pieces, or you have other ideas to make it better. This is where sharing becomes interesting. You can download the file made during this exercise from the link below, and modify it to make it better. Then, if you share that improved file, others might be able to make it even better, or use your well-designed table in their projects. Your design might then give other ideas to other people, and maybe you will have helped a tiny bit to make a better world...
 
-FreeCAD files carry a **license** field, located, among other useful information, under *File → File Properties*. You can specify here a sharing-friendly license such as [Creative Commons](https://creativecommons.org/), which legally allow other people to reuse your file, while preserving some of your rights, such as being identified as the author of the file.
+FreeCAD files carry a **license** field, located, among other useful information, under *File → File Properties*. You can specify here a sharing-friendly license such as [Creative Commons](https://creativecommons.org/), which legally allows other people to reuse your file, while preserving some of your rights, such as being identified as the author of the file.
 
 
 
