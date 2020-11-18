@@ -92,8 +92,8 @@ Then we can create the two linear segments:
 ![the linear segments](http://www.freecadweb.org/wiki/images/5/5b/Line.png)
 
 ```
-L1 = Part.Line(V1,V2)
-L2 = Part.Line(V4,V3)
+L1 = Part.LineSegment(V1,V2)
+L2 = Part.LineSegment(V4,V3)
 ```
 
 Note that we didn't need to create Vertices? We could immediately create Part.Lines from FreeCAD Vectors. This is because here we haven't created Edges yet. A Part.Line (as well as Part.Circle, Part.Arc, Part.Ellipse or PArt.BSpline) does not create an Edge, but rather a base geometry on which an Edge will be created. Edges are always made from such a base geometry, which is stored its Curve attribute. So if you have an Edge, doing:
