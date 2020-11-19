@@ -34,9 +34,9 @@ This book has been written originally by [Yorik van Havre](https://yorik.uncreat
 
 ### Contents
 
-* [Discovering FreeCAD](discovering_freecad/README)
-* [Working with FreeCAD](working_with_freecad/README)
-* [Python scripting](python_scripting/README)
-* [The community](the_community)
-* [summary](SUMMARY)
+* [Discovering FreeCAD](discovering_freecad/README.md)
+* [Working with FreeCAD](working_with_freecad/README.md)
+* [Python scripting](python_scripting/README.md)
+* [The community](the_community.md)
+* [summary](SUMMARY.md)
 
