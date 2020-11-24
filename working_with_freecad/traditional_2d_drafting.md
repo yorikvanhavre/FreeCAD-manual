@@ -16,15 +16,16 @@ To showcase the working and possibilities of the Draft workbench, we will walk t
 
 We will assume in this chapter that the table modeling exercise from the previous chapter has been preformed, so we will skip some basic explanations we already viewed there.
 
-* Start FreeCAD, create a new drawing,  and switch to the **Draft Workbench**
-
 
 
 #### Setup
 
+* Start FreeCAD, create a new drawing,  and switch to the **Draft Workbench**
 * As in all technical drawing applications, it is wise to set up your environment correctly, beforehand, it will save a lot of time. Configure the [grid and working plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane), [text](http://www.freecadweb.org/wiki/index.php?title=Draft_Text) and [dimensions](http://www.freecadweb.org/wiki/index.php?title=Draft_Dimension) settings to your liking in menu *Edit → Preferences → Draft*.
 
 ![Draft options](../images/Freecad_draft_options_01.jpg)
+
+
 
 * For this exercise, let us set, under the **Texts and Dimensions** tab, the default **Font Size** to 10cm, and the **Arrow Size** to 2cm. Optionally, turn **Show Unit** off, and set **Override Unit** to "m" to show our dimensions in meters.
 * Under the **Grid and Snapping** tab, set the **Grid Spacing** to 10cm, with a main line every 10 squares. This will give us a grid with small squares of 10cm, with a main line every meter.
@@ -33,7 +34,7 @@ We will assume in this chapter that the table modeling exercise from the previou
 ![Draft toolbars](../images/Draft_toolbars.jpg)
 
 * Let's start by turning **construction mode** on, using the <img src="../images/icons/Draft_ToggleConstructionMode.png" alt="icon" style="width:24px;" /> icon which will allow us to draw some guidelines, locating features of our final geometry.
-* Set the **working plane** to top position: Click on the field showing Auto and select **XY (Top)**. When left in Auto, the working plane changes automatically to the current view.  You would therefore need to make sure you are in top view whenever you wanted to draw on the XY plane (the "ground" plane). By setting it to a defined position such as Top, it will stay there, no matter the view angle, until we set it back to "Auto". Since we are going to work exclusively in a same 2D plane in this exercise, this is a good first step to do. The grid always shows where the working plane is located.
+* Set the **working plane** to top position: Click on the button showing *Auto* and select **XY (Top)**. When left in Auto, the working plane changes automatically to the current view.  You would therefore need to make sure you are in top view whenever you wanted to draw on the XY plane (the "ground" plane). By setting it to a defined position such as Top, it will stay there, no matter the view angle, until we change it manually or set it back to "Auto". Since we are going to work exclusively in a single 2D plane in this exercise, this is a good first step to do. The grid always shows where the working plane is located.
 * Make sure the **grid** and **endpoint** snap positions are activated, as we will use them often. You can activate other snap positions too.
 
 #### Drawing the construction geometry
@@ -56,6 +57,8 @@ Note that most of the Draft commands can be fully performed from the keyboard, w
 
 ![the first rectangles](../images/Exercise_cabin_02.jpg)
 
+
+
 * We will now draw a couple of vertical lines to define where our doors and windows will be placed, using the ![icon](../images/icons/16px-Draft_Line.png) [Line](http://www.freecadweb.org/wiki/index.php?title=Draft_Line) tool. The crossing of these lines with our two rectangles will give us useful intersections to snap our final wall shapes to:
     * Press the ![icon](../images/icons/16px-Draft_Line.png) [Line](http://www.freecadweb.org/wiki/index.php?title=Draft_Line) button
     * Under the Task tab, make sure the **Relative** check box is unchecked, as we will enter absolute coordinates here. In absolute coordinates, a point at (20,20,0) after a point situated at (10,10,0) will be positioned at (20,20,0). In relative coordinates, it would be added to the previous point and will become (30,30,0). Relative coordinates are useful to indicate do like "go 10cm downwards"
@@ -77,6 +80,8 @@ Note that most of the Draft commands can be fully performed from the keyboard, w
 
 ![the window lines](../images/Exercise_cabin_03.jpg)
 
+
+
 * Optionally, like on the image above, to make sure your lines are placed correctly, you can add a couple of dimensions using the <img src="../images/icons/Draft_Dimension.svg" style="width:24px;" /> [Dimension](https://wiki.freecadweb.org/Draft_Dimension) tool. The dimension tool works like the previous tools we used above, by asking you to click several points on screen. The first and second points will give the distance to be measured, and the third point will give the position of the dimension line. To move the dimension text out of the line like on the image above, double-click it in the model view and move the dot under the text by clicking it and giving it a new position.
 * That is all we need now, so we can switch off construction mode. Check that all the construction geometry has been placed into a "Construction" group, which makes it easy to hide all at once or even delete completely later.
 
@@ -92,9 +97,13 @@ In case you have trouble drawing these shapes correctly, the **Undo** button wil
 
 ![the two walls](../images/Exercise_cabin_04.jpg)
 
+
+
 * We can change their default grey color to a nice hatch pattern, by selecting both walls, (highlight both in the model tree) then setting their **Pattern** property, found under the **View** tab, to *Simple*, and their **Pattern size** to your liking, for example 0.01.
 
 ![hatch patterns](../images/Exercise_cabin_05.jpg)
+
+
 
 * We can now hide the construction geometry by selecting the Construction group in the model tree, right-clicking it and selecting **Toggle visibility**.
 
@@ -106,6 +115,8 @@ In case you have trouble drawing these shapes correctly, the **Undo** button wil
 * Make sure the ![icon](../images/icons/16px-Snap_Midpoint.png) [midpoint snap](http://www.freecadweb.org/wiki/index.php?title=Draft_Snap) is turned on, and use the ![icon](../images/icons/16px-Draft_Line.png) line tool to draw two centered lines as follows:
 
 ![Window lines](../images/Exercise_cabin_06.jpg)
+
+
 
 * Optionally, deactivate ![icon](../images/icons/16px-Snap_Midpoint.png)midpoint snapping. This might help you not snapping to the wrong location in the following steps.
 * With the <img src="../images/icons/20150122200510!Draft_Endpoint.png" alt="icon" style="width:24px;" /> end point snapping activated, add the 4 inner and outer lines.
@@ -120,7 +131,9 @@ In case you have trouble drawing these shapes correctly, the **Undo** button wil
     * Give an end angle of **-90°**. Press Enter.
 * Then create the opening arc with the ![icon](../images/icons/16px-Draft_Arc.png) [Arc](http://www.freecadweb.org/wiki/index.php?title=Draft_Arc) tool. Pick the same point as the rotation center we used in the previous step as center, set the radius by selecting the  other endpoint of the door line, then, with the mouse, indicate the start and end positions of the arc. Pressing SHIFT while moving the mouse will constrain the snapping horizontally or vertically, which might help you to get the correct result:
 
-![the door arc](../images/icons/Exercise_cabin_07.jpg)
+![the door arc](../images/Exercise_cabin_07.jpg)
+
+
 
 * With the arc is still highlighted in the model tree,  change the **Draw Style** property, found under the **View** tab, to Dashed, in order to produce a nice dashed arc as above.
 * As usual, an incremental save might be in order. Also, do not forget to give more meaningful names to your objects from time to time, as it makes selecting them much easier.
@@ -154,10 +167,14 @@ It might be difficult to use snapping while the two objects are on the counterto
 
 ![the dimensions](../images/Exercise_cabin_09.jpg)
 
+
+
 * Let's add some description texts using the ![icon](../images/icons/16px-Draft_Text.png) [Text](http://www.freecadweb.org/wiki/index.php?title=Draft_Text) tool. Click a point to position the text, then enter the lines of text, pressing Enter after each line. To finish, press Enter twice.
 * The indication lines (also called "leaders") that link the texts to the item they are describing are simply done with the polyline tool. Draw a couple of polylines, starting from the text position, to the place being described. Once that is done, you can add a dot or arrow at the end of the polylines by setting their **End Arrow** property to **True**
 
 ![the indications](../images/Exercise_cabin_10.jpg)
+
+
 
 * Our drawing is now complete! As always, this is a good time for an incremental save.
 
@@ -169,14 +186,20 @@ It might be difficult to use snapping while the two objects are on the counterto
 
 ![order](../images/Exercise_cabin_11.jpg)
 
+
+
 * We can now print our work by placing it on a TechDraw sheet, which will be explained further in this manual, or directly export our drawing to other CAD applications, by exporting it to a DXF file. Simply select our "Floor plan" group, (or highlight the the desired elements in the model tree) and select menu **File → Export**. Select the Autodesk DXF format, give it a file name and click **Save**. The file can then be opened in any other 2D CAD application such as [LibreCAD](http://www.librecad.org). You might notice some minor style differences, depending on the configurations of each application.
 
 ![in librecad](../images/Exercise_cabin_12.jpg)
+
+
 
 * The most important thing about the Draft Workbench, however, is that the geometry you create with it can be used as a base or easily extruded into 3D objects, simply by using the ![icon](../images/icons/16px-Part_Extrude.png) [Extrude](http://www.freecadweb.org/wiki/index.php?title=Part_Extrude) tool from the [Part workbench](http://www.freecadweb.org/wiki/index.php?title=Part_Module), or, to stay in Draft, the ![icon](../images/icons/16px-Draft_Trimex.png) [Trimex](http://www.freecadweb.org/wiki/index.php?title=Draft_Trimex) (Trim/Extend/Extrude) tool, which under the hood performs a Part Extrusion,  but does it "the Draft way", that is, allows you to indicate and snap the extrusion length graphically. Experiment extruding our walls as shown below. 
 * By pressing the ![icon](../images/icons/16px-Draft_SelectPlane.png) [working plane](http://www.freecadweb.org/wiki/index.php?title=Draft_SelectPlane) button after selecting a face of an object, you are also able to place the working plane anywhere, and therefore draw Draft objects in different planes, for example on top of the walls. These can then be extruded to form other 3D solids. Experiment setting the working plane on one of the top faces of the walls, then draw some rectangles up there. 
 
 ![3d on top of draft objects](../images/Exercise_cabin_13.jpg)
+
+
 
 * All kinds of openings can also be done as easily by drawing Draft objects on the faces of walls, then extruding them, then using the boolean tools from the Part Workbench to subtract them from another solid, as we saw in the previous chapter.
 
