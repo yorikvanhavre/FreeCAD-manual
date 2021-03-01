@@ -1,25 +1,27 @@
 ## BIM modeling
 
-BIM stands for [Building Information Modeling](https://en.wikipedia.org/wiki/Building_information_modeling). The exact definition varies, but we can say simply that is how buildings and other large structures like bridges, tunnels, etc... are modeled today. BIM models are usually based on 3D models, and also include a series of additional layers of information, such as materials information, relationships to other objects or models, or special instructions for building or maintenance. This extra information permits all kinds of advanced analyses of the model, such as structural resistance, cost and construction time estimations, or calculations of energy consumption.
 
-The [Arch Workbench](http://www.freecadweb.org/wiki/index.php?title=Arch_Module) of FreeCAD implements a series of tools and facilities for BIM modeling. Although it has a different purpose, it is made to work in tight integration with the rest of FreeCAD: Anything made with any other workbench of FreeCAD can become an Arch object, or be used as a base for an Arch object.
 
-As in the [PartDesign Workbench](http://www.freecadweb.org/wiki/index.php?title=PartDesign_Workbench), the objects produced by the Arch Workbench are meant to be built in the real world. Therefore, they need to be **solid**. The Arch tools usually take care of that automatically, and also provide utility tools to help you check the validity of objects.
+BIM stands for [Building Information Modeling](https://en.wikipedia.org/wiki/Building_information_modeling). The exact definition varies, but we can say simply that BIM is a series of rules that define how buildings and other large structures like bridges, tunnels, etc... are modeled today. BIM models are usually the same kind of 3D models as we have done so far in this manual, but also include a series of additional layers of information, such as materials information, relationships to other objects or models, or special instructions for building or maintenance. This extra information permits all kinds of advanced analyses of the model, such as structural resistance, cost and construction time estimations, or calculations of energy consumption.
 
-The Arch Workbench also includes all the tools from the [Draft Workbench](http://www.freecadweb.org/wiki/index.php?title=Draft_Module), and uses its grid and snapping system. Before beginning, it is always a good idea to browse through the preferences pages of both Draft and Arch and set the default settings to your preferences.
+The [Arch workbench](http://www.freecadweb.org/wiki/index.php?title=Arch_Module) of FreeCAD implements a series of tools and facilities for BIM modeling. Although it has a different purpose, it is made to work in tight integration with the rest of FreeCAD: Anything made with any other workbench of FreeCAD can become an Arch object, or be used as a base for an Arch object.
+
+The [BIM workbench](https://wiki.freecadweb.org/BIM_Workbench) is an upgraded, more user-friendly version of the Arch workbench. It also includes several useful tools from other workbenches such as Draft or TechDraw. It is not bundled with FreeCAD by default, but is easily installable through the [addons manager](https://wiki.freecadweb.org/Std_AddonMgr). In this exercise, you can use either Arch or BIM, but if you are going to do BIM modeling with FreeCAD regularly, you are highly recommended to install the BIM workbench.
+
+As in the [PartDesign workbench](http://www.freecadweb.org/wiki/index.php?title=PartDesign_Workbench), the objects produced by the Arch/BIM workbenches are meant to be built in the real world. Therefore, they need to be **solid**. The Arch/BIM tools usually take care of that automatically, and also provide utility tools to help you check the validity of objects.
 
 In this chapter, we will see how to model this small building:
 
-![the arch model](http://www.freecadweb.org/wiki/images/c/cb/Exercise_arch_01.jpg)
+![the arch model](../images/Exercise_arch_01.jpg)
 
-and produce a plan and a section view from it:
+and produce a printable sheet with a plan and a section view from the above model:
 
-![the drawing page](http://www.freecadweb.org/wiki/images/1/15/Exercise_arch_02.jpg)
+![the drawing page](../images/Exercise_arch_02.jpg)
 
 Notice in the sheet title block the cone on it's side.  The graphic is denoting a first angle projection.  If the two images were swapped, a third angle projection is declared.  In this print it is less important, however in the previous chair drawing it would have had greater significance. [First and Third Angle Projection](https://en.wikipedia.org/wiki/Engineering_drawing#Multiple_views_and_projections) 
 
 We are assuming that the exercises in the previous chapters have been preformed, there will be less discussion on previously covered concepts.
- 
+
 * Open FreeCAD, create a new document, and switch to the [Arch Workbench](http://www.freecadweb.org/wiki/index.php?title=Arch_Module).
 * Open menu **Edit → Preferences → Draft → Grid and Snapping** and set the **grid spacing** setting to 1000mm, so we have a one meter-based grid, which will be convenient for the size of our building.
 * On the **snapping toolbar**, make sure the ![icon](http://www.freecadweb.org/wiki/images/thumb/f/f5/Snap_Grid.png/16px-Snap_Grid.png) [grid snap](http://www.freecadweb.org/wiki/index.php?title=Draft_ToggleGrid) button is enabled, so we can use the grid  as much as possible.
