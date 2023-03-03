@@ -66,10 +66,10 @@ Note that most of the Draft commands can be fully performed from the keyboard, w
     * Click **Enter Point** or press Enter
     * Enter the end point coordinates X:15cm, Y:3m, Z:0
     * Click **Enter Point** or press Enter to complete the line
-* Duplicate that line 5 times, using the ![icon](../images/icons/16px-Draft_Move.png) [Move](http://www.freecadweb.org/wiki/index.php?title=Draft_Move) tool with Copy mode turned on. As always, make sure the correct object is selected (highlighted in the model tree), before using the Move tool. Although most FreeCAD tools allow you to either start with a selected object or select an object to work with after you click the tool button, it is always better to verify yourself what you will be working with. Do the following 5 times:
-    * Select the first line
+* Duplicate that line, using the ![icon](../images/icons/16px-Draft_Move.png) [Move](http://www.freecadweb.org/wiki/index.php?title=Draft_Move) tool with Copy mode turned on. As always, make sure the correct object is selected (highlighted in the model tree), before using the Move tool. Although most FreeCAD tools allow you to either start with a selected object or select an object to work with after you click the tool button, it is always better to verify yourself what you will be working with. Do the following 5 times:
+    * Select the last line created.
     * Turn **Copy** mode on
-    * Turn **Relative** mode on, as we will now work with relative coordinates
+    * Turn **Relative** mode on, as we will now work with relative coordinates from each subsequent copy.
     * Give a start point, which can be anything, since the displacement will be relative to that point. You can leave it at (0,0,0) for example, or click a same point on the grid. Press Enter or select **Enter Point** if you entered coordinates manually.
     * Give a different endpoint for each of your 5 copies:
          * line001: X:10cm, Y:0, Z:0
