@@ -2,7 +2,7 @@
 
 In the previous chapters, we learned about the different workbenches of FreeCAD, and that each of them implements its own tools and geometry types. The same concepts applies when working from Python code.
 
-We also saw that the big majority of the FreeCAD workbenches depend on a very fundamental one: the [Part Workbench](http://www.freecadweb.org/wiki/index.php?title=Part_Workbench). In fact, may other workbenches, such as [Draft](http://www.freecadweb.org/wiki/index.php?title=Draft_Module) or [Arch](http://www.freecadweb.org/wiki/index.php?title=Arch_Module), do exactly what we will do in this chapter: They use Python code to create and manipulate Part geometry.
+We also saw that the big majority of the FreeCAD workbenches depend on a very fundamental one: the [Part Workbench](https://wiki.freecad.org/index.php?title=Part_Workbench). In fact, may other workbenches, such as [Draft](https://wiki.freecad.org/index.php?title=Draft_Module) or [Arch](https://wiki.freecad.org/index.php?title=Arch_Module), do exactly what we will do in this chapter: They use Python code to create and manipulate Part geometry.
 
 So the first thing we need to do to work with Part geometry, is to do the Python equivalent of switching to the Part Workbench: import the Part module:
 
@@ -72,11 +72,11 @@ So to resume the whole diagram of Part Shapes: Everything starts with Vertices. 
 
 We can now try creating complex shapes from scratch, by constructing all their components one by one. For example, let's try to create a volume like this:
 
-![a prismatic volume](http://www.freecadweb.org/wiki/images/9/97/Exercise_python_03.jpg)
+![a prismatic volume](https://wiki.freecad.org/images/9/97/Exercise_python_03.jpg)
 
 We will start by creating a planar shape like this:
 
-![planar shape](http://www.freecadweb.org/wiki/images/7/77/Wire.png)
+![planar shape](https://wiki.freecad.org/images/7/77/Wire.png)
 
 First, let's create the four base points:
 
@@ -89,7 +89,7 @@ V4 = FreeCAD.Vector(0,-10,0)
 
 Then we can create the two linear segments:
 
-![the linear segments](http://www.freecadweb.org/wiki/images/5/5b/Line.png)
+![the linear segments](https://wiki.freecad.org/images/5/5b/Line.png)
 
 ```
 L1 = Part.LineSegment(V1,V2)
@@ -102,7 +102,7 @@ Note that we didn't need to create Vertices? We could immediately create Part.Li
 
 will show you what kind of Edge this is, that is, if it is based on a line, an arc, etc... But let's come back to our exercise, and build the arc segments. For this, we will need a third point, so we can use the convenient Part.Arc, which takes 3 points:
 
-![arc segment](http://www.freecadweb.org/wiki/images/e/ec/Circel.png)
+![arc segment](https://wiki.freecad.org/images/e/ec/Circel.png)
 
 ```
 VC1 = FreeCAD.Vector(-10,0,0)
@@ -169,9 +169,9 @@ Alternately, the Part module also provides a shortcut that does the above operat
 
 `Part.show(P)`
 
-All of the above, and much more, is explained in detail on the [Part Scripting](http://www.freecadweb.org/wiki/index.php?title=Topological_data_scripting) page, together with examples.
+All of the above, and much more, is explained in detail on the [Part Scripting](https://wiki.freecad.org/index.php?title=Topological_data_scripting) page, together with examples.
 
 **Read more**:
 
-* The Part Workbench: http://www.freecadweb.org/wiki/index.php?title=Part_Workbench
-* Part scripting: http://www.freecadweb.org/wiki/index.php?title=Topological_data_scripting
+* The Part Workbench: https://wiki.freecad.org/index.php?title=Part_Workbench
+* Part scripting: https://wiki.freecad.org/index.php?title=Topological_data_scripting

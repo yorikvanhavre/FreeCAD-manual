@@ -6,7 +6,7 @@ FreeCAD uses the [LGPL license](https://en.wikipedia.org/wiki/GNU_Lesser_General
 
 FreeCAD runs without any difference on Windows, Mac OS and Linux. However, the ways to install it differ slightly depending on your platform. The FreeCAD community provides pre-compiled packages (installers) ready to download, for Linux, Windows and Mac. On Linux, the source code is also made available to Linux distributions maintainers, who are then responsible for packaging FreeCAD for their specific distribution. As a result, on Linux, you can usually install FreeCAD right from the software manager application.
 
-The official FreeCAD download page for Windows, Mac OS and Linux packages is https://www.freecadweb.org/downloads.php
+The official FreeCAD download page for Windows, Mac OS and Linux packages is https://freecad.org/downloads.php
 
 **FreeCAD versions**
 
@@ -20,7 +20,7 @@ If you are installing FreeCAD in a virtual machine, please be aware that the per
 
 ### Installing on Windows
 
-1. Download a Windows installer package (.exe) corresponding to your version of Windows (32bit or 64bit) from  the [download page](https://www.freecadweb.org/downloads.php). The FreeCAD installers should work on any windows version starting from Windows 7.
+1. Download a Windows installer package (.exe) corresponding to your version of Windows (32bit or 64bit) from  the [download page](https://freecad.org/downloads.php). The FreeCAD installers should work on any windows version starting from Windows 7.
 2. Double-click the downloaded installer.
 3. Accept the terms of the LGPL license (this will be one of the few cases where you can really, safely click the "accept" button without reading the text. No hidden clauses):
 ![FreeCAD installation on windows, step 1](../images/Freecad-windows-install-01.jpg)
@@ -46,7 +46,7 @@ On most modern Linux distributions (Ubuntu, Fedora, OpenSUSE, Debian, Mint, Elem
 
 **Alternative ways**
 
-One of the big joys of using Linux is the multitude of possibilities to tailor your software, so don't restrain yourself. On Ubuntu and derivatives, FreeCAD can also be installed from a [PPA](https://launchpad.net/~freecad-maintainers) maintained by the FreeCAD community (it contains both stable and development versions) and since this is open-source software, you can also easily [compile FreeCAD yourself](http://www.freecadweb.org/wiki/index.php?title=Compiling).
+One of the big joys of using Linux is the multitude of possibilities to tailor your software, so don't restrain yourself. On Ubuntu and derivatives, FreeCAD can also be installed from a [PPA](https://launchpad.net/~freecad-maintainers) maintained by the FreeCAD community (it contains both stable and development versions) and since this is open-source software, you can also easily [compile FreeCAD yourself](https://wiki.freecad.org/index.php?title=Compiling).
 
 
 
@@ -80,7 +80,7 @@ Once FreeCAD is installed, you might want to open it and set a couple of prefere
 
 ![freecad basic options, step 1](../images/Freecad-basic-options01.jpg)
 
-2. **Auto-load module**: Normally, FreeCAD will start showing you the [start center](https://wiki.freecadweb.org/Start_Workbench). But you can skip this and begin a FreeCAD session directly in the workbench of your choice. [Workbenches](http://www.freecadweb.org/wiki/index.php?title=Workbenches) will be explained in detail in the [next chapter](the_freecad_interface.md).
+2. **Auto-load module**: Normally, FreeCAD will start showing you the [start center](https://wiki.freecad.org/Start_Workbench). But you can skip this and begin a FreeCAD session directly in the workbench of your choice. [Workbenches](https://wiki.freecad.org/index.php?title=Workbenches) will be explained in detail in the [next chapter](the_freecad_interface.md).
 3. **Create document at startup**: Combined with the option above, this starts FreeCAD ready for work.
 
 ![freecad basic options, step 2](../images/Freecad-basic-options02.jpg)
@@ -105,9 +105,9 @@ There, among other things, you will find:
 
 1. A [Parts library](https://github.com/FreeCAD/FreeCAD-library), which contains all kinds of useful models, or pieces of models, created by FreeCAD users that can be freely used in your projects. The library can be used and accessed right from inside your FreeCAD installation via a macro.
 2. A [collection of additional workbenches](https://github.com/FreeCAD/FreeCAD-addons), most of them additional workbenches, that extend the functionality of FreeCAD for certain tasks. Instructions for installing are given on each separate addon page.
-3. A [collection of macros](https://github.com/FreeCAD/FreeCAD-macros), which are also available [on the FreeCAD wiki](http://www.freecadweb.org/wiki/index.php?title=Macros_recipes) along with documentation about how to use them.
+3. A [collection of macros](https://github.com/FreeCAD/FreeCAD-macros), which are also available [on the FreeCAD wiki](https://wiki.freecad.org/index.php?title=Macros_recipes) along with documentation about how to use them.
 
-All the content above can be viewed and installed directly from withing FreeCAD, using the [Addons Manager](https://wiki.freecadweb.org/Std_AddonMgr), found under menu **Tools → Addons Manager**
+All the content above can be viewed and installed directly from withing FreeCAD, using the [Addons Manager](https://wiki.freecad.org/Std_AddonMgr), found under menu **Tools → Addons Manager**
 ![the execute macro dialog](../images/Macro_installer_01.jpg)
 
 
@@ -120,10 +120,10 @@ The addons manager allows you to very simply install, uninstall and update any e
 
 **Read more**
 
-* More download options: http://wiki.freecadweb.org/Download
-* Detailed installation instructions: http://wiki.freecadweb.org/Installing
+* More download options: https://wiki.freecad.org/Download
+* Detailed installation instructions: https://wiki.freecad.org/Installing
 * FreeCAD PPA for Ubuntu: https://launchpad.net/~freecad-maintainers
-* Compile FreeCAD yourself: http://wiki.freecadweb.org/Compiling
+* Compile FreeCAD yourself: https://wiki.freecad.org/Compiling
 * FreeCAD translations: https://crowdin.com/project/freecad
 * FreeCAD github page: https://github.com/FreeCAD
-* The FreeCAD addons manager: https://wiki.freecadweb.org/Std_AddonMgr
+* The FreeCAD addons manager: https://wiki.freecad.org/Std_AddonMgr

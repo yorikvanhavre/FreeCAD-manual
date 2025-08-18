@@ -2,7 +2,7 @@
 
 
 
-FreeCAD uses the [Qt framework](https://en.wikipedia.org/wiki/Qt_(software)) to draw and manage its interface. This framework is used in a wide range of applications. The FreeCAD interface is pretty classical and presents no particular difficulty to understand. Most buttons are standard and will be found where you expect them (File → Open, Edit → Paste, etc). Here is the look of FreeCAD when you open it for the first time, just after installing, showing you the [start page](https://wiki.freecadweb.org/Start_Workbench):
+FreeCAD uses the [Qt framework](https://en.wikipedia.org/wiki/Qt_(software)) to draw and manage its interface. This framework is used in a wide range of applications. The FreeCAD interface is pretty classical and presents no particular difficulty to understand. Most buttons are standard and will be found where you expect them (File → Open, Edit → Paste, etc). Here is the look of FreeCAD when you open it for the first time, just after installing, showing you the [start page](https://wiki.freecad.org/Start_Workbench):
 
 ![FreeCAD interface screenshot 01](../images/Freecad-interface-01.jpg)
 
@@ -68,7 +68,7 @@ The FreeCAD interface also offers several themes (inteface colors and icons). Th
 
 **Read more**
 
-* Getting started with FreeCAD: http://wiki.freecadweb.org/Getting_started
-* Customizing the interface: http://wiki.freecadweb.org/Interface_Customization
-* Workbenches: http://wiki.freecadweb.org/Workbenches
+* Getting started with FreeCAD: https://wiki.freecad.org/Getting_started
+* Customizing the interface: https://wiki.freecad.org/Interface_Customization
+* Workbenches: https://wiki.freecad.org/Workbenches
 * More about Python: https://www.python.org

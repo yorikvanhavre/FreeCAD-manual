@@ -8,13 +8,13 @@
 
 FreeCAD makes extensive use of Python. With it, you can access and control almost any feature of FreeCAD. You can, for example, create new objects, modify their geometry, analyze their contents, or even create new interface controls, tools and panels. Some workbenches of FreeCAD and most of the addon workbenches are fully programmed in Python. FreeCAD has an advanced Python console, available from menu **View→Panels→Python console**. It is often useful to perform operations for which there is no toolbar button yet, or to check shapes for problems, or to perform repetitive tasks:
 
-![the Python console](http://www.freecadweb.org/wiki/images/c/cf/Exercise_python_01.jpg)
+![the Python console](https://wiki.freecad.org/images/c/cf/Exercise_python_01.jpg)
 
 But the Python console also has another very important use: Every time you press a toolbar button, or perform other operations in FreeCAD, some Python code is printed in the console and executed. By leaving the Python console open, you can literally see the Python code unfold as you work, and in no time, almost without knowing it, you will be learning some Python language.
 
-FreeCAD also has a [macros system](http://www.freecadweb.org/wiki/index.php?title=Macros), which allows you to record actions to be replayed later. This system also uses the Python console, by simply recording everything that is done in it.
+FreeCAD also has a [macros system](https://wiki.freecad.org/index.php?title=Macros), which allows you to record actions to be replayed later. This system also uses the Python console, by simply recording everything that is done in it.
 
-In this chapter, we will discover very generally the Python language. If you are interested in learning more, the FreeCAD documentation wiki has an extensive section related to [Python programming](http://www.freecadweb.org/wiki/index.php?title=Power_users_hub).
+In this chapter, we will discover very generally the Python language. If you are interested in learning more, the FreeCAD documentation wiki has an extensive section related to [Python programming](https://wiki.freecad.org/index.php?title=Power_users_hub).
 
 ### Writing Python code
 
@@ -22,7 +22,7 @@ There are two easy ways to write Python code in FreeCAD: From the Python console
 
 In this chapter, you will be able to use both methods, but it is highly recommended to use the Python Console, since it will immediately inform you of any typing error.
 
-If this is the first time you are coding in Python, consider reading this short [Introduction to Python](http://www.freecadweb.org/wiki/index.php?title=Introduction_to_Python) before going further, it will make the basic concepts of Python clearer.
+If this is the first time you are coding in Python, consider reading this short [Introduction to Python](https://wiki.freecad.org/index.php?title=Introduction_to_Python) before going further, it will make the basic concepts of Python clearer.
 
 ### Manipulating FreeCAD objects
 
@@ -32,7 +32,7 @@ Let's start by creating a new empty document:
 
 If you type this in the FreeCAD Python console, you will notice that as soon as you type "FreeCAD." (the word FreeCAD followed by a dot), a windows pops up, allowing to quickly autocomplete the rest of your line. Even better, each entry in the autocomplete list has a tooltip explaining what it does. This makes it very easy to explore the functionality available. Before choosing "newDocument", have a look at the other options available.
 
-![The autocomplete mechanism of the FreeCAD Python console](http://www.freecadweb.org/wiki/images/e/e2/Exercise_python_02.jpg)
+![The autocomplete mechanism of the FreeCAD Python console](https://wiki.freecad.org/images/e/e2/Exercise_python_02.jpg)
 
 As soon as you press **Enter** our new document will be created. This is similar to pressing the "new document" button on the toolbar. In Python, the dot is used to indicate something that is contained inside something else (newDocument is a function that is inside the FreeCAD module). The window that pops up therefore shows you everything that is contained inside "FreeCAD". If you would add a dot after newDocument, instead of the parentheses, it would show you everything that is contained inside the newDocument function. The parentheses are mandatory when you are calling a Python function, such as this one. We will illustrate that better below.
 
@@ -124,7 +124,7 @@ newplace = App.Placement(pos, rot, center).multiply(newplace)
 **Read more**
 
 * Python: https://www.python.org/
-* Working with Macros: http://www.freecadweb.org/wiki/index.php?title=Macros
-* Introduction to Python scripting: http://www.freecadweb.org/wiki/index.php?title=Introduction_to_Python
-* Using Python in FreeCAD: http://www.freecadweb.org/wiki/index.php?title=Python_scripting_tutorial
-* The Python scripting wiki hub: http://www.freecadweb.org/wiki/index.php?title=Power_users_hub
+* Working with Macros: https://wiki.freecad.org/index.php?title=Macros
+* Introduction to Python scripting: https://wiki.freecad.org/index.php?title=Introduction_to_Python
+* Using Python in FreeCAD: https://wiki.freecad.org/index.php?title=Python_scripting_tutorial
+* The Python scripting wiki hub: https://wiki.freecad.org/index.php?title=Power_users_hub

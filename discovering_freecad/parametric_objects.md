@@ -4,7 +4,7 @@
 
 FreeCAD is designed for parametric modeling. This means that the geometry that you create, instead of being freely sculptable, is produced by rules and parameters. For example, a cylinder might be produced from a radius and a height. With these two parameters, the program has enough information to build the cylinder.
 
-Parameters are also called **object properties**. All FreeCAD objects have properties. The properties of selected objects can be modified anytime from the [property editor](http://wiki.freecadweb.org/Property_editor) located under the tree view.
+Parameters are also called **object properties**. All FreeCAD objects have properties. The properties of selected objects can be modified anytime from the [property editor](https://wiki.freecad.org/Property_editor) located under the tree view.
 
 Parametric objects, in FreeCAD, are in reality small pieces of a program that run whenever one of the parameters has changed. Objects can have a lot of different kinds of parameters, or properties: numbers (integer numbers like 1, 2, 3 or floating-point values like 3.1416), real-world sizes (1mm, 2.4m, 4.5ft), (x,y,z) coordinates, text strings ("hello!") or even another object.
 
@@ -23,9 +23,9 @@ Two important things are necessary to know:
 
 Not all geometry is parametric in FreeCAD. Often, the geometry that you import from other files won't contain any parameter, and will be simple, non-parametric objects in FreeCAD. However, these can often be used as a base, or starting point for newly created parametric objects. There are also many tools to convert geometry to other types, and often some or all "parametricity" can be regained.
 
-All objects, however, parametric or not, will have a couple of basic properties, such as a Name, which is unique in the document and cannot be edited, a Label, which is a user-defined name that can be edited, and a  [placement](http://www.freecadweb.org/wiki/index.php?title=Placement), which holds its position in the 3D space.
+All objects, however, parametric or not, will have a couple of basic properties, such as a Name, which is unique in the document and cannot be edited, a Label, which is a user-defined name that can be edited, and a  [placement](https://wiki.freecad.org/index.php?title=Placement), which holds its position in the 3D space.
 
-Finally, it is worth noting that custom parametric objects are [easy to program in python](http://www.freecadweb.org/wiki/index.php?title=Scripted_objects).
+Finally, it is worth noting that custom parametric objects are [easy to program in python](https://wiki.freecad.org/index.php?title=Scripted_objects).
 
 
 
@@ -37,7 +37,7 @@ Finally, it is worth noting that custom parametric objects are [easy to program 
 
 **Read more**
 
-* The properties editor: http://wiki.freecadweb.org/Property_editor
-* How to program parametric objects: http://wiki.freecadweb.org/Scripted_objects
-* Positioning objects in FreeCAD: http://wiki.freecadweb.org/Placement
-* Using the dependency graph: http://wiki.freecadweb.org/Std_DependencyGraph
+* The properties editor: https://wiki.freecad.org/Property_editor
+* How to program parametric objects: https://wiki.freecad.org/Scripted_objects
+* Positioning objects in FreeCAD: https://wiki.freecad.org/Placement
+* Using the dependency graph: https://wiki.freecad.org/Std_DependencyGraph

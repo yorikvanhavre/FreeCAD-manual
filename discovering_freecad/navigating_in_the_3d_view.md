@@ -6,7 +6,7 @@
 
 If this is your first contact with a 3D application, you will need to grab some key concepts first. If not, you can safely skip this section.
 
-The FreeCAD 3D space is an [euclidian space](https://en.wikipedia.org/wiki/Euclidean_space). It has an origin point and three axes: X, Y and Z. If you look at your scene from above, conventionally, the increasing, positive, X axis points to the right, the positive Y axis to the back, and the positive Z axis upwards. The [navigation cube](https://wiki.freecadweb.org/Navigation_Cube) and the 3-axes icon in lower right corner of the FreeCAD view always show you from where you are viewing the scene:
+The FreeCAD 3D space is an [euclidian space](https://en.wikipedia.org/wiki/Euclidean_space). It has an origin point and three axes: X, Y and Z. If you look at your scene from above, conventionally, the increasing, positive, X axis points to the right, the positive Y axis to the back, and the positive Z axis upwards. The [navigation cube](https://wiki.freecad.org/Navigation_Cube) and the 3-axes icon in lower right corner of the FreeCAD view always show you from where you are viewing the scene:
 
 ![axes](../images/axes-orientation.jpg) 
 
@@ -20,7 +20,7 @@ You can look at that scene from any angle, like if you were holding a camera. Th
 
 ### The FreeCAD 3D view
 
-Navigating in the FreeCAD 3D view can be done with a mouse, a Space Navigator device, the keyboard, a touchpad, or a combination of those. FreeCAD can use several [navigation modes](http://www.freecadweb.org/wiki/index.php?title=Mouse_Model), which determine how the three basic view manipulation operations (pan, rotate and zoom) are done, as well as how to select objects on the screen. Navigation modes are accessed from the Preferences screen, directly by right-clicking anywhere on the 3D view, or using the control button in the status bar at the bottom of the FreeCAD window:
+Navigating in the FreeCAD 3D view can be done with a mouse, a Space Navigator device, the keyboard, a touchpad, or a combination of those. FreeCAD can use several [navigation modes](https://wiki.freecad.org/index.php?title=Mouse_Model), which determine how the three basic view manipulation operations (pan, rotate and zoom) are done, as well as how to select objects on the screen. Navigation modes are accessed from the Preferences screen, directly by right-clicking anywhere on the 3D view, or using the control button in the status bar at the bottom of the FreeCAD window:
 
 ![Accessing navigation modes](../images/Freecad-interface-05.jpg)
 
@@ -57,7 +57,7 @@ These controls are also available from the View menu and some from the View tool
 
 Objects in the 3D view can be selected by clicking them with the corresponding mouse button, depending on the navigation mode. A single click will select the object, and one of its subcomponents (edge, face, vertex). Double-clicking will select all its subcomponents. You can select more than one subcomponent, or even different subcomponents from different objects, by pressing the **CTRL** key. With multiple items selected, keeping the CTRL key pressed, and pressing a selected item removes it from the selection.  Clicking with the selection button on an empty portion of the 3D view will deselect everything.
 
-A panel called [Selection view](https://wiki.freecadweb.org/Selection_view), available from the View menu, can also be turned on, which shows you what is currently selected,and allows you to search objects by name:
+A panel called [Selection view](https://wiki.freecad.org/Selection_view), available from the View menu, can also be turned on, which shows you what is currently selected,and allows you to search objects by name:
 
 ![selection view](../images/selection-view.jpg) 
 
@@ -67,6 +67,6 @@ A panel called [Selection view](https://wiki.freecadweb.org/Selection_view), ava
 
 **Read more**
 
-* The navigation styles: https://wiki.freecadweb.org/Mouse_Model
-* The navigation cube: https://wiki.freecadweb.org/Navigation_Cube
-* The selection view: https://wiki.freecadweb.org/Selection_view
+* The navigation styles: https://wiki.freecad.org/Mouse_Model
+* The navigation cube: https://wiki.freecad.org/Navigation_Cube
+* The selection view: https://wiki.freecad.org/Selection_view

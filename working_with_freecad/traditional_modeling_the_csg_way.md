@@ -4,7 +4,7 @@
 
 CSG stands for [Constructive Solid Geometry](https://en.wikipedia.org/wiki/Constructive_solid_geometry) and describes the most basic way to work with solid 3D geometry, which is creating complex objects by adding and removing pieces to/from solids by using Boolean operations such as union, subtraction or intersection.
 
-As we saw earlier in this manual, FreeCAD handles many types of geometry, but the preferred and most useful type, which is solid geometry, also called [BREP](https://en.wikipedia.org/wiki/Boundary_representation) geometry, is mainly handled by the [Part Workbench](http://www.freecadweb.org/wiki/index.php?title=Part_Module). Unlike [polygon meshes](https://en.wikipedia.org/wiki/Polygon_mesh), which are made only of points and triangles, BREP objects have their faces defined by mathematical curves, which permit absolute precision, no matter the scale.
+As we saw earlier in this manual, FreeCAD handles many types of geometry, but the preferred and most useful type, which is solid geometry, also called [BREP](https://en.wikipedia.org/wiki/Boundary_representation) geometry, is mainly handled by the [Part Workbench](https://wiki.freecad.org/index.php?title=Part_Module). Unlike [polygon meshes](https://en.wikipedia.org/wiki/Polygon_mesh), which are made only of points and triangles, BREP objects have their faces defined by mathematical curves, which permit absolute precision, no matter the scale.
 
 ![Difference between mesh and brep geometry](../images/Mesh_vs_brep.jpg)
 
@@ -40,7 +40,7 @@ In this exercise, we will assume some default settings. Feel free to adjust to y
 * Adjust the view with the <img src="../images/icons/View-axometric.svg" alt="icon" style="width:24px;" /> **Axonometric view** button (or menu *View → Default views → Axonometric*)
 * Duplicate the cube (make sure it is still highlighted in Model tab) by pressing **Ctrl+C** then **Ctrl+V** (or menu *Edit → Copy* and *Edit → Paste*). No change will be evident in the 3D view, as the second object is identical and placed exactly on the first one
 * Select the new object that has been created (Click on Cube001 in the model tree)
-* Change its position by editing its **Placement** property, found in the **Data** tab. The [placement](https://wiki.freecadweb.org/Placement) is a FreeCAD structure that combines position and rotation. All geometric objects have one. By expanding the placement entry in the properties list, you will be able to access both the rotation (which consists of an axis direction and an angle), and the position (made of x, y and z coordinates). The position indicated by the placement is not necessarily tied to the center of the object, it is just an abstract reference point. But by changing it, we move the whole object geometry. Let's move our second cube 8mm in both x and y directions by setting the following values:
+* Change its position by editing its **Placement** property, found in the **Data** tab. The [placement](https://wiki.freecad.org/Placement) is a FreeCAD structure that combines position and rotation. All geometric objects have one. By expanding the placement entry in the properties list, you will be able to access both the rotation (which consists of an axis direction and an angle), and the position (made of x, y and z coordinates). The position indicated by the placement is not necessarily tied to the center of the object, it is just an abstract reference point. But by changing it, we move the whole object geometry. Let's move our second cube 8mm in both x and y directions by setting the following values:
     * Position X: 8mm (In the Translation Fields)
    * Position Y: 8mm  (Select OK when complete)
 
@@ -49,7 +49,7 @@ We will now obtain two overlapping high boxes, one 8mm apart from the other:
 
 ![The first objects](../images/Exercise_table_01.jpg)
 
-* Now we will subtract one from the other, in order to create an L-shaped foot: Select the **first** one, that is, the one that will **stay** (labeled Cube) , then, with the CTRL key pressed, select the **other** one, that will be **subtracted** (labeled Cube001). The order in which you select both pieces is important for FreeCAD to know which one to subtract. Now press the ![icon](http://www.freecadweb.org/wiki/images/thumb/4/4a/Part_Cut.png/16px-Part_Cut.png) **Cut** button (or menu *Part → Boolean → Cut*):
+* Now we will subtract one from the other, in order to create an L-shaped foot: Select the **first** one, that is, the one that will **stay** (labeled Cube) , then, with the CTRL key pressed, select the **other** one, that will be **subtracted** (labeled Cube001). The order in which you select both pieces is important for FreeCAD to know which one to subtract. Now press the ![icon](https://wiki.freecad.org/images/thumb/4/4a/Part_Cut.png/16px-Part_Cut.png) **Cut** button (or menu *Part → Boolean → Cut*):
 
 ![First foot complete](../images/Exercise_table_02.jpg)
 
@@ -141,7 +141,7 @@ Notice that, although the legs are 8mm thick, we placed our table top 10mm away,
 
 #### Placing the screws
 
-* We will now place some screws. There is an extremely useful addon developed by a member of the FreeCAD community, that you can install from the [addons manager](https://wiki.freecadweb.org/Std_AddonMgr), called [Fasteners](https://github.com/shaise/FreeCAD_FastenersWB), that makes the insertion of screws very easy. The addons manager is located under menu *Tools*.
+* We will now place some screws. There is an extremely useful addon developed by a member of the FreeCAD community, that you can install from the [addons manager](https://wiki.freecad.org/Std_AddonMgr), called [Fasteners](https://github.com/shaise/FreeCAD_FastenersWB), that makes the insertion of screws very easy. The addons manager is located under menu *Tools*.
 * Once you have installed the Fasteners Workbench and restarted FreeCAD, it will appear in the workbenches list, and we can switch to it. Adding a screw to one of our holes is done by first selecting the circular edge of our hole, in the 3D view:
 
 ![a selected hole](../images/Exercise_table_07.jpg)
@@ -194,8 +194,8 @@ FreeCAD files carry a **license** field, located, among other useful information
 
 **Read more**
 
-* The Part workbench: http://wiki.freecadweb.org/Part_Module
-* Placements: https://wiki.freecadweb.org/Placement
-* The addons aanager: https://wiki.freecadweb.org/Std_AddonMgr
+* The Part workbench: https://wiki.freecad.org/Part_Module
+* Placements: https://wiki.freecad.org/Placement
+* The addons aanager: https://wiki.freecad.org/Std_AddonMgr
 * The Fasteners workbench: https://github.com/shaise/FreeCAD_FastenersWB
 * Creative Commons: https://creativecommons.org/
